@@ -1,4 +1,4 @@
-# OSSIM_Kullanim Kılavuzu
+# OSSIM Kullanım Kılavuzu
 OSSIM(Meaning Open Source Security Information Manager) is an open source project by Alienvault which provides the SIEM (Security information and event management) functionality. It provides SIEM features which are required by security professionals. The goal of OSSIM is to fill a gap in the needs of security professionals.
 
 Considering the important technological advances of recent years that have made tools with capacities
