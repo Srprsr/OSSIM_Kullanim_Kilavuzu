@@ -91,13 +91,13 @@ policy.
 
 ##Creating a new sensor
 The following steps allow an administrator to add or modify an OSSIM sensor.
-*Click on policy
-* Click on sensors
+*Click on **policy**
+* Click on **sensors**
 You should be presented with the following screen. Note – This is a sensor we installed earlier. 
 
 FOTO GELİCEK
 
-* Click Insert new sensor
+* Click **Insert new sensor**.
 You will be presented with the following screen. 
 
 FOTO GELİCEK
@@ -108,7 +108,7 @@ FOTO GELİCEK
 *Add the Port - Which port the server connects on.
 *Add the description - The description.
 
-Click OK to create the object. Once the sensor has been created you should see the following updated
+Click **OK** to create the object. Once the sensor has been created you should see the following updated
 information on the sensors screen. 
 
 FOTO GELİCEK
@@ -124,9 +124,9 @@ the definition of different signatures for different sensors. So, for example, w
 list of type Virus that only contains the Snort Virus rules for the internal network, but a different list
 of Web server signatures for the DMZ.
 To create a new signature group:
-* Click on Policy.
-* Click on Signatures
-* Click Insert new signature group.
+* Click on **Policy**.
+* Click on **Signatures**.
+* Click **Insert new signature group**.
 
 FOTO GELİCEK
 
@@ -137,18 +137,18 @@ FOTO GELİCEK
 From here, give the new signature group a name, and choose the signatures that you wish to define.
 * Tick the relevant boxes.
 * Add a useful description.
-* Click OK
+* Click **OK**
 The new signature is now added, and available for use in future policy creation. 
 
 ##Creating a Network
-It is very likely that you will need to define multiple networks within the organisation. The Policy >
-Networks option allows us to do this. Click Policy > Networks. You will be presented with the
+It is very likely that you will need to define multiple networks within the organisation. **The Policy >
+Networks** option allows us to do this. Click **Policy > Networks**. You will be presented with the
 following screen. 
 
 FOTO GELİCEK
 
 To add a new network, click on:
-* Insert new network. 
+* **Insert new network**. 
 
 FOTO GELİCEK
 
@@ -161,13 +161,13 @@ Add the following components.
 * Scan options - Tick this if you would like the network scanned for vulnerabilities.
 * Description - Network group description.
 
-Click OK to add the new network group.
+Click **OK** to add the new network group.
 Please note: If you do not wish to have the entire network group scanned periodically, ensure that the
-NESSUS SCAN option is set to DISABLED. 
+NESSUS SCAN option is set to **DISABLED**. 
 
 ## Adding a group of relevant ports
 It may be necessary from time to time for the administrator to optimise the ports OSSIM should
-monitor. This is done through the Policy > Ports menu option.
+monitor. This is done through the **Policy > Ports** menu option.
 To define a new group of ports, complete the following tasks.
 * Click on Policy
 * Click on Ports
@@ -175,7 +175,7 @@ To define a new group of ports, complete the following tasks.
 * Add a name for the port group.
 * Tick the ports that you wish to monitor.
 * Add the description.
-* Click OK.
+* Click **OK**.
 
 The port group has now been added, as shown below
 
@@ -187,9 +187,16 @@ network. This is an extremely useful facility as it gives the administrator the 
 amount of false positives, or alert you to one specific signature type you may know you are vulnerable
 to.
 To change the priority and reliability settings:
-* Click Policy
-* Click Priority & Reliability
+* Click **Policy**
+* Click **Priority & Reliability**
 
 You will see the following screen. 
 
 FOTO GELİCEK
+
+To edit the priority and reliability of Back Orifice, click on the **Id** field.
+
+As can be seen from the screenshot below, Back Orifice has the highest priority for obvious reasons.
+The reliability of the Back Orifice signature has been set to 3. We can change this by simply editing
+the number 3, and increasing or decreasing the number. Once this is complete, click Modify. 
+
