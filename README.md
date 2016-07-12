@@ -43,6 +43,7 @@ detection reliability and sensitivity:
 * Correlation
 * Prioritization
 * Risk assessment
+
 Post-processing in turn makes use of the preprocessors, a number of detectors and monitors already
 known to most of the administrators that will be included in our distribution:
 * IDS (pattern detectors)
