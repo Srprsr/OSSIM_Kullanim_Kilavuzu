@@ -57,4 +57,51 @@ assets, to define: the topology, a security policy, correlation rules, and to li
 tools.
 
 #Installation and Configuration of OSSIM
-------
+Coming soon.
+
+#Logging in
+The OSSIM console is web based, and can be interfaced through any standard web browser. The
+system runs on port 80 (HTTP) or secure (HTTPS) port 443.
+
+* Start your favourite browser.
+* In the address bar enter – http://ipaddressorofossimserver
+* Enter the user ID ossim
+* Enter the password ossim_password 
+
+FOTO GELİCEK
+
+
+Remember to change your password from the default.
+
+Once you have logged in, you will be presented with the Metrics screen. The Metrics screen
+provides an overview of what is going on in the networks you have decided to monitor. 
+
+##The Metrics Screen 
+The screen is split into separate sections. Global Metrics, Riskmeter, Service Level, and current
+metrics for each of the individual components you have defined as part of a policy. 
+
+#The Policy Menu
+The OSSIM policy menu allows an administrator to create, or modify the objects needed to build a
+policy.
+
+
+##Creating a new sensor
+The following steps allow an administrator to add or modify an OSSIM sensor.
+• Click on policy
+• Click on sensors
+You should be presented with the following screen. Note – This is a sensor we installed earlier. 
+
+FOTO GELİCEK
+
+• Click Insert new sensor
+You will be presented with the following screen. 
+
+FOTO GELİCEK
+
+Add the Hostname - Name of your host
+Add the IP Address - IP of the host.
+Add the Priority - How important this host is. A priority of 5 is most important.
+Add the Port - Which port the server connects on.
+Add the description - The description.
+Click OK to create the object. Once the sensor has been created you should see the following updated
+information on the sensors screen. 
