@@ -77,6 +77,9 @@ Once you have logged in, you will be presented with the Metrics screen. The Metr
 provides an overview of what is going on in the networks you have decided to monitor. 
 
 ##The Metrics Screen 
+
+FOTO GELİCEK 
+
 The screen is split into separate sections. Global Metrics, Riskmeter, Service Level, and current
 metrics for each of the individual components you have defined as part of a policy. 
 
@@ -87,21 +90,105 @@ policy.
 
 ##Creating a new sensor
 The following steps allow an administrator to add or modify an OSSIM sensor.
-• Click on policy
-• Click on sensors
+*Click on policy
+* Click on sensors
 You should be presented with the following screen. Note – This is a sensor we installed earlier. 
 
 FOTO GELİCEK
 
-• Click Insert new sensor
+* Click Insert new sensor
 You will be presented with the following screen. 
 
 FOTO GELİCEK
 
-Add the Hostname - Name of your host
-Add the IP Address - IP of the host.
-Add the Priority - How important this host is. A priority of 5 is most important.
-Add the Port - Which port the server connects on.
-Add the description - The description.
+*Add the Hostname - Name of your host
+*Add the IP Address - IP of the host.
+*Add the Priority - How important this host is. A priority of 5 is most important.
+*Add the Port - Which port the server connects on.
+*Add the description - The description.
+
 Click OK to create the object. Once the sensor has been created you should see the following updated
 information on the sensors screen. 
+
+FOTO GELİCEK
+
+If the new sensor does not appear as active, click the Active button to recheck the connection. If this
+is still not active please refer to the OSSIM or Boseco forums. 
+
+##Defining Signature groups
+The signatures section relates directly to the snort, and other signatures types that are picked up by the
+sensor. These individual alerts can be viewed in ACID. In this section the administrator can optimise
+the amount of attack signatures or responses of that are of interest. This section is useful as it allows
+the definition of different signatures for different sensors. So, for example, we can define a signature
+list of type Virus that only contains the Snort Virus rules for the internal network, but a different list
+of Web server signatures for the DMZ.
+To create a new signature group:
+* Click on Policy.
+* Click on Signatures
+* Click Insert new signature group.
+
+FOTO GELİCEK
+
+The following screen appears. 
+
+FOTO GELİCEK
+
+From here, give the new signature group a name, and choose the signatures that you wish to define.
+* Tick the relevant boxes.
+* Add a useful description.
+* Click OK
+The new signature is now added, and available for use in future policy creation. 
+
+##Creating a Network
+It is very likely that you will need to define multiple networks within the organisation. The Policy >
+Networks option allows us to do this. Click Policy > Networks. You will be presented with the
+following screen. 
+
+FOTO GELİCEK
+
+To add a new network, click on:
+* Insert new network. 
+
+FOTO GELİCEK
+
+Add the following components.
+* Name - Name of the new network/networks group.
+* Ips - IP addresses of the networks
+* Priority - How important is this network. A priority of 5 is most important.
+* Threshold - The thresholds for this network before raising an alarm.
+* Sensors - Which sensors monitor this network.
+* Scan options - Tick this if you would like the network scanned for vulnerabilities.
+* Description - Network group description.
+
+Click OK to add the new network group.
+Please note: If you do not wish to have the entire network group scanned periodically, ensure that the
+NESSUS SCAN option is set to DISABLED. 
+
+## Adding a group of relevant ports
+It may be necessary from time to time for the administrator to optimise the ports OSSIM should
+monitor. This is done through the Policy > Ports menu option.
+To define a new group of ports, complete the following tasks.
+* Click on Policy
+* Click on Ports
+* Click Insert new Port Group
+* Add a name for the port group.
+* Tick the ports that you wish to monitor.
+* Add the description.
+* Click OK.
+
+The port group has now been added, as shown below
+
+FOTO GELİCEK
+
+##Editing the Priority & Reliability
+With OSSIM, it is possible to change the priority and reliability rating of signatures detected on the
+network. This is an extremely useful facility as it gives the administrator the ability to reduce the
+amount of false positives, or alert you to one specific signature type you may know you are vulnerable
+to.
+To change the priority and reliability settings:
+* Click Policy
+* Click Priority & Reliability
+
+You will see the following screen. 
+
+FOTO GELİCEK
