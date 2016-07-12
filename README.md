@@ -63,6 +63,12 @@ Coming soon.
 #OSSIM ARCHITECTURE
 Coming soon.
 
+#A Customized Plugin
+##Server Configuration
+##Agent Configuration
+##Verification
+#A Sample OSSIM directive
+
 #Logging in
 The OSSIM console is web based, and can be interfaced through any standard web browser. The
 system runs on port 80 (HTTP) or secure (HTTPS) port 443.
