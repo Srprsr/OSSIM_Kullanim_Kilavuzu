@@ -461,7 +461,9 @@ which hosts are up or down. To scan a range, enter the range required as shown b
 
 FOTO GELİCEK
 
-## Backlog Viewer - The backlog viewer provides information on outstanding anomalies.
+## Backlog Viewer 
+
+The backlog viewer provides information on outstanding anomalies.
 
 ## Rule Viewer
 
