@@ -34,21 +34,22 @@ security monitoring.
 Its objective is to provide a framework for centralizing, organizing, and improving detection and
 display for monitoring security events within the organization.
 Our system will include the following monitoring tools:
-a. Control panel for high-level display
-b. Risk and activity monitors for mid-level monitoring
-c. Forensic console and network monitors at the low level
-3
+* Control panel for high-level display
+* Risk and activity monitors for mid-level monitoring
+* Forensic console and network monitors at the low level
+
 These tools utilize new capabilities developed in SIM post-processing, whose objective is to improve
 detection reliability and sensitivity:
-a. Correlation
-b. Prioritization
-c. Risk assessment
+* Correlation
+* Prioritization
+* Risk assessment
 Post-processing in turn makes use of the preprocessors, a number of detectors and monitors already
 known to most of the administrators that will be included in our distribution:
-a. IDS (pattern detectors)
-b. Anomaly detectors
-c. Firewalls
-d. Various monitors
+* IDS (pattern detectors)
+* Anomaly detectors
+* Firewalls
+* Various monitors
+
 Finally, we need an administrative tool that configures and organizes the various modules, both
 external and native, that comprise OSSIM. That tool is the framework, which allows us to inventory
 assets, to define: the topology, a security policy, correlation rules, and to link up the various integrated
