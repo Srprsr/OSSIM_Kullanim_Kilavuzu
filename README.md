@@ -54,4 +54,7 @@ known to most of the administrators that will be included in our distribution:
 Finally, we need an administrative tool that configures and organizes the various modules, both
 external and native, that comprise OSSIM. That tool is the framework, which allows us to inventory
 assets, to define: the topology, a security policy, correlation rules, and to link up the various integrated
-tools. 
+tools.
+
+#Installation and Configuration of OSSIM
+------
