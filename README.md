@@ -85,10 +85,264 @@ done is run the setup script. The configuration parameters are already
 the OSSIM installer
 
 ##A Customized Plugin
+This is an area where priority and reliability is assigned to an event. OSSIM allows for the creation of
+custom plugins that will capture events specific to a user's network. This will focus on the steps needed
+to create an OSSIM plugin. This will be a simple plugin that you can trigger using a small python script
+
+Illustration 4: Events Tab
+OSSIM Brian E. Lavender
+that sends a message to syslog. This process can be used to verify that the agent and server are
+functioning and that the agent can send information to the server. It will also serve as a tutorial for
+configuring and utilizing other plugins.
+
 ##Server Configuration
+In the previous tables showing risk, an event came from a foobar plugin. The following demonstrates
+how to create the a plugin for foobar. On the OSSIM server, the ossim database needs to be updated
+with information regarding the plugin. You can copy and paste the following and it will create the file
+with the sql. If you create the file manually, be sure to remove the backslashes before any ‘$’ symbol. 
+
+```
+<localfile>
+cat > ./foobar.sql << __END__
+-- foobar
+-- plugin_id: 20000
+--
+-- \$Id:\$
+--
+DELETE FROM plugin WHERE id = "20000";
+DELETE FROM plugin_sid where plugin_id = "20000";
+INSERT INTO plugin (id, type, name, description) VALUES (20000, 1, 'foobar',
+'Foobar demo detector');
+INSERT INTO plugin_sid (plugin_id, sid, category_id, class_id, reliability,
+priority, name) VALUES (20000, 1, NULL, NULL, 6, 4, 'foobar: new foo found on
+(DST_IP)');
+INSERT INTO plugin_sid (plugin_id, sid, category_id, class_id, reliability,
+priority, name) VALUES (20000, 2, NULL, NULL, 6, 1, 'foobar: foo the same on
+(DST_IP)');
+INSERT INTO plugin_sid (plugin_id, sid, category_id, class_id, reliability,
+priority, name) VALUES (20000, 3, NULL, NULL, 10, 2, 'foobar: foo changed on
+(DST_IP)');
+INSERT INTO plugin_sid (plugin_id, sid, category_id, class_id, reliability,
+priority, name) VALUES (20000, 4, NULL, NULL, 8, 3, 'foobar: foo deleted on
+(DST_IP)');
+INSERT INTO plugin_sid (plugin_id, sid, category_id, class_id, reliability,
+priority, name) VALUES (20000, 5, NULL, NULL, 10, 5, 'foobar: alien foo on
+(DST_IP)');
+__END__
+</localfile>
+```
+
+Now the plugin can be inserted into the OSSIM server using the following command.
+```
+<localfile>
+cat foobar.sql | mysql -u root -p ossim
+</localfile>
+```
+
+The OSSIM server must be restarted so that it is aware of the new plugin information.
+
+```
+<localfile>
+/etc/init.d/ossim-server restart
+</localfile>
+```
+
+Once the plugin exists the OSSIM web interface will verify it in the window: **Configuration-> Plugins**
+
+FOTO GELİCEK
+
+Modification of the values in the above illustration for reliability and priority for each plugin_sid,
+requires restart of the OSSIM server in order for it to take effect. 
+
 ##Agent Configuration
+The following steps detail configuration of the agent for the plugin. This plugin is going to monitor
+syslog for the output, so a config file for the plugin  must exist containing the plugin ID and how to
+match information in syslog. In this case, it matches only one sid, but as you can see from the above sql,
+there could be five patterns and five sub ids. 
+
+Contents of /etc/ossim/agent/plugins/foobar.cfg You can copy and paste into the shell. If you create the
+file manually, be sure to remove the backslashes before any ‘$’ symbol. 
+
+```
+<localfile>
+cat > /etc/ossim/agent/plugins/foobar.cfg << __END__
+;; foobar
+;; plugin_id: 20000
+;; type: detector
+;; description: foobar demo plugin
+;;
+;; URL:
+;;
+;; \$Id:\$
+[DEFAULT]
+plugin_id=20000
+[config]
+type=detector
+enable=yes
+source=log
+location=/var/log/user.log
+# create log file if it does not exists,
+# otherwise stop processing this plugin
+create_file=false
+process=
+start=no
+stop=no
+startup=
+shutdown=
+## rules
+##
+## New foo found in bar
+##
+[foobar - New foo found]
+# Sep 7 12:40:55 eldedo FOOBAR[2054]: new foo found
+event_type=event
+regexp="(\S+\s+\d+\s+\d\d:\d\d:\d\d)\s+(?P<dst_ip>[^\s]*).*?FOOBAR.*?new foo
+found"
+plugin_sid=1
+dst_ip={resolv(\$dst_ip)}
+src_ip=0.0.0.0
+date={normalize_date(\$1)}
+[foobar - foo the same]
+# Sep 7 12:40:55 eldedo FOOBAR[2054]: foo the same
+event_type=event
+regexp="(\S+\s+\d+\s+\d\d:\d\d:\d\d)\s+(?P<dst_ip>[^\s]*).*?FOOBAR.*?foo the same"
+plugin_sid=2
+dst_ip={resolv(\$dst_ip)}
+src_ip=0.0.0.0
+date={normalize_date(\$1)}
+[foobar - New changed]
+# Sep 7 12:40:55 eldedo FOOBAR[2054]: foo changed
+event_type=event
+regexp="(\S+\s+\d+\s+\d\d:\d\d:\d\d)\s+(?P<dst_ip>[^\s]*).*?FOOBAR.*?foo changed"
+plugin_sid=3
+dst_ip={resolv(\$dst_ip)}
+src_ip=0.0.0.0
+date={normalize_date(\$1)}
+[foobar - New deleted]
+# Sep 7 12:40:55 eldedo FOOBAR[2054]: foo deleted
+event_type=event
+regexp="(\S+\s+\d+\s+\d\d:\d\d:\d\d)\s+(?P<dst_ip>[^\s]*).*?FOOBAR.*?foo deleted"
+plugin_sid=4
+dst_ip={resolv(\$dst_ip)}
+src_ip=0.0.0.0
+date={normalize_date(\$1)}
+[foobar - alien foo]
+# Sep 7 12:40:55 eldedo FOOBAR[2054]: alien foo
+event_type=event
+regexp="(\S+\s+\d+\s+\d\d:\d\d:\d\d)\s+(?P<dst_ip>[^\s]*).*?FOOBAR.*?alien foo"
+plugin_sid=5
+dst_ip={resolv(\$dst_ip)}
+src_ip=0.0.0.0
+date={normalize_date(\$1)}
+__END__
+
+</localfile>
+```
+
+We need to tell the agent that we have a new plugin. Edit the file /etc/ossim/agent/config.cfg and add
+the following line in the [plugin] section.
+
+```
+<localfile>
+foobar=/etc/ossim/agent/plugins/foobar.cfg
+</localfile>
+```
+Now to restart the agent so that it is aware of the new plugin information. 
+```
+<localfile>
+/etc/init.d/ossim-agent restart
+</localfile>
+```
+
 ##Verification
+This is a sample python script that will send a message to syslog. I parses the optios sent and sends a
+log message for each option that matches the case. The following code can be run as a script on any
+host that has Python installed.
+
+```
+<localfile>
+#! /usr/bin/python
+import syslog
+import sys
+syslog.openlog("FOOBAR", syslog.LOG_PID , syslog.LOG_USER )
+for arg in sys.argv:
+ if arg == "1":
+ syslog.syslog(syslog.LOG_WARNING, "new foo found")
+ elif arg == "2":
+ syslog.syslog(syslog.LOG_WARNING, "foo the same")
+ elif arg == "3":
+ syslog.syslog(syslog.LOG_WARNING, "foo changed")
+ elif arg == "4":
+ syslog.syslog(syslog.LOG_WARNING, "foo deleted")
+ elif arg == "5":
+ syslog.syslog(syslog.LOG_WARNING, "alien foo")
+syslog.closelog()
+</localfile>
+```
+
+Run this program on the server for which you want to generate the event. The following will send the
+first type syslog message. 
+
+```
+<localfile>
+testfoobar.py 1
+</localfile>
+```
+The second will send the 5th type syslog message, the 4th type syslog message, and then finally the 2nd
+type syslog message. 
+
+```
+<localfile>
+testfoobar.py 5 4 2
+</localfile>
+```
+
+Check your events and alarms. An event and/or an alarm should appear on the event tab previously
+shown.
+
+
 #A Sample OSSIM directive
+OSSIM stores its rules on the server in a file named /etc/ossim/server/directives.xml. The rules are
+separated into directives. The following is an example ssh brute force directive. This rules from this
+directive obtains its information from the ssh auth.log plugin. In this case, the attacker could be
+switching different hosts to attack in attempt to escape detection on a single host, but this directive will
+detect those attempts between switched target hosts as well. The reliability begins at 3 after three failed
+attempts. Three more will raise it to 4. Five more will raise it 6, and then an additional 10 attempts will
+raise it to 8. 
+
+```
+<localfile>
+<directive id="20" name="Possible SSH brute force login attempt against DST_IP"
+priority="5">
+  <rule type="detector" name="SSH Authentication failure" reliability="3"
+    occurrence="1" from="ANY" to="ANY" port_from="ANY" port_to="ANY"
+    time_out="10" plugin_id="4003" plugin_sid="1,2,3,4,5,6">
+      <rules>
+        <rule type="detector" name="SSH Authentication failure (3 times)"
+          reliability="+1" occurrence="3" from="1:SRC_IP" to="ANY" 
+          port_from="ANY" time_out="15" port_to="ANY" 
+          plugin_id="4003" plugin_sid="1,2,3,4,5,6" sticky="true">
+          <rules>
+            <rule type="detector" name="SSH Authentication failure (5 times)"
+              reliability="+2" occurrence="5" from="1:SRC_IP" to="ANY" 
+              port_from="ANY" time_out="20" port_to="ANY" 
+              plugin_id="4003" plugin_sid="1,2,3,4,5,6" sticky="true">
+              <rules>
+                <rule type="detector" name="SSH Authentication failure (10 times)"
+                  reliability="+2" occurrence="10" from="1:SRC_IP" to="ANY" 
+                  port_from="ANY" time_out="30" port_to="ANY" 
+                  plugin_id="4003" plugin_sid="1,2,3,4,5,6" sticky="true">
+                </rule>
+              </rules>
+            </rule>
+          </rules>
+        </rule>
+      </rules>
+    </rule>
+</directive>
+
+</localfile>
+```
 
 
 #OSSIM ARCHITECTURE
