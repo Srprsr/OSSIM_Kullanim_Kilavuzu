@@ -909,7 +909,7 @@ example of this is shown below. A default global RRD_Config, with default settin
 RRD configurations can be added for individual hosts, or networks.
 A new RRD configuration is added in the following way.
 
-####Inserting a new RRD Configuration. 
+####Yeni Bir RRD Configuration Ekleme. 
 
 ![alt text](http://i.hizliresim.com/EJd289.jpg "OSSEC Logo")
 
@@ -921,7 +921,7 @@ Karşımıza çıkan ekranda, biçimlendirilmesine izin verilen bireysel network
 
 
 * Monitor'e bir IP addresi ekliyoruz.
-* thresolds değerini aşağıdaki ipucu değerine göre değiştiriyoruz.
+* thresolds değerini aşağıdaki ipucu değerlerine göre değiştiriyoruz.
 
 ![alt text](http://i.hizliresim.com/ZdBnZZ.jpg "OSSEC Logo")
 
