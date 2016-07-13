@@ -677,7 +677,9 @@ As can be seen from the screenshot below, Back Orifice has the highest priority 
 The reliability of the Back Orifice signature has been set to 3. We can change this by simply editing
 the number 3, and increasing or decreasing the number. Once this is complete, click Modify. 
 
-FOTO GELİCEK
+![alt text](http://i.hizliresim.com/EJd2bv.jpg "OSSEC Logo")
+
+
 
 The above task will be undertaken on a regular basis as you optimise OSSIM for your network. 
 
@@ -688,13 +690,15 @@ There are two ways to create a new host. Manually, and with a scan, which will p
 on hosts that are live on the network. We are going to undertake a manual installation through the
 **Policy > Hosts** menu. Host operating system types shown below are detected using P0F. 
 
-FOTO GELİCEK
+![alt text](http://i.hizliresim.com/jnOAL9.jpg "OSSEC Logo")
+
 
 To add the new host:
 * Click **Insert new host**
 * Add information to all of the sections shown in the screenshot on the following page. 
 
-FOTO GELİCEK
+![alt text](http://i.hizliresim.com/2Z3PyL.jpg "OSSEC Logo")
+
 
 **IMPORTANT : Enable nessus scan. You may not always wish to look for vulnerabilities if you
 have a large network. Ticking ‘Enable nessus scan’ will add the host to the scheduled scans.
@@ -709,19 +713,22 @@ incorrect, clicking on Modify, in the Action column, and editing the information
 To update the new host information click on the hosts name in the Hostname field.
 You will be presented with the following screen.
 
-FOTO GELİCEK
+![alt text](http://i.hizliresim.com/B2QGEV.jpg "OSSEC Logo")
+
 
 Update the host inventory information by clicking **update**. The update facility initiates an Nmap scan
 against the new host. This will obtain the open ports, and the services running on the system, as
 shown below.
 
-FOTO GELİCEK
+![alt text](http://i.hizliresim.com/ZdBnLg.jpg "OSSEC Logo")
+
 
 To view the **Metrics** for a specific host, click on the **Metrics** button. The metrics graphs show
 Attacks, and Compromises picked up against the relevant host. The graphs are based on the last day,
 week, month or year. 
 
-FOTO GELİCEK
+![alt text](http://i.hizliresim.com/o7WyAQ.jpg "OSSEC Logo")
+
 
 ### Alarms and Alerts
 On the Host Report menu, there are three sub-sections. Vulnerabilities, which we will look at further
@@ -764,7 +771,8 @@ http://www.ossim.net
 
 Once successfully logged in, the administrator is presented with the following screen. 
 
-FOTO GELİCEK
+![alt text](http://i.hizliresim.com/l1G4kB.jpg "OSSEC Logo")
+
 
 ###Using the ACID console.
 ACID is a very powerful tool for examining intrusion detection information. As this is a user manual
@@ -777,7 +785,8 @@ Below is a basic demonstration of the information available via ACID.
 To look at the occurrences of attacks as source from the designated system click the number in the
 **Occurances as Src.** field. The following screen will appear with the signatures/attacks detected. 
 
-FOTO GELİCEK
+![alt text](http://i.hizliresim.com/VYnBly.jpg "OSSEC Logo")
+
 
 For further information on any of the signatures, click on **[snort]**. This will take you to the Snort rules
 descriptions page, which will give you relevant information on the signature, including the potential
@@ -794,7 +803,8 @@ the **Vulnerabilities** section of the Host Report menu to view the results.
 A list of hosts with vulnerabilities is provided. The relevant host, and its IP address are highlighted in
 red. Click on the IP address of the host you wish to study.
 
-FOTO GELİCEK
+![alt text](http://i.hizliresim.com/nr6yA5.jpg "OSSEC Logo")
+
 
 To view further detail on any security holes found, and to determine whether it is a relevant
 vulnerability, click on **(Security hole found)**. Or scroll through the report. 
@@ -803,7 +813,8 @@ vulnerability, click on **(Security hole found)**. Or scroll through the report.
 The Usage information is provided by **NTOP**. Further information on NTOP is available from –
 http://www.ntop.org. OSSIM uses NTOP to look at traffic flows including suspicious traffic. 
 
-FTO GELİCEK 
+![alt text](http://i.hizliresim.com/v42ygm.jpg "OSSEC Logo")
+
 
 ### Anomalies
 Anomalies are changes in the usual behaviour of the host. This section defines such things as
