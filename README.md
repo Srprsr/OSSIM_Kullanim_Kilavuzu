@@ -1,41 +1,25 @@
 # OSSIM Kullanım Kılavuzu
-OSSIM(Meaning Open Source Security Information Manager) is an open source project by Alienvault which provides the SIEM (Security information and event management) functionality. It provides SIEM features which are required by security professionals. The goal of OSSIM is to fill a gap in the needs of security professionals.
+OSSIM(Open Source Security Information Manager), SIEM (Security information and event management) fonksiyonunu destekleyen **Alienvault** tarafından geliştirilen open source bir yazılımdır. Üst düzey güvenlik için gerekli olan SIEM özelliklerini desteklemektedir. OSSIM'in amacı üst düzey güvenlik için oluşturulması gereken ortamdaki boşlukları doldurmaktır.
 
-Considering the important technological advances of recent years that have made tools with capacities
-such as those of IDS available, it is surprising that it is so complex from a security standpoint to
-obtain a snapshot of a network as well as information with a level of abstraction that allows practical
-and manageable monitoring. 
-
+Son zamanlardaki **IDS** gibi güvenlik açısından gelişen teknolojiyi düşünecek olursak, şaşırtıcı bir şekilde Network'un snapshot'ını elde etmek neredeyse hattı gözetlemek kadar kompleks bir hal almıştır.
 
 ![alt text](http://cybersecurity-excellence-awards.com/wp-content/uploads/2016/01/638669-500x318.jpg "OSSIM Logo")
 
-#CORRELATION
-Correlation means the ability to view all events in all systems in one place and in the same format,
-and from this privileged vantage point compare and process the information, thereby allowing us to
-improve detection capabilities, prioritise events according to the context in which they occurred, and
-monitor the security situation of our network.
-The idea of correlation is also implicit in the vision of our project in the sense of bundling and
-integrating products. Within the general framework of OSSIM, we want to include a number of
-magnificent products developed in recent years that create new possibilities when their functionalities
-are interrelated. 
+#Bağıntı
 
-#RISK ASSESSMENT
-In each case, in order to decide whether or not to perform an action we evaluate the threat represented
-by an event in relation to certain assets, keeping in mind the reliability of our data and the probability
-the event will occur.
-This is where the system becomes more complex, and we must therefore be able to implement a
-security policy, a network inventory, a real-time risk monitor-all configured and managed within a
-single framework... In any case, we cannot let complexity keep us from achieving our objective:
-product integration
+Bağıntı'nın anlamı, tüm sistemdeki tüm bağlantıları tek bir yerden ve tek bir formattan incelemek ve de bu ayrıcalıkla beraber bağlantıları birbirleriyle karşılaştırmak, bilgileri işlemektir. Bu durumda da , Network'un güvenlik durumunu izlerken, bizlere saldırı tespit sistemini kolaylaştırıp oldukça fayda sağlamaktadır.
 
+Bağıntının bir diğer fikri de şudur ki; birbiriyle alakalı ürünler arasında entegre bir sistem olmasıdır. OSSIM'in bu yapısı, bizlere daha iyi fonksiyonda içeren ürünler üretmemizde yadsınamayacak şekilde destek vermektedir.
+
+#Risk Oluşumu
+
+Her bir durumda, bir durumdan dolayı oluşmuş olan tehdide karşı önlem alınıp alınmamasını, güvenliğin öncelikle düşünülerek, bu durumun gerçekleştirip gerçekleştirilmeyeceğine karar verilmelidir.
+Bu durum sistemin daha fazla kompleks hale geldiği yerdir. Ve biz tam burada kendi güvenlik politikamızı hayata geçirmeli, Ve bağıntıda da bahsettiğim üzere tüm real time olarak tüm riskli bağlantıları tek bir yapıdan kontrol etmeliyiz. 
 
 #WHAT IS OSSIM?
-OSSIM is a distribution of open source products that are integrated to provide an infrastructure for
-security monitoring.
+OSSIM open source bir yazılım olup, güvenliğin kontrol edilmesini sağlayan bir yapıdır.
 
-OSSIM is a unified platform which is providing the essential security capabilities. Many proven open source security software's are built into the OSSIM platform. It continues to be the fastest way to make the first steps towards unified security visibility.
-
-OSSIM platform support following open source software's/plugins:
+OSSIM birleşik bir yapı olup vazgeçilemez güvenlik becerileri vardır. Bilindiği üzere bir çok open source yazılım OSSIM üzerine inşaa edilmiştir. Bu yazilimların bazıları şunlardır:
 
 > * Apache
 > * IIS
