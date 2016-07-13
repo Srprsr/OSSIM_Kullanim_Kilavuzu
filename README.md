@@ -84,35 +84,40 @@ Processor :   2 VCPU ,  RAM   : 2 GB , Hard disk Size: 8GB , Management IP :  19
 When OSSIM VM boots with iso image, it shows following two option at installation wizard.
 
 
-FOTO GELİCEK
 
+![alt text](http://blog.linoxide.com/wp-content/uploads/2015/02/first.png "OSSEC Logo")
 Highlighted option in above figure is selected which will install OSSIM on this VM. Press enter to start the installation process. Select language, location and keyboard setting in next few steps.
 
 ##Network Configuration
 
 In this step, configure the network of OSSIM VM. We are using eth0 for the management and rest of the network is connected to eth1. Network configuration for eth0 is shown below.
 
-FOTO GELİCEK
 
+
+![alt text](http://blog.linoxide.com/wp-content/uploads/2015/02/network-configuration.png "OSSEC Logo")
+![alt text](http://blog.linoxide.com/wp-content/uploads/2015/02/combine.png "OSSEC Logo")
 ##Root User Setting
 
 After network setting, next windows prompt for the password of user root which can access the CLI of OSSIM server. Password of root user must be strong.
 
-FOTO GELİCEK
 
+![alt text](http://blog.linoxide.com/wp-content/uploads/2015/02/rootuser.png "OSSEC Logo")
 ##Time Zone setting
 
 Time zone information is important in logging system and shown below.
 
-FOTO GELİCEK
+
+![alt text](http://blog.linoxide.com/wp-content/uploads/2015/02/timezone.png "OSSEC Logo")
 
 After setting time zone, wizard automatically perform the partition step and start installing the base system. This step will take almost 15-20 minute.
 
-FOTO GELİCEK
+
+![alt text](http://blog.linoxide.com/wp-content/uploads/2015/02/basesystem.png "OSSEC Logo")
 
 Final stage of installation is shown in following figure.
 
-FOTO GELİCEK
+
+![alt text](http://blog.linoxide.com/wp-content/uploads/2015/02/finsih.png "OSSEC Logo")
 
 Following windows prompt after the complete installation of AlienVault OSSIM. We can access the  web interface using following URL:
 ```
@@ -121,27 +126,29 @@ https://192.168.1.150/
 <localfile>
 ```
 
-FOTO GELİCEK
+
+![alt text](http://blog.linoxide.com/wp-content/uploads/2015/02/completion.png "OSSEC Logo")
 
 Login with user root and password test in CLI of OSSIM server.
 
-FOTO GELİCEK
+![alt text](http://blog.linoxide.com/wp-content/uploads/2015/02/login.png "OSSEC Logo")
 
 Latest Mozilla firefox browser does not open the link, so use Chrome or IE browser for the access of web interface. Chrome and IE will prompt following windows which says that certificate are not trusted because OSSIM uses self signed certificate.
 
-FOTO GELİCEK
+![alt text](http://blog.linoxide.com/wp-content/uploads/2015/02/exception.png "OSSEC Logo")
 
 After acceptance of above exception, following information required for the administrator of OSSIM server. Fill the required details which are asked in the following figure.
 
-FOTO GELİCEK
+
+![alt text](http://blog.linoxide.com/wp-content/uploads/2015/02/information.png "OSSEC Logo")
 
 Following windows will appear after the completion of administration account. Username is admin and password is test@123.
 
-FOTO GELİCEK
+![alt text](http://blog.linoxide.com/wp-content/uploads/2015/02/loginscreen.png "OSSEC Logo")
 
 After successful log in into the web interface, following wizard appear for further setting of OSSIM server.
 
-FOTO GELİCEK
+![alt text](http://blog.linoxide.com/wp-content/uploads/2015/02/wizardnew.png "OSSEC Logo")
 
 It shows following three options
 
@@ -152,7 +159,7 @@ Click on the **start** button of the above figure  for the configuration of OSSI
 
 After clicking on the 1st option, another windows will  prompt for the network configuration which is shown in the below figure. We  configured eth1 for the log collector and monitoring interface of the OSSIM server.
 
-FOTO GELİCEK
+![alt text](http://blog.linoxide.com/wp-content/uploads/2015/02/network-configuration2.png "OSSEC Logo")
 
 In the 2nd step, OSSIM will perform automatic discovery of  the network assets . select Asset discovery (2) option and following windows will prompt for the  configuration. It supports automatic and manual discovery of assets .
 
@@ -162,26 +169,28 @@ Type of Assets in the OSSIM server are
 *Linux
 *Network device
 
-FOTO GELİCEK
+![alt text](http://blog.linoxide.com/wp-content/uploads/2015/02/asset.png "OSSEC Logo")
 
 After network setting and asset discovery, next step is the deployment of HIDS on windows/linux devices to perform file integrity, monitoring, rootkit detection and  collection of  event logs. Enter username/password of the asset for the deployment of HIDS.
 
-FOTO GELİCEK
+![alt text](http://blog.linoxide.com/wp-content/uploads/2015/02/hids.png "OSSEC Logo")
 
 Select desired host from the list and click on Deploy button for the HIDS deployment. Again click on  Continue button to start deployment process which is shown in the  figure. This process will take a few minute for the HIDS deployment on selected host.
 
-FOTO GELİCEK
+
+![alt text](http://blog.linoxide.com/wp-content/uploads/2015/02/prompot.png "OSSEC Logo")
+![alt text](http://blog.linoxide.com/wp-content/uploads/2015/02/deployming.png "OSSEC Logo")
 
 ##Log Management
 Following figure showing the configuration of discovered asset for the management of different logs.
 
-FOTO GELİCEK
+![alt text](http://blog.linoxide.com/wp-content/uploads/2015/02/log-management.png "OSSEC Logo")
 
 Final option of the configuration wizard  is to join OTX (Threat exchanged program of AlienVault). We are not going to sign up for this option. Finish the configuration step by clicking on finish button.
 
 The main dashboard of the OSSIM server is shown below .
 
-FOTO GELİCEK
+![alt text](http://blog.linoxide.com/wp-content/uploads/2015/02/dashboard.png "OSSEC Logo")
 
 ##Web Interface
 
@@ -197,25 +206,24 @@ Web interface of OSSIM server consist of following options on the main GUI.
 
 It show a comprehensive view of all components of OSSIM server like severity of threat, vulnerabilities in the networks host, deployment status , risk maps and OTX stats. Sub menu of dashboard is shown in the following figure
 
-FOTO GELİCEK
+![alt text](http://blog.linoxide.com/wp-content/uploads/2015/02/dashboard-submenu.png "OSSEC Logo")
 
 ##Analysis
 
 Analysis is very important component of any SIEM device. OSSIM server analyzed the hosts based on their logs. This menu shows the alarms, SIEM (security events),tickets and raw logs. Analysis menu is further divided following sub menu.
 
-FOTO GELİCEK
-
+![alt text](http://blog.linoxide.com/wp-content/uploads/2015/02/analysis-submenu.png "OSSEC Logo")
 ##Environment
 
 In this menu of OSSIM server, setting are related to the assets of the organization. It shows the assets, group and network, vulnerabilities, netflow and detection settings. Sub menu for all these settings is shown in the figure.
 
-FOTO GELİCEK
+![alt text](http://blog.linoxide.com/wp-content/uploads/2015/02/environment.png "OSSEC Logo")
 
 ##Reports
 
 Reporting is an important component of any logging Server. OSSIM server also generates reports which are very useful for the detail investigation of any specific host.
 
-FOTO GELİCEK
+![alt text](http://blog.linoxide.com/wp-content/uploads/2015/02/reports-submenu.png "OSSEC Logo")
 
 ##Configuration
 
