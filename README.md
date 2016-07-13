@@ -926,9 +926,8 @@ The following screen appears, which will allow configuration of an individual ne
 
 
 ## Host Scan
-The host scan option allows the user to add a host to a list of hosts to scan. It is not advisable to do
-this. Instead, it is a better idea to add the options via the **Policy > Hosts > Insert new host** menu
-option. 
+Host scan seçeneği kullanıcıya scan edilecek olan host listesine, scan edilmesi istenen host'un eklenmesini sağlar. Bu çok tercih edilen bir yöntem değildir. Bunun yerine **Policy > Hosts > Insert new host** menüsünden bu seçeneği eklemek daha iyi bir fikir olur.
+
 
 ##Riskmeter configuration
 Aşağıdaki screenshoot'dan görüleceği gibi, default configuration **Configuration > Riskmeter** bölümünden değiştirilebilir.
