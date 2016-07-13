@@ -538,8 +538,6 @@ system runs on port 80 (HTTP) or secure (HTTPS) port 443.
 * Enter the user ID ossim
 * Enter the password ossim_password 
 
-FOTO GELİCEK
-
 
 Remember to change your password from the default.
 
