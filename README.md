@@ -39,7 +39,7 @@ OSSIM platform support following open source software's/plugins:
 
 > *Apache
 > *IIS
-> *> *Syslog
+> * *Syslog
 > *Ossec
 > *Snare
 > *Snort
