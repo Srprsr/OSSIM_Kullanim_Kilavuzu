@@ -521,7 +521,11 @@ priority="5">
 
 
 #OSSIM ARCHITECTURE
-Coming soon.
+![alt text](http://i.hizliresim.com/7vnaRl.jpg "OSSEC Logo")
+
+![alt text](http://i.hizliresim.com/PMW1X8.jpg "OSSEC Logo")
+
+![alt text](http://i.hizliresim.com/go0rmN.jpg "OSSEC Logo")
 
 
 
