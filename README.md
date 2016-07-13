@@ -37,17 +37,17 @@ OSSIM is a unified platform which is providing the essential security capabiliti
 
 OSSIM platform support following open source software's/plugins:
 
-> *Apache
-> *IIS
-> * *Syslog
-> *Ossec
-> *Snare
-> *Snort
-> *OpenVAS
-> *Nessus
-> *Nagios
-> *Ntop
-> *Nmap
+> * Apache
+> * IIS
+> * Syslog
+> * Ossec
+> * Snare
+> * Snort
+> * OpenVAS
+> * Nessus
+> * Nagios
+> * Ntop
+> * Nmap
 
 Its objective is to provide a framework for centralizing, organizing, and improving detection and
 display for monitoring security events within the organization.
