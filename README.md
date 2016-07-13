@@ -545,8 +545,8 @@ Once you have logged in, you will be presented with the Metrics screen. The Metr
 provides an overview of what is going on in the networks you have decided to monitor. 
 
 ##The Metrics Screen 
+![alt text](http://i.hizliresim.com/7vnB9N.jpg "OSSEC Logo")
 
-FOTO GELİCEK 
 
 The screen is split into separate sections. Global Metrics, Riskmeter, Service Level, and current
 metrics for each of the individual components you have defined as part of a policy. 
@@ -562,12 +562,14 @@ The following steps allow an administrator to add or modify an OSSIM sensor.
 * Click on **sensors**
 You should be presented with the following screen. Note – This is a sensor we installed earlier. 
 
-FOTO GELİCEK
+
+![alt text](http://i.hizliresim.com/PMW78O.jpg "OSSEC Logo")
 
 * Click **Insert new sensor**.
 You will be presented with the following screen. 
 
-FOTO GELİCEK
+![alt text](http://i.hizliresim.com/go0PdO.jpg "OSSEC Logo")
+
 
 *Add the Hostname - Name of your host
 *Add the IP Address - IP of the host.
@@ -578,7 +580,8 @@ FOTO GELİCEK
 Click **OK** to create the object. Once the sensor has been created you should see the following updated
 information on the sensors screen. 
 
-FOTO GELİCEK
+![alt text](http://i.hizliresim.com/9L1YMN.jpg "OSSEC Logo")
+
 
 If the new sensor does not appear as active, click the Active button to recheck the connection. If this
 is still not active please refer to the OSSIM or Boseco forums. 
@@ -595,11 +598,13 @@ To create a new signature group:
 * Click on **Signatures**.
 * Click **Insert new signature group**.
 
-FOTO GELİCEK
+![alt text](http://i.hizliresim.com/qBkA6d.jpg "OSSEC Logo")
+
 
 The following screen appears. 
 
-FOTO GELİCEK
+![alt text](http://i.hizliresim.com/MJG1N1.jpg "OSSEC Logo")
+
 
 From here, give the new signature group a name, and choose the signatures that you wish to define.
 * Tick the relevant boxes.
@@ -612,12 +617,14 @@ It is very likely that you will need to define multiple networks within the orga
 Networks** option allows us to do this. Click **Policy > Networks**. You will be presented with the
 following screen. 
 
-FOTO GELİCEK
+![alt text](http://i.hizliresim.com/QM3PDy.jpg "OSSEC Logo")
+
 
 To add a new network, click on:
 * **Insert new network**. 
 
-FOTO GELİCEK
+![alt text](http://i.hizliresim.com/X41bV3.jpg "OSSEC Logo")
+
 
 Add the following components.
 * Name - Name of the new network/networks group.
@@ -646,7 +653,8 @@ To define a new group of ports, complete the following tasks.
 
 The port group has now been added, as shown below
 
-FOTO GELİCEK
+![alt text](http://i.hizliresim.com/bbXvqZ.jpg "OSSEC Logo")
+
 
 ##Editing the Priority & Reliability
 With OSSIM, it is possible to change the priority and reliability rating of signatures detected on the
@@ -659,7 +667,9 @@ To change the priority and reliability settings:
 
 You will see the following screen. 
 
-FOTO GELİCEK
+![alt text](http://i.hizliresim.com/dbdLQD.jpg "OSSEC Logo")
+
+
 
 To edit the priority and reliability of Back Orifice, click on the **Id** field.
 
