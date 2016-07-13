@@ -914,13 +914,14 @@ A new RRD configuration is added in the following way.
 ![alt text](http://i.hizliresim.com/EJd289.jpg "OSSEC Logo")
 
 
-* Click on **Configuration > RRD_Config**
-* Click on Insert **new rrd_conf**
+* **Configuration > RRD_Config**'a tıklıyoruz.
+* **Insert new rrd_conf**' a tıklıyoruz.
 
-The following screen appears, which will allow configuration of an individual network or host.
+Karşımıza çıkan ekranda, biçimlendirilmesine izin verilen bireysel network'ler veya host'lar görünüyor.
 
-* Add an IP Address to monitor.
-* Edit the thresholds based on the hints below. 
+
+* Monitor'e bir IP addresi ekliyoruz.
+* thresolds değerini aşağıdaki ipucu değerine göre değiştiriyoruz.
 
 ![alt text](http://i.hizliresim.com/ZdBnZZ.jpg "OSSEC Logo")
 
