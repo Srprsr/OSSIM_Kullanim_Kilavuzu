@@ -221,7 +221,7 @@ FOTO GELİCEK
 
 In the configuration meHow to Install and Configure AlienVault SIEM (OSSIM)nu, user can change the setting of OSSIM server such as change the ip address of management interface, add more host for monitoring and logging and add/remove different sensors/plugins. Sub menu for all services is shown below.
 
-FOTO GELİCEK
+![alt text](http://blog.linoxide.com/wp-content/uploads/2015/02/configuration-submenu.png "OSSEC Logo")
 
 In this article,we explain the installation and configuration process of open source SIEM software which is backed by AlienVault. In our next article, our focus will be on the details of all components of OSSIM.
 
