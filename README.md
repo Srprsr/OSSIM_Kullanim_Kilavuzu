@@ -324,7 +324,7 @@ The OSSIM server must be restarted so that it is aware of the new 
 
 Once the plugin exists the OSSIM web interface will verify it in the window: **Configuration-> Plugins**
 
-FOTO GELİCEK
+![alt text](http://i.hizliresim.com/0D60m9.jpg "OSSIM Logo")
 
 Modification of the values in the above illustration for reliability and priority for each plugin_sid,
 requires restart of the OSSIM server in order for it to take effect. 
