@@ -32,6 +32,23 @@ product integration
 #WHAT IS OSSIM?
 OSSIM is a distribution of open source products that are integrated to provide an infrastructure for
 security monitoring.
+
+OSSIM is a unified platform which is providing the essential security capabilities. Many proven open source security software's are built into the OSSIM platform. It continues to be the fastest way to make the first steps towards unified security visibility.
+
+OSSIM platform support following open source software's/plugins:
+
+> *Apache
+> *IIS
+> *> *Syslog
+> *Ossec
+> *Snare
+> *Snort
+> *OpenVAS
+> *Nessus
+> *Nagios
+> *Ntop
+> *Nmap
+
 Its objective is to provide a framework for centralizing, organizing, and improving detection and
 display for monitoring security events within the organization.
 Our system will include the following monitoring tools:
@@ -757,7 +774,7 @@ The backlog viewer provides information on outstanding anomalies.
 
 ## Rule Viewer
 
-The rule viewer allows the administrator to view the individual Snort rules. Click on Tools > Rule
-Viewer, and choose the rule set you wish to view. In this case the virus.rules. 
+The rule viewer allows the administrator to view the individual Snort rules. Click on **Tools > Rule
+Viewer**, and choose the rule set you wish to view. In this case the virus.rules. 
 
 FOTO GELİCEK
