@@ -931,31 +931,30 @@ this. Instead, it is a better idea to add the options via the **Policy > Hosts >
 option. 
 
 ##Riskmeter configuration
-As can be seen in the following screenshot, the riskmeter default configuration can be changed using
-the Configuration > Riskmeter menu options. 
+Aşağıdaki screenshoot'dan görüleceği gibi, default configuration **Configuration > Riskmeter** bölümünden değiştirilebilir.
 
 ![alt text](http://i.hizliresim.com/o7Wyjk.jpg "OSSEC Logo")
 
 
 # Tools
-Clicking on the tools menu provides utilities to scan hosts, view alarm backlogs, and view rules.
+Tools menüsüne tıklandığında Scan host, view alarm backlog ve view rules gibi seçenekleri görürüz.
+
 
 ## Scan
-The scan option will scan IP addresses within a defined network range, and provide information on
-which hosts are up or down. To scan a range, enter the range required as shown below, and click
-**OK**.
+Scan seçeneği tanımlanmış Network range'indeki tüm ip adresslerini tarar. Bu sayede, hangi host'un çalışıp çalışmadığı hakkında bilgi verir. Belli bir range'yi taramak için aşağıdaki range belirlenmeli ve **OK** tuşuna basılmalıdır.
 
 ![alt text](http://i.hizliresim.com/l1G4db.jpg "OSSEC Logo")
 
 
-## Backlog Viewer 
+## Backlog Viewer
 
-The backlog viewer provides information on outstanding anomalies.
+Backlog viewer, öne çıkan anormallikler hakkında bilgi edinilmesini sağlar.
 
-## Rule Viewer
 
-The rule viewer allows the administrator to view the individual Snort rules. Click on **Tools > Rule
-Viewer**, and choose the rule set you wish to view. In this case the virus.rules. 
+## Rule viewer
+
+Rule viewer, yöneticiye kuralları ayrı ayrı gösteren bir paneldir.  **Tools > Rule
+Viewer** butonuna tıkladıktan sonra , incelenmek istenen kural seçilir. Aşşağıdaki durumda virüsle ilgili olan kural yer almaktadır.
 
 ![alt text](http://i.hizliresim.com/VYnB0r.jpg "OSSEC Logo")
 
