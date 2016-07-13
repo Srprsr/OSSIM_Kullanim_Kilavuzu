@@ -74,10 +74,160 @@ external and native, that comprise OSSIM. That tool is the framework, which allo
 assets, to define: the topology, a security policy, correlation rules, and to link up the various integrated
 tools.
 
-#Installation
-Coming soon.
+#Installation and Configuration
+Download an iso from AlienVault **(http://downloads.alienvault.com/c/download?version=current_ossim_iso)** and install it in the VM . In this tutorial, we will install OSSIM on VM instead of physical server which has following specifications
 
-#Configuration
+It has two interfaces, one is for the management of server and 2nd is for collecting logs and monitoring of the network devices. The details of the VM are  given below.
+
+Processor :   2 VCPU ,  RAM   : 2 GB , Hard disk Size: 8GB , Management IP :  192.168.1.150/24 and Asset network  : 192.168.0.0/24
+
+When OSSIM VM boots with iso image, it shows following two option at installation wizard.
+
+
+FOTO GELİCEK
+
+Highlighted option in above figure is selected which will install OSSIM on this VM. Press enter to start the installation process. Select language, location and keyboard setting in next few steps.
+
+##Network Configuration
+
+In this step, configure the network of OSSIM VM. We are using eth0 for the management and rest of the network is connected to eth1. Network configuration for eth0 is shown below.
+
+FOTO GELİCEK
+
+##Root User Setting
+
+After network setting, next windows prompt for the password of user root which can access the CLI of OSSIM server. Password of root user must be strong.
+
+FOTO GELİCEK
+
+##Time Zone setting
+
+Time zone information is important in logging system and shown below.
+
+FOTO GELİCEK
+
+After setting time zone, wizard automatically perform the partition step and start installing the base system. This step will take almost 15-20 minute.
+
+FOTO GELİCEK
+
+Final stage of installation is shown in following figure.
+
+FOTO GELİCEK
+
+Following windows prompt after the complete installation of AlienVault OSSIM. We can access the  web interface using following URL:
+```
+<localfile>
+https://192.168.1.150/
+<localfile>
+```
+
+FOTO GELİCEK
+
+Login with user root and password test in CLI of OSSIM server.
+
+FOTO GELİCEK
+
+Latest Mozilla firefox browser does not open the link, so use Chrome or IE browser for the access of web interface. Chrome and IE will prompt following windows which says that certificate are not trusted because OSSIM uses self signed certificate.
+
+FOTO GELİCEK
+
+After acceptance of above exception, following information required for the administrator of OSSIM server. Fill the required details which are asked in the following figure.
+
+FOTO GELİCEK
+
+Following windows will appear after the completion of administration account. Username is admin and password is test@123.
+
+FOTO GELİCEK
+
+After successful log in into the web interface, following wizard appear for further setting of OSSIM server.
+
+FOTO GELİCEK
+
+It shows following three options
+
+*Monitor Network (Configure  network which is being monitored by the OSSIM server)
+*Assets Discovery (Automatic discovery of network devices in the organization )
+*Collecting logs and monitoring of network nodes
+Click on the **start** button of the above figure  for the configuration of OSSIM server.
+
+After clicking on the 1st option, another windows will  prompt for the network configuration which is shown in the below figure. We  configured eth1 for the log collector and monitoring interface of the OSSIM server.
+
+FOTO GELİCEK
+
+In the 2nd step, OSSIM will perform automatic discovery of  the network assets . select Asset discovery (2) option and following windows will prompt for the  configuration. It supports automatic and manual discovery of assets .
+
+Type of Assets in the OSSIM server are
+
+*Windows
+*Linux
+*Network device
+
+FOTO GELİCEK
+
+After network setting and asset discovery, next step is the deployment of HIDS on windows/linux devices to perform file integrity, monitoring, rootkit detection and  collection of  event logs. Enter username/password of the asset for the deployment of HIDS.
+
+FOTO GELİCEK
+
+Select desired host from the list and click on Deploy button for the HIDS deployment. Again click on  Continue button to start deployment process which is shown in the  figure. This process will take a few minute for the HIDS deployment on selected host.
+
+FOTO GELİCEK
+
+##Log Management
+Following figure showing the configuration of discovered asset for the management of different logs.
+
+FOTO GELİCEK
+
+Final option of the configuration wizard  is to join OTX (Threat exchanged program of AlienVault). We are not going to sign up for this option. Finish the configuration step by clicking on finish button.
+
+The main dashboard of the OSSIM server is shown below .
+
+FOTO GELİCEK
+
+##Web Interface
+
+Web interface of OSSIM server consist of following options on the main GUI.
+
+*Dashboards
+*Analysis
+*Environments
+*Reports
+*Configuration
+ 
+##Dashboard
+
+It show a comprehensive view of all components of OSSIM server like severity of threat, vulnerabilities in the networks host, deployment status , risk maps and OTX stats. Sub menu of dashboard is shown in the following figure
+
+FOTO GELİCEK
+
+##Analysis
+
+Analysis is very important component of any SIEM device. OSSIM server analyzed the hosts based on their logs. This menu shows the alarms, SIEM (security events),tickets and raw logs. Analysis menu is further divided following sub menu.
+
+FOTO GELİCEK
+
+##Environment
+
+In this menu of OSSIM server, setting are related to the assets of the organization. It shows the assets, group and network, vulnerabilities, netflow and detection settings. Sub menu for all these settings is shown in the figure.
+
+FOTO GELİCEK
+
+##Reports
+
+Reporting is an important component of any logging Server. OSSIM server also generates reports which are very useful for the detail investigation of any specific host.
+
+FOTO GELİCEK
+
+##Configuration
+
+In the configuration meHow to Install and Configure AlienVault SIEM (OSSIM)nu, user can change the setting of OSSIM server such as change the ip address of management interface, add more host for monitoring and logging and add/remove different sensors/plugins. Sub menu for all services is shown below.
+
+FOTO GELİCEK
+
+In this article,we explain the installation and configuration process of open source SIEM software which is backed by AlienVault. In our next article, our focus will be on the details of all components of OSSIM.
+
+
+
+#Configuration of OSSIM
 
 To begin to see the value OSSIM provides, policies need to be created. Dominique Karg of the OSSIM
 development team has written a series of tutorials including one describing initial steps after
