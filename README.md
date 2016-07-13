@@ -795,6 +795,8 @@ vulnerability, click on **(Security hole found)**. Or scroll through the report.
 The Usage information is provided by **NTOP**. Further information on NTOP is available from –
 http://www.ntop.org. OSSIM uses NTOP to look at traffic flows including suspicious traffic. 
 
+FTO GELİCEK 
+
 ### Anomalies
 Anomalies are changes in the usual behaviour of the host. This section defines such things as
 operating system or MAC address changes. The anomalies are based on the RRD_Config that is
