@@ -822,7 +822,8 @@ operating system or MAC address changes. The anomalies are based on the RRD_Conf
 created. An overall list of anomalies can be viewed using the **Control Panel > Anomalies** section as
 show in the following screenshot. 
 
-FOTO GELİCEK
+![alt text](http://i.hizliresim.com/R3ZGkG.jpg "OSSEC Logo")
+
 
 The changes can be acknowledged or ignored.
 
@@ -834,11 +835,13 @@ the organisation, it is possible to create policies relevant to those.
 * Click on Policy
 The following screen is shown. Notice that a few policies already exist for the example network. 
 
-FOTO GELİCEK
+![alt text](http://i.hizliresim.com/pP32zN.jpg "OSSEC Logo")
+
 
 To add a new policy, click **Insert new policy**. You are presented with the Insert new policy screen. 
 
-FOTO GELİCEK
+![alt text](http://i.hizliresim.com/kvz0B7.jpg "OSSEC Logo")
+
 
 * Choose the source addresses.
 * Choose the destination addresses
@@ -856,11 +859,13 @@ host report option provides an alternative way of obtaining the host data we tou
 document.
 The Security Report section provides the following information. 
 
-FOTO GELİCEK
+![alt text](http://i.hizliresim.com/NEBGAN.jpg "OSSEC Logo")
+
 
 Clicking on Top 10 Alerts, will provide the following screen.
 
-FOTO GELİCEK
+![alt text](http://i.hizliresim.com/aEQg3R.jpg "OSSEC Logo")
+
 
 It is also possible, from this menu, to drill further into each individual alert using ACID. This screen
 is extremely useful for the purposes of removing false positives, or optimising the Snort sensors to
@@ -876,7 +881,8 @@ in these sections, and to obtain the in-depth documentation, please visit the re
 
 ##RiskMeter 
 
-FOTO GELİCEK
+![alt text](http://i.hizliresim.com/YbLVka.jpg "OSSEC Logo")
+
 
 The Riskmeter provides information pertaining to the systems, which are currently deemed to be at
 risk, or are currently launching attacks. For a definition of risk pertaining to OSSIM, and how it is
@@ -895,20 +901,23 @@ riskmeter configuration.
 
 The Main menu allows the user to reload individual components, or all components. 
 
-FOTO GELİCEK
+![alt text](http://i.hizliresim.com/81vXZr.jpg "OSSEC Logo")
+
 
 ### Directives
 
 Directives are a set of events that combine to cause an alarm. These events can be optimised to suit
 any infrastructure. The screenshot below shows the default directive for the win-trin00 Trojan. 
 
-FOTO GELİCEK
+![alt text](http://i.hizliresim.com/DJbG21.jpg "OSSEC Logo")
+
 
 The directives can be edited by clicking on the relevant plugin ID. So, for example we can click on
 ossim and the following screen is presented, which allows the administrator to edit the priority and
 reliability of OSSIM events. 
 
-FOTO GELİCEK
+![alt text](http://i.hizliresim.com/mLyR6y.jpg "OSSEC Logo")
+
 
 ### RRD Configuration
 The RRD config allows the administrator to enter relevant values and thresholds for alerting. An
@@ -918,7 +927,8 @@ A new RRD configuration is added in the following way.
 
 ####Inserting a new RRD Configuration. 
 
-FOTO GELİCEK
+![alt text](http://i.hizliresim.com/EJd289.jpg "OSSEC Logo")
+
 
 * Click on **Configuration > RRD_Config**
 * Click on Insert **new rrd_conf**
@@ -928,7 +938,8 @@ The following screen appears, which will allow configuration of an individual ne
 * Add an IP Address to monitor.
 * Edit the thresholds based on the hints below. 
 
-FOTO GELİCEK
+![alt text](http://i.hizliresim.com/ZdBnZZ.jpg "OSSEC Logo")
+
 
 ## Host Scan
 The host scan option allows the user to add a host to a list of hosts to scan. It is not advisable to do
@@ -939,7 +950,8 @@ option.
 As can be seen in the following screenshot, the riskmeter default configuration can be changed using
 the Configuration > Riskmeter menu options. 
 
-FOTO GELİCEK
+![alt text](http://i.hizliresim.com/o7Wyjk.jpg "OSSEC Logo")
+
 
 # Tools
 Clicking on the tools menu provides utilities to scan hosts, view alarm backlogs, and view rules.
@@ -949,7 +961,8 @@ The scan option will scan IP addresses within a defined network range, and provi
 which hosts are up or down. To scan a range, enter the range required as shown below, and click
 **OK**.
 
-FOTO GELİCEK
+![alt text](http://i.hizliresim.com/l1G4db.jpg "OSSEC Logo")
+
 
 ## Backlog Viewer 
 
@@ -960,4 +973,5 @@ The backlog viewer provides information on outstanding anomalies.
 The rule viewer allows the administrator to view the individual Snort rules. Click on **Tools > Rule
 Viewer**, and choose the rule set you wish to view. In this case the virus.rules. 
 
-FOTO GELİCEK
+![alt text](http://i.hizliresim.com/VYnB0r.jpg "OSSEC Logo")
+
