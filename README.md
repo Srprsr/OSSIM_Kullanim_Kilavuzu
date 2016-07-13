@@ -57,17 +57,44 @@ external and native, that comprise OSSIM. That tool is the framework, which allo
 assets, to define: the topology, a security policy, correlation rules, and to link up the various integrated
 tools.
 
-#Installation and Configuration of OSSIM
+#Installation
 Coming soon.
 
-#OSSIM ARCHITECTURE
-Coming soon.
+#Configuration
 
-#A Customized Plugin
+To begin to see the value OSSIM provides, policies need to be created. Dominique Karg of the OSSIM
+development team has written a series of tutorials including one describing initial steps after
+installation. http://www.ossim.com/home.php?id=download . The following is a summary of the steps
+described in his tutorial. I will go through the steps briefly, but I highly recommend following his
+tutorial directly.
+First, create a network policy by going to to the screen **Policy => Networks** and specify a network.
+This network is given an asset value, a compromise threshold and an attack threshold values. In
+addition, you can specify whether you want hosts in this network to be scanned by Nessus and if Nagios
+is enabled. See the Creating Assets and Calculating Risk section below for detailed information about
+how to assign risk. Individual asset values can also be specified for hosts, which will override the value
+given to the network. 
+Scan the network you just specified by going to the screen **Tools => Netscan** . This will run an
+nmap scan across the range of IP addresses that you specified in the previous step. It will list the hosts it
+found along with the services for each host. You can choose which ones are inserted into the database.
+The risk value given for the inserted hosts will be same as the network. It can be modified for each host
+by going to the screen **Policy => Hosts**.
+Perform an OCS inventory for each host. OCS automatically collects information about the host
+operating system, configuration, and installed software. OSSIM integrates the OCS tools into its **Tools
+=> Downloads** screen. The tool has been customized by the OSSIM installer, so all that needs to be
+done is run the setup script. The configuration parameters are already set to report OCS details back to
+the OSSIM installer
+
+##A Customized Plugin
 ##Server Configuration
 ##Agent Configuration
 ##Verification
 #A Sample OSSIM directive
+
+
+#OSSIM ARCHITECTURE
+Coming soon.
+
+
 
 #Logging in
 The OSSIM console is web based, and can be interfaced through any standard web browser. The
