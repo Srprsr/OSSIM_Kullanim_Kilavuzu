@@ -514,19 +514,17 @@ priority="5">
 
 
 #Logging in
-The OSSIM console is web based, and can be interfaced through any standard web browser. The
-system runs on port 80 (HTTP) or secure (HTTPS) port 443.
+OSSIM konsolu web üzerine kurulmuş olup, standart bir web tarayıcısı üzerinden 80 portundan (HTTP) veya güvenli olan 443 portundan (HTTPS)'den bağlanılabilir.
 
-* Start your favourite browser.
-* In the address bar enter – http://ipaddressorofossimserver
-* Enter the user ID ossim
-* Enter the password ossim_password 
+* Kullandığımız browser'ı açıyoruz.
+* Addres yerine **http://ipaddressorofossimserver** yazıyoruz.
+* OSSIM ID kullanıcı adımızı yazıyoruz.
+* OsSIM şifresini giriyoruz. 
 
 
-Remember to change your password from the default.
+Default şifremizi değiştirmeyi unutmuyoruz ve buna özen gösteriyoruz.
 
-Once you have logged in, you will be presented with the Metrics screen. The Metrics screen
-provides an overview of what is going on in the networks you have decided to monitor. 
+Bir kere giriş yaptıktan sonra, Karşımıza **Metrics** ekranı gelmektedir. Metrics ekranın da ise izlemek istediğimiz Network'leri gözden geçiriyoruz. 
 
 ##The Metrics Screen 
 ![alt text](http://i.hizliresim.com/7vnB9N.jpg "OSSEC Logo")
@@ -597,9 +595,9 @@ From here, give the new signature group a name, and choose the signatures that y
 The new signature is now added, and available for use in future policy creation. 
 
 ##Creating a Network
-It is very likely that you will need to define multiple networks within the organisation. **The Policy >
-Networks** option allows us to do this. Click **Policy > Networks**. You will be presented with the
-following screen. 
+Genellikle Network gruplarının organizasyonu elimizde bulundururuz. Bunun için **The Policy >
+Networks** Butonuna basıyoruz.
+Karşımıza şu ekran çıkıyor.
 
 ![alt text](http://i.hizliresim.com/QM3PDy.jpg "OSSEC Logo")
 
