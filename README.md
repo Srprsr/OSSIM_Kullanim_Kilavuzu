@@ -604,68 +604,64 @@ following screen.
 ![alt text](http://i.hizliresim.com/QM3PDy.jpg "OSSEC Logo")
 
 
-To add a new network, click on:
-* **Insert new network**. 
+Yeni bir Network eklemek için 
+* **Insert new network**'e basıyoruz. 
 
 ![alt text](http://i.hizliresim.com/X41bV3.jpg "OSSEC Logo")
 
 
-Add the following components.
-* Name - Name of the new network/networks group.
-* Ips - IP addresses of the networks
-* Priority - How important is this network. A priority of 5 is most important.
-* Threshold - The thresholds for this network before raising an alarm.
-* Sensors - Which sensors monitor this network.
-* Scan options - Tick this if you would like the network scanned for vulnerabilities.
-* Description - Network group description.
+Aşşağıdaki bileşenleri sırayla ekliyoruz.
+* Name - Yeni Network veya Network grubunun ismi 
+* Ips - Networklerin IP adresleri 
+* Priority - Eklenilen Network'ün ne kadar önemli olduğunu belirtiyoruz. 5, en yüksek dereceye tekabül ediyor.
+* Threshold - Alarmın verilmesiyse ilgili Thresholds değeri.
+* Sensors - Hangi sensörün bu Network'ü izleyeceği.
+* Scan options - Zayıflıkların taranıp taranmayacağına karar verildiği yer.
+* Description - Network grubunun açıklaması.
 
-Click **OK** to add the new network group.
-Please note: If you do not wish to have the entire network group scanned periodically, ensure that the
-NESSUS SCAN option is set to **DISABLED**. 
+ **OK** tuşuna basıyoruz ve  to Network grubu ekleniyor.
+ **NOT:** Her bir Network grubunun periyodik olarak taranmasını istemiyorsak, Nessus Scan seçeneğini **DISABLED** yapmalıyız.
 
 ## Adding a group of relevant ports
-It may be necessary from time to time for the administrator to optimise the ports OSSIM should
-monitor. This is done through the **Policy > Ports** menu option.
-To define a new group of ports, complete the following tasks.
-* Click on Policy
-* Click on Ports
-* Click Insert new Port Group
-* Add a name for the port group.
-* Tick the ports that you wish to monitor.
-* Add the description.
-* Click **OK**.
+Bazı zamanlarda, OSSIM'in izlemesi gereken portların optimise edilmesi veya değiştirilmesi gerekmektedir. Bunu yapmak için de **Policy >Ports** Menüsüne giriyoruz.
+Yeni bir port grubu oluşturmak için aşşağıdaki adımlara harfi harfine uymamız gerekiyor.
 
-The port group has now been added, as shown below
+* **Policy**'ye tıklıyoruz
+* **Ports**'a tıklıyoruz.
+* **Insert new Port Group**'a tıklıyoruz
+* Bu port grubu için bir isim ekliyoruz
+* İzlemek istediğimiz portları seçiyoruz
+* Açıklama ekliyoruz
+* Son olarak **OK** butonuna basıyoruz.
+
+Yeni port grubu aşşağıda görüldüğü gibi eklenmiş bulunuyor.
 
 ![alt text](http://i.hizliresim.com/bbXvqZ.jpg "OSSEC Logo")
 
 
 ##Editing the Priority & Reliability
-With OSSIM, it is possible to change the priority and reliability rating of signatures detected on the
-network. This is an extremely useful facility as it gives the administrator the ability to reduce the
-amount of false positives, or alert you to one specific signature type you may know you are vulnerable
-to.
-To change the priority and reliability settings:
-* Click **Policy**
-* Click **Priority & Reliability**
 
-You will see the following screen. 
+OSSIM'de öncelik ve güvenilirliği Network'de alınan imzalar doğrultusunda değiştirilebilme imkanı vardır. Bu durum gerçektende yönetici için çok yararlı bir durumdur. Çünkü, yönetici bizi imzanın zayıflığı konusunda bizi uyarabilme şansına sahip olur.
+
+Güvenilirliği ve önceliği değiştirmek için:
+* **Policy**'e tıklıyoruz
+* **Priority & Reliability**'e tıklıyoruz
+
+Karşımıza çıkan ekran şu olacaktır.
 
 ![alt text](http://i.hizliresim.com/dbdLQD.jpg "OSSEC Logo")
 
 
 
-To edit the priority and reliability of Back Orifice, click on the **Id** field.
+Back Orifice'nin öncelik ve güvenilirliğini değiştirmek için,  **Id** alanına tıklıyoruz.
 
-As can be seen from the screenshot below, Back Orifice has the highest priority for obvious reasons.
-The reliability of the Back Orifice signature has been set to 3. We can change this by simply editing
-the number 3, and increasing or decreasing the number. Once this is complete, click Modify. 
+Aşağıda gördüğümüz ekran görütüsünde gördüğümüz üzere, Back orifice en yüksek önceliğe sahip. Güvenilirlik derecesi de 3'e set edilmiştir bunu değiştirmek içinde farklı bir değer girip **Modify** butonuna basılmalıdır.
 
 ![alt text](http://i.hizliresim.com/EJd2bv.jpg "OSSEC Logo")
 
 
+Yukarıdaki görev OSSIM'i kendi network'ümüze göre optimize ettiğimizde, OSSIM tarafından üstlenilmiş bir görev olacaktır.
 
-The above task will be undertaken on a regular basis as you optimise OSSIM for your network. 
 
 ##Creating a Host
 Önceki adımları tamamlamak için son işlemimiz diyebiliriz. Yeni bir host oluşturmanın iki farklı yolu vardır. Ya manuel bir şekilde ya da bilinen bir hostun networkde scan edip o host hakkında bilgi alınması şeklindedir.
@@ -685,9 +681,7 @@ Yeni bir host eklemek için
 
 **Önemli : Burada Nessus scan'i akif etmeliyiz. Bu durumda large bir network kullanıyorsak bütün zayıf noktaları görmemize gerek kalmaz. Asıl yapılması gereken, belirli olarak seçeceğimiz bir hostta zayıflıklar var mı yok mu görmek daha faydalı olacaktır.**
 
-Once the information has been inserted, click **OK**. The new host will appear in the hosts list.
-More information about the individual host can now be determined. If the information entered is
-incorrect, clicking on Modify, in the Action column, and editing the information can change it.
+Gerekli bilgiler doldurulduğunda **OK** butonuna basılmalıdır. Bu yeni host, host listesinde yer alacaktır. Eğer gilgiler yanlış yazılmış ise **Modify** Butonunu kullanarak, bu bilgiler tekrardan değiştirilebilir.
 
 ### Updating and the host information.
 Yeni bir host'un bilgilerini update etmek için, **Host Field** kısmından bilgileri değiştirilmek istenen host ismine tıklanır. Ve karşımıza şu şekilde bir ekran çıkacaktır.
