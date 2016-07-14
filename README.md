@@ -529,44 +529,40 @@ Bir kere giriş yaptıktan sonra, Karşımıza **Metrics** ekranı gelmektedir. 
 ##The Metrics Screen 
 ![alt text](http://i.hizliresim.com/7vnB9N.jpg "OSSEC Logo")
 
-
-The screen is split into separate sections. Global Metrics, Riskmeter, Service Level, and current
-metrics for each of the individual components you have defined as part of a policy. 
+Göründüğü gibi ekran farklı bölümlere ayrılmıştır. Bunlar **Global Metrics**, **Riskmeter**, **Service Level**, ve  policy'nin her bir parçası için **Current Metrics**.
 
 #The Policy Menu
-The OSSIM policy menu allows an administrator to create, or modify the objects needed to build a
-policy.
+OSSIM Policy menüsü yönetciye, policy inşaa etmek için gerekli olan objeleri yaratmaya ve bunları değiştirmeye izin verir.
 
 
 ##Creating a new sensor
-The following steps allow an administrator to add or modify an OSSIM sensor.
-*Click on **policy**
-* Click on **sensors**
-You should be presented with the following screen. Note – This is a sensor we installed earlier. 
+Aşağıda takip edilen adımlarla, yönetici bir OSSIM sensör ekleyebilir veya bunu değiştirebilir.
+* **policy**'e tıklıyoruz.
+* **sensors**Ee tıklıyoruz.
+
+Karşımıza şu ekran çıkıyor. Burda farkettiğiniz üzere bu sensör önceden eklenmiştir.
 
 
 ![alt text](http://i.hizliresim.com/PMW78O.jpg "OSSEC Logo")
 
-* Click **Insert new sensor**.
-You will be presented with the following screen. 
+* **Insert new sensor**'e tıklıyoruz.
+* 
+Karşımıza şu ekran çıkacaktır. 
 
 ![alt text](http://i.hizliresim.com/go0PdO.jpg "OSSEC Logo")
 
 
-*Add the Hostname - Name of your host
-*Add the IP Address - IP of the host.
-*Add the Priority - How important this host is. A priority of 5 is most important.
-*Add the Port - Which port the server connects on.
-*Add the description - The description.
+*Add the Hostname - Host'unuzun ismi
+*Add the IP Address - Host'un IP numarası.
+*Add the Priority - Host'un ne kadar önemli olduğu ve önceliği. 5 en fazla öneme tekabül etmektedir.
+*Add the Port - Serverin hangi port'una bağlı olacağına
+*Add the description - Açıklama.
 
-Click **OK** to create the object. Once the sensor has been created you should see the following updated
-information on the sensors screen. 
+Objeyi oluşturmak için **OK**'a tıklıyoruz. Sensor yaratıldığında Sensorler ekranında eklemiş olduğumuz bilgileri görebiliyoruz.
 
 ![alt text](http://i.hizliresim.com/9L1YMN.jpg "OSSEC Logo")
 
-
-If the new sensor does not appear as active, click the Active button to recheck the connection. If this
-is still not active please refer to the OSSIM or Boseco forums. 
+Eğer eklenmiş yeni sensör aktif değilse, Aktif butonuna basarak bağlantıyı tekrar kontrol ediyoruz.
 
 ##Defining Signature groups
 The signatures section relates directly to the snort, and other signatures types that are picked up by the
