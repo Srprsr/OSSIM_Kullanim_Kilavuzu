@@ -552,11 +552,11 @@ Karşımıza şu ekran çıkacaktır.
 ![alt text](http://i.hizliresim.com/go0PdO.jpg "OSSEC Logo")
 
 
-*Add the Hostname - Host'unuzun ismi
-*Add the IP Address - Host'un IP numarası.
-*Add the Priority - Host'un ne kadar önemli olduğu ve önceliği. 5 en fazla öneme tekabül etmektedir.
-*Add the Port - Serverin hangi port'una bağlı olacağına
-*Add the description - Açıklama.
+* Add the Hostname - Host'unuzun ismi
+* Add the IP Address - Host'un IP numarası.
+* Add the Priority - Host'un ne kadar önemli olduğu ve önceliği. 5 en fazla öneme tekabül etmektedir.
+* Add the Port - Serverin hangi port'una bağlı olacağına
+* Add the description - Açıklama.
 
 Objeyi oluşturmak için **OK**'a tıklıyoruz. Sensor yaratıldığında Sensorler ekranında eklemiş olduğumuz bilgileri görebiliyoruz.
 
