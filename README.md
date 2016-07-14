@@ -739,59 +739,44 @@ Alerts options are Main, Source, and Destination
 Clicking on any of the above options in Alarms will provide the Alarms relevant to the host. 
 
 ###Alerts
-The Alerts view is obtained through ACID. To enter the acid console, a user ID and password are
-required.
+Alert'ler ACID sayrsinde elde edilir. ACID konsoluna ulaşmak için User ID ve password gereklidir.
 
-* Click on **Main**.
+* **Main**'e Tıklıyoruz.
 
-You will be presented with a login box. The default USERID and PASSWORD are shown below.
+Bir login ekranı ile karşılaşacağız. Default User ID ve Password aşağıda yazılmıştır.
 
 USER ID: acid
 PASS: acid_password
 
-It is advisable to change these passwords during the installation and configuration phase of OSSIM.
-As mentioned earlier, documentation pertaining to the installation can be found on
-http://www.ossim.net
+Yükleme kısmında ID ve Password dilenildiğince değiştirilebilmektedir.
 
-Once successfully logged in, the administrator is presented with the following screen. 
+Eğer başarılı bir şekilde login olunursa, yönetici şu ekranla karşılaşılacaktır.
 
 ![alt text](http://i.hizliresim.com/l1G4kB.jpg "OSSEC Logo")
 
 
 ###Using the ACID console.
-ACID is a very powerful tool for examining intrusion detection information. As this is a user manual
-specifically related to OSSIM, and although we touch on the underlying utilities, each of these utilities
-may have its own user manual. More information, including a FAQ for ACID can be found at –
-http://acidlab.sourceforge.net
+ACID çok önemli bir araç olup ihlalleri tespit edip bununla ilgili bilgileri kullanıcıya verir.
+OSSIM'le ilgili oldukca da bağlantılı olup daha fazla bilgiyi **http://acidlab.sourceforge.net** sayfasından elde edebilirsiniz. 
 
-Below is a basic demonstration of the information available via ACID.
+Aşağıda ACID'in basit bir örneklendirmesini görebilirsini görebilirsiniz.
 
-To look at the occurrences of attacks as source from the designated system click the number in the
-**Occurances as Src.** field. The following screen will appear with the signatures/attacks detected. 
+Saldırıların oluşumuna bakmak için **Occurances as Src.** kısmına tıklanmalı ve detect edilen imzalar ve saldırılar görülebilir.
 
 ![alt text](http://i.hizliresim.com/VYnBly.jpg "OSSEC Logo")
 
 
-For further information on any of the signatures, click on **[snort]**. This will take you to the Snort rules
-descriptions page, which will give you relevant information on the signature, including the potential
-for false positives and false negatives. As mentioned earlier ACID is a powerful tool, which can also
-perform graphing functions. It is recommended therefore that anyone wishing to use OSSIM to its
-full potential should also have a good understanding of ACID, as well as the other underlying utilities.
+Herhangi bir imza ile ilgili daha fazla bilgi almak için **[snort]** üzreine tıklanmalı ve bu bizi Snort rules tanımlarının olduğu sayfaya yönlendirecektir. Bu sayfada imza ile ilgili önemli bilgiler yer almaktadır.
 
 ### Vulnerabilities
-OSSIM allows companies or individuals to view the vulnerabilities currently outstanding on their
-servers. This is done from the same Host Report menu. To obtain a vulnerability report, a Nessus
-scan against the host must be undertaken. Once this has been completed, click on **Vulnmeter**, under
-the **Vulnerabilities** section of the Host Report menu to view the results.
+OSSIM, şirketlere ve bireysel kullanıcılara kendi serverlerindeki önde gelen zayıf noktaları inceleme imkanı sağlar. Bunu sağlayan **Host Repot** menüsüdür. Bu bölüm zayıf noktaların raporlarını elde eder ve bu noktaları tarar. Bunun sonucunu da görmek için önce **Vulnmeter** başlığı altındaki **Vulnerabilities** bölümüne bakmamız yeterli olacaktır.
 
-A list of hosts with vulnerabilities is provided. The relevant host, and its IP address are highlighted in
-red. Click on the IP address of the host you wish to study.
+Bu bölümde zayıf noktaları olan hostların listesi gelecektir. ve ilgili host ve ilgili IP adress highlighted şekilde gözükecektir. Üzerinde çalışılmak istenen host ve IP adresin üzerine tıklanması gerekir.
 
 ![alt text](http://i.hizliresim.com/nr6yA5.jpg "OSSEC Logo")
 
 
-To view further detail on any security holes found, and to determine whether it is a relevant
-vulnerability, click on **(Security hole found)**. Or scroll through the report. 
+Daha fazla bilgi edinmek için **(Security hole found)** seçeneğine tıklanmalı ve scroll bar aşağı indirilmelidir.
 
 ### Host Usage
 Host usage ile ilgili bilgiler **NTOP** tarafından sağlanmaktadır. Daha fazla bilgiyi **http://www.ntop.org.** adresinden elde edebilirsiniz. Trafik akışındaki şüpheli durumlar içn OSSIM, NTOP'u kullanmaktadır.
