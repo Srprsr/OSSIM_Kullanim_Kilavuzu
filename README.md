@@ -813,11 +813,9 @@ The changes can be acknowledged or ignored.
 
 ## Creating a Policy
 
-The most important thing that has to be created in OSSIM is a policy for the monitoring of networks
-and hosts. Now that all the relevant information has been entered for the networks and hosts within
-the organisation, it is possible to create policies relevant to those.
-* Click on Policy
-* Click on Policy
+Policy yaratmak, OSSIM için en önemli durumlardan biridir. Çünkü, yaratılan policy ile hostların ve networklerin izlenme işlemleri yapılır. Buna göre de anlamlı ve istenilen bilgiler elde edilir.
+
+* **Policy**'ye tıklıyoruz.
 
 Aşşağıdaki resimde, gösterilen network için bir kaç tane hali hazırda varolan policy olduğunu görüyoruz.
 
