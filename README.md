@@ -812,48 +812,46 @@ show in the following screenshot.
 The changes can be acknowledged or ignored.
 
 ## Creating a Policy
+
 The most important thing that has to be created in OSSIM is a policy for the monitoring of networks
 and hosts. Now that all the relevant information has been entered for the networks and hosts within
 the organisation, it is possible to create policies relevant to those.
 * Click on Policy
 * Click on Policy
-The following screen is shown. Notice that a few policies already exist for the example network. 
+
+Aşşağıdaki resimde, gösterilen network için bir kaç tane hali hazırda varolan policy olduğunu görüyoruz.
 
 ![alt text](http://i.hizliresim.com/pP32zN.jpg "OSSEC Logo")
 
 
-To add a new policy, click **Insert new policy**. You are presented with the Insert new policy screen. 
+Yeni bir policy eklemek için, **Insert new policy**'a tıklanır. Sonrasında karşımıza şu ekran çıkar.
 
 ![alt text](http://i.hizliresim.com/kvz0B7.jpg "OSSEC Logo")
 
 
-* Choose the source addresses.
-* Choose the destination addresses
-* Choose the ports
-* Choose the priority
-* Choose the signatures.
-* Choose the sensors you wish to use with this policy
-* Choose the time range.
-* Enter a description for the policy.
-* Click OK to save. 
+* Source addressler seçilir.
+* Destination addressler seçilir.
+* Portlar seçilir
+* Priority seçilir
+* İmzalar seçilir
+* Bu policy'de hangi sensörün çalışması istendiği bilirlenir
+* Time range belirlenir.
+* Policy için bir tanım verilir
+* Kaydedilmesi için **Ok** tuşuna basılır. 
 
 # Reports
-The Reports section of OSSIM provides information on both hosts, and overall network security. The
-host report option provides an alternative way of obtaining the host data we touched on earlier in this
-document.
-The Security Report section provides the following information. 
+Reports, OSSIM'in sağladığı hostlar ve tüm network güvenliği için bilgi edinilmesini sağlayan bir menüdür. Gelen report'lar isteğe göre değiştirilebilir ve hangi raporların görülüp görülmeyeceğini kullanıcı tarafından seçilebilir.
+
+The Security Report bölümü aşşağıdaki bilgileri sağlar. 
 
 ![alt text](http://i.hizliresim.com/NEBGAN.jpg "OSSEC Logo")
 
 
-Clicking on Top 10 Alerts, will provide the following screen.
+ **Top 10 Alerts**'a tıkladığımızda, karşımıza şu ekran çıkacaktır.
 
 ![alt text](http://i.hizliresim.com/aEQg3R.jpg "OSSEC Logo")
 
-
-It is also possible, from this menu, to drill further into each individual alert using ACID. This screen
-is extremely useful for the purposes of removing false positives, or optimising the Snort sensors to
-remove an alert you do not wish to see. 
+Ayrıca bu ekranda, verilem alert'ler hakkında bilgi edinebildiğinden oldukça kullanışlı bir bölümdür. Ayrıca görünmesini istemediğimiz alert'ları bu menüdeyken silebiliriz.
 
 # Monitors Menu
 
