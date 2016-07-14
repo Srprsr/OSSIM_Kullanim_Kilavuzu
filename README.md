@@ -856,10 +856,10 @@ is extremely useful for the purposes of removing false positives, or optimising 
 remove an alert you do not wish to see. 
 
 # Monitors Menu
-Session, Network, Availability, and Riskmeter are sub-menus provided in this section.
-The monitor’s menu provides real-time network, uptime, and risk session data. NTOP and OpenNMS
-provide most of the information shown in this section. To fully appreciate the information provided
-in these sections, and to obtain the in-depth documentation, please visit the relevant websites.
+
+Bu bölümde Session, Network, Availability ve Riskmeter gibi alt başlıklar yer almaktadır.
+Monitor menüsü  real-time network, uptime, ve risk session data gibi seçenekleri sağlar. Bu bölümdeki bilgilerin çoğunu NTOP ve OpenNMS sağlar.
+
 * NTOP – http://www.ntop.org
 * OPENNMS – http://www.opennms.org
 
@@ -867,17 +867,11 @@ in these sections, and to obtain the in-depth documentation, please visit the re
 
 ![alt text](http://i.hizliresim.com/YbLVka.jpg "OSSEC Logo")
 
-
-The Riskmeter provides information pertaining to the systems, which are currently deemed to be at
-risk, or are currently launching attacks. For a definition of risk pertaining to OSSIM, and how it is
-calculated, please see the OSSIM website at http://www.ossim.net. 
+Riskmeter risk altında olan veya saldırı gerçekleştirilen sistem hakkında bilgi edinilmesini sağlar. Bu riskmeter'in nasıl hesaplandığını öğrenmek için OSSIM websitesini ziyaret edebilirsiniz http://www.ossim.net. 
 
 #Configuration Menu
 
-The configuration menu provides the administrator with the ability to change and optimise OSSIM
-settings. The sub-menus include options to reload all policies, edit directives, view correlation
-information, create or modify RRD_Config information, add a host to scan, and edit the global
-riskmeter configuration. 
+Configuration menüsü, yöneticiye Ossimin seçeneklerini değiştirme imkanı sağlar. Sub menüler ise reload all policies, edit directives , view correlation, information, create or modify RDD_Config information, add a host to scan, and edit the global riskmeter configuratin gibi seçenekleri içermektedir.
 
 ##Sub Menus
 
