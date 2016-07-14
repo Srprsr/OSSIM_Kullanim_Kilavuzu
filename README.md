@@ -461,13 +461,7 @@ shown.
 
 
 #A Sample OSSIM directive
-OSSIM stores its rules on the server in a file named /etc/ossim/server/directives.xml. The rules are
-separated into directives. The following is an example ssh brute force directive. This rules from this
-directive obtains its information from the ssh auth.log plugin. In this case, the attacker could be
-switching different hosts to attack in attempt to escape detection on a single host, but this directive will
-detect those attempts between switched target hosts as well. The reliability begins at 3 after three failed
-attempts. Three more will raise it to 4. Five more will raise it 6, and then an additional 10 attempts will
-raise it to 8. 
+OSSIM kendi içindeki kurallarını serverde **/etc/ossim/server/directives.xml** isimli dosyada tutuyor. Bu kurallar direktiflere ayrılmış şekilde bulunuyorlar. Aşağıda gördüğünüz örnek ssh brute force direktifidir. Bu direktif gerekli bilgiyi **ssh auth log.plugin**'inden almaktadır. Aslında bu durumda saldırgan, tek bir host üzerinde host'u değiştirip saldırı girişiminde bulunup farkedilmekten kurtulabilir. Fakat, bu direktif bu saldırı girişimlerini yakalayacaktır.
 
 ```
 <localfile>
