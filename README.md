@@ -677,17 +677,15 @@ on hosts that are live on the network. We are going to undertake a manual instal
 ![alt text](http://i.hizliresim.com/jnOAL9.jpg "OSSEC Logo")
 
 
-To add the new host:
-* Click **Insert new host**
-* Add information to all of the sections shown in the screenshot on the following page. 
+Yeni bir host eklemek için
+
+* **Insert new host**'a tıklıyoruz.
+* Aşağıda görülen tüm yerlere anlamlı bilgileri giriyoruz.
 
 ![alt text](http://i.hizliresim.com/2Z3PyL.jpg "OSSEC Logo")
 
 
-**IMPORTANT : Enable nessus scan. You may not always wish to look for vulnerabilities if you
-have a large network. Ticking ‘Enable nessus scan’ will add the host to the scheduled scans.
-Network utilisation on large networks may reach undesirable levels. Choose the hosts you wish
-to scan for vulnerabilities carefully.**
+**Önemli : Burada Nessus scan'i akif etmeliyiz. Bu durumda large bir network kullanıyorsak bütün zayıf noktaları görmemize gerek kalmaz. Asıl yapılması gereken, belirli olarak seçeceğimiz bir hostta zayıflıklar var mı yok mu görmek daha faydalı olacaktır.**
 
 Once the information has been inserted, click **OK**. The new host will appear in the hosts list.
 More information about the individual host can now be determined. If the information entered is
@@ -776,7 +774,7 @@ Host usage ile ilgili bilgiler **NTOP** tarafından sağlanmaktadır. Daha fazla
 
 
 ### Anomalies
-Anomlies host'un normal davranışının değişmesidir. Bu bölümde **işletim sistemi** ve **MAC adresi** değişmelerini içermektedir. Anomalie'ler, yaratılmış olan RDD_Config'e göre değişiklik gösterirler. Bütün anomalie'leri görmek için **Control Panel > Anomalies**
+Anomalies host'un normal davranışının değişmesidir. Bu bölümde **işletim sistemi** ve **MAC adresi** değişmelerini içermektedir. Anomalie'ler, yaratılmış olan RDD_Config'e göre değişiklik gösterirler. Bütün anomalie'leri görmek için **Control Panel > Anomalies**
 bölümüne girilmelidir. Sonradan karşımıza şu ekran çıkacaktır.
 
 ![alt text](http://i.hizliresim.com/R3ZGkG.jpg "OSSEC Logo")
