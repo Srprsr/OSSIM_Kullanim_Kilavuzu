@@ -707,9 +707,7 @@ shown below.
 ![alt text](http://i.hizliresim.com/ZdBnLg.jpg "OSSEC Logo")
 
 
-To view the **Metrics** for a specific host, click on the **Metrics** button. The metrics graphs show
-Attacks, and Compromises picked up against the relevant host. The graphs are based on the last day,
-week, month or year. 
+Spesifik bir host için **Metrics**'i incelemek için, **Metrics** Butonuna basılmalıdır. Karşımıza çıkacak olan Metrics grafiği atakları gösterir. Bu grafik gün bazında, ay bazında olacağı gibi yıl bazında da olabilir.
 
 ![alt text](http://i.hizliresim.com/o7WyAQ.jpg "OSSEC Logo")
 
@@ -717,13 +715,12 @@ week, month or year.
 ### Alarms and Alerts
 Host Report menüsünde 3 tane alt bölüm bulunmaktadır. Bunlar; **Vulnerabilities**, **Alarms**, ve **Alerts** dir. Peki alarm ve Alert arasındaki fark nedir?
 
-Alarms are raised when a set of criteria has been met based on the directives created. For example, an
-alarm may trip if the following group of events occur together.
-* An alert is produced by Snort.
-* A specific attack response is detected relevant to the alert.
-* Specific thresholds have been passed.
-* An attack has lasted for a designated length of time.
-* The priority of the system is high enough.
+Belirli olan belli başlı kriterler sağlandığında alarm ortaya çıkar. Örneğin, şu durumlar gerçeleştiğinde alarm ortaya çıkar
+
+* Snort tarafından bir alert oluşturulduğunda.
+* Alarmla ilgili bir attack detect edilirse.
+* Spesifik thresholds değeri geçilirse.
+* Sistemin güvenlik öncliği yeteri kadar yüksekse.
 
 Bütün bu durumlar alarm oluşturmak için gereklidir.
 
