@@ -794,22 +794,19 @@ To view further detail on any security holes found, and to determine whether it 
 vulnerability, click on **(Security hole found)**. Or scroll through the report. 
 
 ### Host Usage
-The Usage information is provided by **NTOP**. Further information on NTOP is available from –
-http://www.ntop.org. OSSIM uses NTOP to look at traffic flows including suspicious traffic. 
+Host usage ile ilgili bilgiler **NTOP** tarafından sağlanmaktadır. Daha fazla bilgiyi **http://www.ntop.org.** adresinden elde edebilirsiniz. Trafik akışındaki şüpheli durumlar içn OSSIM, NTOP'u kullanmaktadır.
 
 ![alt text](http://i.hizliresim.com/v42ygm.jpg "OSSEC Logo")
 
 
 ### Anomalies
-Anomalies are changes in the usual behaviour of the host. This section defines such things as
-operating system or MAC address changes. The anomalies are based on the RRD_Config that is
-created. An overall list of anomalies can be viewed using the **Control Panel > Anomalies** section as
-show in the following screenshot. 
+Anomlies host'un normal davranışının değişmesidir. Bu bölümde **işletim sistemi** ve **MAC adresi** değişmelerini içermektedir. Anomalie'ler, yaratılmış olan RDD_Config'e göre değişiklik gösterirler. Bütün anomalie'leri görmek için **Control Panel > Anomalies**
+bölümüne girilmelidir. Sonradan karşımıza şu ekran çıkacaktır.
 
 ![alt text](http://i.hizliresim.com/R3ZGkG.jpg "OSSEC Logo")
 
 
-The changes can be acknowledged or ignored.
+Değişiklikler farkedilebilir ya da görmezden gelinebilir.
 
 ## Creating a Policy
 
