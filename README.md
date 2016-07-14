@@ -883,31 +883,28 @@ riskmeter configuration.
 
 ###Main
 
-The Main menu allows the user to reload individual components, or all components. 
+Main menü' de bir çok ayrı ayrı parçalar bulunmaktadır.
 
 ![alt text](http://i.hizliresim.com/81vXZr.jpg "OSSEC Logo")
 
 
 ### Directives
 
-Directives are a set of events that combine to cause an alarm. These events can be optimised to suit
-any infrastructure. The screenshot below shows the default directive for the win-trin00 Trojan. 
+Directives dediğimizde alarm'a neden olan olayların hepsi olarak düşünebiliriz. Bu durumlar herhangi bir altyapıya göre optimise edilebilir. Aşşağıdaki ekran görüntünsünde, win-trin00 Trojan'ı için default directive görünmektedir.
+
 
 ![alt text](http://i.hizliresim.com/DJbG21.jpg "OSSEC Logo")
 
 
-The directives can be edited by clicking on the relevant plugin ID. So, for example we can click on
-ossim and the following screen is presented, which allows the administrator to edit the priority and
-reliability of OSSIM events. 
+Directive'ler plugin ID'ler tarafından değiştirebilirler. Örneğin, Ossime tıklayıp karşımıza şu ekran çıktığında, bu ekranda yöneticiye öncelik ve güvenlik olan OSSIM durumlarını değiştirme imkanı veriyor.
 
 ![alt text](http://i.hizliresim.com/mLyR6y.jpg "OSSEC Logo")
 
 
 ### RRD Configuration
-The RRD config allows the administrator to enter relevant values and thresholds for alerting. An
-example of this is shown below. A default global RRD_Config, with default settings exists, but new
-RRD configurations can be added for individual hosts, or networks.
-A new RRD configuration is added in the following way.
+RDD biçimlendirme, alınmak istenen uyarılar için yönetecinin anlamlı değerler ve de thersholds değerlerini girmesini sağlar.
+Aşağıdaki örnekte default RDD_Config ve deafult seçenekler mevcut. Fakat, farklı bir RDD configuration ekleyebiliriz. Bu da aşşağıda şekildeki gibi olmaktadır.
+
 
 ####Yeni Bir RRD Configuration Ekleme. 
 
