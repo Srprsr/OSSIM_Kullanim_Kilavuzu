@@ -694,15 +694,12 @@ More information about the individual host can now be determined. If the informa
 incorrect, clicking on Modify, in the Action column, and editing the information can change it.
 
 ### Updating and the host information.
-To update the new host information click on the hosts name in the Hostname field.
-You will be presented with the following screen.
+Yeni bir host'un bilgilerini update etmek için, **Host Field** kısmından bilgileri değiştirilmek istenen host ismine tıklanır. Ve karşımıza şu şekilde bir ekran çıkacaktır.
 
 ![alt text](http://i.hizliresim.com/B2QGEV.jpg "OSSEC Logo")
 
 
-Update the host inventory information by clicking **update**. The update facility initiates an Nmap scan
-against the new host. This will obtain the open ports, and the services running on the system, as
-shown below.
+Host inventory'sini update etmek için **update** butonuna basılır. Yeni hostlara karşı Nmap scan başlatılır. Bu durum açık portları elde etmemize yararken, servis sistemde aşağıdaki gibi çalışmaktadır.
 
 ![alt text](http://i.hizliresim.com/ZdBnLg.jpg "OSSEC Logo")
 
