@@ -565,12 +565,8 @@ Objeyi oluşturmak için **OK**'a tıklıyoruz. Sensor yaratıldığında Sensor
 Eğer eklenmiş yeni sensör aktif değilse, Aktif butonuna basarak bağlantıyı tekrar kontrol ediyoruz.
 
 ##Defining Signature groups
-The signatures section relates directly to the snort, and other signatures types that are picked up by the
-sensor. These individual alerts can be viewed in ACID. In this section the administrator can optimise
-the amount of attack signatures or responses of that are of interest. This section is useful as it allows
-the definition of different signatures for different sensors. So, for example, we can define a signature
-list of type Virus that only contains the Snort Virus rules for the internal network, but a different list
-of Web server signatures for the DMZ.
+İmzalar bölümü direkt olarak Snort ve sensörden okunan diğer imzala tipleriyle alakalıdırlar. Buradaki birbirinden bağımsız uyarılar 
+ACID başlığı altında incelenebilirler. Bu bölümde yönetici, saldırılarla ilgili olan imzaları optimise edebilir. Bu bölüm Diğer sensörler için diğer imzaların açıklamalarını da taşıdığı için oldukça kullanışlı bir bölümdür. Örneğin, sadece Snort Virüs rules içeren Virüs tiplerinin imza listesi tutulabilir. 
 
 Yeni bir imza grubu oluşturmak için:
 * **Policy**'e tıklıyoruz.
