@@ -733,10 +733,11 @@ Alternatively, an alert is raised when Snort, or Spade detects a specific attack
 shown in **ACID** – **A** **C**onsole for **I**ntrusion **D**etection, which will be explained on the next few pages
 of this document.
 
-Alarms options are Source or Destination, Source, Destination.
-Alerts options are Main, Source, and Destination
+Alarm seçenekleri **Source** veya **Destination**, **Source** ve **Destination** dir.
+Alerts seçenekleri ise **Main**, **Source**, ve **Destination** dir.
 
-Clicking on any of the above options in Alarms will provide the Alarms relevant to the host. 
+Yukarıdaki Alarm seçeneklerden herhangi birisine basıldığında o alarmın hangi host ile alakalı olduğunu gösterecektir. 
+
 
 ###Alerts
 Alert'ler ACID sayrsinde elde edilir. ACID konsoluna ulaşmak için User ID ve password gereklidir.
