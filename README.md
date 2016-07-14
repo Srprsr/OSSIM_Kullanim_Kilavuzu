@@ -715,9 +715,8 @@ week, month or year.
 
 
 ### Alarms and Alerts
-On the Host Report menu, there are three sub-sections. Vulnerabilities, which we will look at further
-on in this document is one. The other two are Alarms, and Alerts. So what is the difference between
-the two latter sections?
+Host Report menüsünde 3 tane alt bölüm bulunmaktadır. Bunlar; **Vulnerabilities**, **Alarms**, ve **Alerts** dir. Peki alarm ve Alert arasındaki fark nedir?
+
 Alarms are raised when a set of criteria has been met based on the directives created. For example, an
 alarm may trip if the following group of events occur together.
 * An alert is produced by Snort.
@@ -726,12 +725,9 @@ alarm may trip if the following group of events occur together.
 * An attack has lasted for a designated length of time.
 * The priority of the system is high enough.
 
-All of the above are added together to create an alarm. This system is designed to limit the false
-positives produced by the system
+Bütün bu durumlar alarm oluşturmak için gereklidir.
 
-Alternatively, an alert is raised when Snort, or Spade detects a specific attack signature. This is
-shown in **ACID** – **A** **C**onsole for **I**ntrusion **D**etection, which will be explained on the next few pages
-of this document.
+Ek olarak, Snort veya Spade spesifik bir saldırı imzası yakalarsa alarm durumu oluşur.  Bu durum, **ACID** – **A** **C**onsole for **I**ntrusion **D**etection kısmında gösterilir. ACID tool'u bu dökümanın sonraki bölümlerde anlatacağım.
 
 Alarm seçenekleri **Source** veya **Destination**, **Source** ve **Destination** dir.
 Alerts seçenekleri ise **Main**, **Source**, ve **Destination** dir.
