@@ -668,11 +668,9 @@ the number 3, and increasing or decreasing the number. Once this is complete, cl
 The above task will be undertaken on a regular basis as you optimise OSSIM for your network. 
 
 ##Creating a Host
-Finally, once all of the previous steps have been completed, a host may be added. It was necessary to
-complete the previous steps, as all of them provide the information required for the host entry.
-There are two ways to create a new host. Manually, and with a scan, which will provide information
-on hosts that are live on the network. We are going to undertake a manual installation through the
-**Policy > Hosts** menu. Host operating system types shown below are detected using P0F. 
+Önceki adımları tamamlamak için son işlemimiz diyebiliriz. Yeni bir host oluşturmanın iki farklı yolu vardır. Ya manuel bir şekilde ya da bilinen bir hostun networkde scan edip o host hakkında bilgi alınması şeklindedir.
+
+**Policy > Hosts** menü, Host operating system şeklinde P0F kullanarak detect edilmesi aşağıdaki şekildedir. 
 
 ![alt text](http://i.hizliresim.com/jnOAL9.jpg "OSSEC Logo")
 
