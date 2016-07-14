@@ -571,24 +571,26 @@ the amount of attack signatures or responses of that are of interest. This secti
 the definition of different signatures for different sensors. So, for example, we can define a signature
 list of type Virus that only contains the Snort Virus rules for the internal network, but a different list
 of Web server signatures for the DMZ.
-To create a new signature group:
-* Click on **Policy**.
-* Click on **Signatures**.
-* Click **Insert new signature group**.
+
+Yeni bir imza grubu oluşturmak için:
+* **Policy**'e tıklıyoruz.
+* **Signatures**'a tıklıyoruz.
+* **Insert new signature group**'a tıklıyoruz.
 
 ![alt text](http://i.hizliresim.com/qBkA6d.jpg "OSSEC Logo")
 
 
-The following screen appears. 
+Karşımıza şu ekran çıkıyor.
 
 ![alt text](http://i.hizliresim.com/MJG1N1.jpg "OSSEC Logo")
 
 
-From here, give the new signature group a name, and choose the signatures that you wish to define.
-* Tick the relevant boxes.
-* Add a useful description.
-* Click **OK**
-The new signature is now added, and available for use in future policy creation. 
+Burada bir imza grubuna isim verebiliyoruz. Açıklamak istediğimiz imzaları seçiyoruz.
+* Anlamlı olan kutulara tıklıyoruz.
+* Kullanışlı bir açıklama ekliyoruz.
+* **OK** butonuna basıyoruz.
+
+Yeni imza eklenmiş oldu. İleride policy yaratman için kullanılmaya hazırdır.
 
 ##Creating a Network
 Genellikle Network gruplarının organizasyonu elimizde bulundururuz. Bunun için **The Policy >
