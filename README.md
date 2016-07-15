@@ -261,7 +261,7 @@ with information regarding the plugin. You can copy and paste the fol
 with the sql. If you create the file manually, be sure to remove the backslashes before any ‘$’ symbol. 
 
 ```
-<localfile>
+
 cat > ./foobar.sql << __END__
 -- foobar
 -- plugin_id: 20000
@@ -288,22 +288,22 @@ INSERT INTO plugin_sid (plugin_id, sid, category_id, class_id, reliability,
 priority, name) VALUES (20000, 5, NULL, NULL, 10, 5, 'foobar: alien foo on
 (DST_IP)');
 __END__
-</localfile>
+
 ```
 
 Now the plugin can be inserted into the OSSIM server using the following command.
 ```
-<localfile>
+
 cat foobar.sql | mysql -u root -p ossim
-</localfile>
+
 ```
 
 The OSSIM server must be restarted so that it is aware of the new plugin information.
 
 ```
-<localfile>
+
 /etc/init.d/ossim-server restart
-</localfile>
+
 ```
 
 Once the plugin exists the OSSIM web interface will verify it in the window: **Configuration-> Plugins**
@@ -323,7 +323,7 @@ Contents of /etc/ossim/agent/plugins/foobar.cfg You can copy and paste i
 file manually, be sure to remove the backslashes before any ‘$’ symbol. 
 
 ```
-<localfile>
+
 cat > /etc/ossim/agent/plugins/foobar.cfg << __END__
 ;; foobar
 ;; plugin_id: 20000
@@ -395,31 +395,31 @@ src_ip=0.0.0.0
 date={normalize_date(\$1)}
 __END__
 
-</localfile>
+
 ```
 
 We need to tell the agent that we have a new plugin. Edit the file /etc/ossim/agent/config.cfg and add
 the following line in the [plugin] section.
 
 ```
-<localfile>
+
 foobar=/etc/ossim/agent/plugins/foobar.cfg
-</localfile>
+
 ```
+
 Now to restart the agent so that it is aware of the new plugin information. 
 ```
-<localfile>
+
 /etc/init.d/ossim-agent restart
-</localfile>
+
 ```
 
 ##Verification
-This is a sample python script that will send a message to syslog. I parses the optios sent and sends a
-log message for each option that matches the case. The following code can be run as a script on any
-host that has Python installed.
+Bu basit bir Syslog mesajı gönderen phyton script'i dir. Aşağıdaki kod phyton yüklü host'ta script olarak run edilebilir. 
+
 
 ```
-<localfile>
+
 #! /usr/bin/python
 import syslog
 import sys
@@ -436,35 +436,30 @@ for arg in sys.argv:
  elif arg == "5":
  syslog.syslog(syslog.LOG_WARNING, "alien foo")
 syslog.closelog()
-</localfile>
-```
-
-Run this program on the server for which you want to generate the event. The following will send the
-first type syslog message. 
 
 ```
-<localfile>
+Bu programı etkinliğin gerçekleşmesini istediğimiz server üzerinde çalıştırıyoruz. Alttaki kodla birinci tip syslog mesajı yolluyoruz.
+
+```
+
 testfoobar.py 1
-</localfile>
-```
-The second will send the 5th type syslog message, the 4th type syslog message, and then finally the 2nd
-type syslog message. 
 
 ```
-<localfile>
+Bu ikinci mesajla da 5. tip syslog mesaj ilk olarak gönderiliyor, sonra 4. tip ve son olarak da 2. tip syslog mesajları sırasıyla gönderiliyor.
+
+```
+
 testfoobar.py 5 4 2
-</localfile>
-```
 
-Check your events and alarms. An event and/or an alarm should appear on the event tab previously
-shown.
+```
+Etkinlikleri ve uyarıları kontrol ediyoruz. Önceden gösterilmiş etkinlikler sekmesinde bir etkinlik veya alarm görülmelidir.
 
 
 #A Sample OSSIM directive
 OSSIM kendi içindeki kurallarını serverde **/etc/ossim/server/directives.xml** isimli dosyada tutuyor. Bu kurallar direktiflere ayrılmış şekilde bulunuyorlar. Aşağıda gördüğünüz örnek ssh brute force direktifidir. Bu direktif gerekli bilgiyi **ssh auth log.plugin**'inden almaktadır. Aslında bu durumda saldırgan, tek bir host üzerinde host'u değiştirip saldırı girişiminde bulunup farkedilmekten kurtulabilir. Fakat, bu direktif bu saldırı girişimlerini yakalayacaktır.
 
 ```
-<localfile>
+
 <directive id="20" name="Possible SSH brute force login attempt against DST_IP"
 priority="5">
   <rule type="detector" name="SSH Authentication failure" reliability="3"
@@ -494,7 +489,7 @@ priority="5">
     </rule>
 </directive>
 
-</localfile>
+
 ```
 
 
