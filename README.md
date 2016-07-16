@@ -214,54 +214,26 @@ Raporlama herbir logging server için vazgeçilemez bir parçadır.Ayrıca, OSSI
 
 ##Configuration
 
-In the configuration meHow to Install and Configure AlienVault SIEM (OSSIM)nu, user can change the setting of OSSIM server such as change the ip address of management interface, add more host for monitoring and logging and add/remove different sensors/plugins. Sub menu for all services is shown below.
+Konfigürasyon menüsün kullanıcının; yönetim arayüzünün ip adresi, hangi hostların inceleneceği gibi OSSIM serverindeki değişiklikleri yapabileceği bir bölümdür. Alt menüler aşağıdaki ekran görüntüsünde gösterilmiştir.
+
 
 ![alt text](http://blog.linoxide.com/wp-content/uploads/2015/02/configuration-submenu.png "OSSEC Logo")
-
-In this article,we explain the installation and configuration process of open source SIEM software which is backed by AlienVault. In our next article, our focus will be on the details of all components of OSSIM.
-
 
 
 #Configuration of OSSIM
 
-To begin to see the value OSSIM provides, policies need to be created. Dominique Karg of the OSSIM
-development team has written a series of tutorials including one describing initial steps after
-installation. http://www.ossim.com/home.php?id=download . The following is a summary of the steps
-described in his tutorial. I will go through the steps briefly, but I highly recommend following his
-tutorial directly.
-First, create a network policy by going to to the screen **Policy => Networks** and specify a network.
-This network is given an asset value, a compromise threshold and an attack threshold values. In
-addition, you can specify whether you want hosts in this network to be scanned by Nessus and if Nagios
-is enabled. See the Creating Assets and Calculating Risk section below for detailed information about
-how to assign risk. Individual asset values can also be specified for hosts, which will override the value
-given to the network. 
-Scan the network you just specified by going to the screen **Tools => Netscan** . This will run an
-nmap scan across the range of IP addresses that you specified in the previous step. It will list the hosts it
-found along with the services for each host. You can choose which ones are inserted into the database.
-The risk value given for the inserted hosts will be same as the network. It can be modified for each host
-by going to the screen **Policy => Hosts**.
-Perform an OCS inventory for each host. OCS automatically collects information about the host
-operating system, configuration, and installed software. OSSIM integrates the OCS tools into its **Tools
-=> Downloads** screen. The tool has been customized by the OSSIM installer, so all that needs to be
-done is run the setup script. The configuration parameters are already set to report OCS details back to
-the OSSIM installer
+İlk olarak **Policy => Networks** ekranına gidip  yeni bir **Network Policy** yaratıyoruz. Bu Network'ün kendine özel asset, compromise threshold ve saldırı threshold gibi değerleri var. Ek olarak da Network'ün içinde bulunan host'un Nessus ile taranmasını istiyosarsak bunu yapabiliyoruz. Herhangi bir asset değerini de herhangi bir host için spesifik hale getirebiliyoruz.
+
+Network'ü taramak için **Tools => Netscan** bölümüne gidiyoruz. Bu ekran bize **nmap scan** taramasını çalıştırıp, bu taramanın hangi range aralığında olacağını önceki adımda girdiğimiz değerlere göre taramayı gerçekleştirmektedir. Aynı Network işlemlerindei gibi hangi hostların database eklenip eklenmeyeceğini seçebiliyoruz. Bunları modify etmek için de **Policy => Hosts** ekranına gitmemiz yeterli olacaktır.
+
+Her bir host için OCS parçalarını çalıştırdığımızda. OCS, otomatik olarak host'tun sahip olduğu bilgileri bize getiriyor. OSSIM, OCS ile ilgili bütün bileşenlerini **Tools =>Downloads** kısmından görebiliyoruz. Bu tool OSSIM installer tarafından değiştirilmiştir. Yapılması gereken tek şey setup scripti çalıştırılmaktır. Bu parametreler de OCS'den OSSIM installer'a rapor olarak sunulmaktadır.
 
 ##A Customized Plugin
-This is an area where priority and reliability is assigned to an event. OSSIM allows for the creation of
-custom plugins that will capture events specific to a user's network. This will focus on the steps needed
-to create an OSSIM plugin. This will be a simple plugin that you can trigger using a small python script
-
-Illustration 4: Events Tab
-OSSIM Brian E. Lavender
-that sends a message to syslog. This process can be used to verify that the agent and server are
-functioning and that the agent can send information to the server. It will also serve as a tutorial for
-configuring and utilizing other plugins.
+Bu bölümde güvenilirlik ve öncelik değerleri bir duruma tahsis edilir. Küçük bir plugin ile basit bir pyhton scrpti ile bu halledilebilir. Bu pyhton scripti syslog'a bir mesaj göndermektedir. Bu mesajda agent ve server doğrulanır.
 
 ##Server Configuration
-In the previous tables showing risk, an event came from a foobar plugin. The following demonstrates
-how to create the a plugin for foobar. On the OSSIM server, the ossim database needs to be updated
-with information regarding the plugin. You can copy and paste the following and it will create the file
-with the sql. If you create the file manually, be sure to remove the backslashes before any ‘$’ symbol. 
+OSSIM Serverde, OSSIM database'i alakalı olan plugin ile  bilgileri güncellenmesi gerekmektedir. Aşşağıdaki komutları kopyalayabiliriz. Bu komut satırı sql adında bir dosya yaratıcaktır. Eğer, dosyayı manuel bir şekilde yaratmak istiyorsanız blackslashlerden önce olan **’$’** sembollerini silmeyi unutmayın.
+
 
 ```
 
