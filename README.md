@@ -69,7 +69,8 @@ Processor :   2 VCPU ,  RAM   : 2 GB , Hard disk Size: 8GB , Management IP :  19
 OSSIM iso maji ile ön yüklemede karşımıza 2 tane yükleme seçeneği çıkartıyor.
 
 ![alt text](http://blog.linoxide.com/wp-content/uploads/2015/02/first.png "OSSEC Logo")
-Highlighted option in above figure is selected which will install OSSIM on this VM. Press enter to start the installation process. Select language, location and keyboard setting in next few steps.
+
+Vurgulanan olan seçenek hangi yükleme türünün VM üzerinde seçildiğini gösteriyor. Yükleme işlemini başlatmak için **Start** tuşuna basıyoruz. Sonradan dil, bölge ve klavye seçeneklerini düzenliyoruz.
 
 ##Network Configuration
 
