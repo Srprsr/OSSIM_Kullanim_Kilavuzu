@@ -74,36 +74,36 @@ Highlighted option in above figure is selected which will install OSSIM on this 
 
 ##Network Configuration
 
-In this step, configure the network of OSSIM VM. We are using eth0 for the management and rest of the network is connected to eth1. Network configuration for eth0 is shown below.
-
+Bu adımda, OSSIM'in Network'ünü VM de konfigüre ediyoruz. Burada yönetmek için eth0'ı kullanıyoruz. eth1'e bağlı olan diğer tüm networkler için, eth0 Network konfigürasyonu aşağıda gösterilmiştir.
 
 
 ![alt text](http://blog.linoxide.com/wp-content/uploads/2015/02/network-configuration.png "OSSEC Logo")
 ![alt text](http://blog.linoxide.com/wp-content/uploads/2015/02/combine.png "OSSEC Logo")
 ##Root User Setting
 
-After network setting, next windows prompt for the password of user root which can access the CLI of OSSIM server. Password of root user must be strong.
+Network seçeneklerinden sonra windows promt, OSSIM servere bağlantı için **root** ile bağlantılı olan kullanıcı şifresini istemektedir.
 
 
 ![alt text](http://blog.linoxide.com/wp-content/uploads/2015/02/rootuser.png "OSSEC Logo")
 ##Time Zone setting
 
-Time zone information is important in logging system and shown below.
+
+Time zone bilgisi giriş sistemi açısından oldukça öncem sarfetmektedir.
 
 
 ![alt text](http://blog.linoxide.com/wp-content/uploads/2015/02/timezone.png "OSSEC Logo")
 
-After setting time zone, wizard automatically perform the partition step and start installing the base system. This step will take almost 15-20 minute.
-
+Time zone seçeneğinden sonra, yükleme wizard'ı otomatik olarak paraçaları yüklemeye başlayacaktır. Bu adım 15-20 dakika arası sürmektedir.
 
 ![alt text](http://blog.linoxide.com/wp-content/uploads/2015/02/basesystem.png "OSSEC Logo")
 
-Final stage of installation is shown in following figure.
+Yüklemenin son adımı aşağıda gösterilmiştir.
 
 
 ![alt text](http://blog.linoxide.com/wp-content/uploads/2015/02/finsih.png "OSSEC Logo")
 
-Following windows prompt after the complete installation of AlienVault OSSIM. We can access the  web interface using following URL:
+Yükleme bittikten sora aşağıda görülen windows promt ekramı açılacaktır. Bu ekran OSSIM'in yüklenmesinin başarı olduğunu söylemektedir. Ve OSSIM'e web arayüzünden üzerinden erişmek için gereken URL şudur:
+
 ```
 <localfile>
 https://192.168.1.150/
@@ -113,45 +113,48 @@ https://192.168.1.150/
 
 ![alt text](http://blog.linoxide.com/wp-content/uploads/2015/02/completion.png "OSSEC Logo")
 
-Login with user root and password test in CLI of OSSIM server.
+Daha önce belirlediğimiz root adına olan şifre ile OSSIM server'e giriş yapıyoruz.
 
 ![alt text](http://blog.linoxide.com/wp-content/uploads/2015/02/login.png "OSSEC Logo")
 
-Latest Mozilla firefox browser does not open the link, so use Chrome or IE browser for the access of web interface. Chrome and IE will prompt following windows which says that certificate are not trusted because OSSIM uses self signed certificate.
+Güncel olan Mozilla Firefox tarayıcısı bu linki açmamaktadır. Bu yüzden Chrome kullanmamızda fayda var. Chrome ile gerekli URL'yi girince karşımıza Aşağıdaki uyarı gelmektedir. Bu uyarının anlamı OSSIM kendi self signed sertifikasını kullandığı için Chrome, doğrudan buna güvenememektedir. Proceed seçeniğine basıp ilerlememiz gerekiyor.
+
 
 ![alt text](http://blog.linoxide.com/wp-content/uploads/2015/02/exception.png "OSSEC Logo")
 
-After acceptance of above exception, following information required for the administrator of OSSIM server. Fill the required details which are asked in the following figure.
+Yukarıdaki durumu atlattıktan sonra, Karşımıa şu şekilde bir ekrançıkacaktır. Burda OSSIM server'i yöneticisi için gerekli bilgileri istemektedir. Bunları doldurmamız gerekiyor.
 
 
 ![alt text](http://blog.linoxide.com/wp-content/uploads/2015/02/information.png "OSSEC Logo")
 
-Following windows will appear after the completion of administration account. Username is admin and password is test@123.
+Bir sonraki adımda karşımıza login ekranı geliyor ve bu ekranda account ve şifre giriyoruz. Ben burda Username olarak **admin** şifre olarak da **test@123** değerlerini girdim.
+
 
 ![alt text](http://blog.linoxide.com/wp-content/uploads/2015/02/loginscreen.png "OSSEC Logo")
 
-After successful log in into the web interface, following wizard appear for further setting of OSSIM server.
+OSSIM'im web arayüzüne başarılı bir şekilde giriş yaptıktan sonra daha fazla seçeneğin anlatıldığı bir wizard ekranı geliyor.
 
 ![alt text](http://blog.linoxide.com/wp-content/uploads/2015/02/wizardnew.png "OSSEC Logo")
 
-It shows following three options
+Bu wizard bize 3 tane seçenekten bahsediyor. Bunlar:
 
-*Monitor Network (Configure  network which is being monitored by the OSSIM server)
-*Assets Discovery (Automatic discovery of network devices in the organization )
-*Collecting logs and monitoring of network nodes
-Click on the **start** button of the above figure  for the configuration of OSSIM server.
+*Monitor Network (Hangi Network'ün inceleneceği için gerekli olan konfigürasyon)
+*Assets Discovery (Belli bir organizasyonun içinde bulunan tüm Network cihazlarını bulmak)
+*Logları ve incelenen networkleri derleme.
 
-After clicking on the 1st option, another windows will  prompt for the network configuration which is shown in the below figure. We  configured eth1 for the log collector and monitoring interface of the OSSIM server.
+Yukarıdaki ekran görüntüsünde yer alan  **start** butonuna tıklamamız gerekiyor.
+
+Eğer birinci seçeneğe tıklarsak, karşımıza farklı bir pencere açılıyor. Burada log derleyicisi ve izleme arayüzü için eth1 konfigürasyonunu sağlıyoruz.
 
 ![alt text](http://blog.linoxide.com/wp-content/uploads/2015/02/network-configuration2.png "OSSEC Logo")
 
-In the 2nd step, OSSIM will perform automatic discovery of  the network assets . select Asset discovery (2) option and following windows will prompt for the  configuration. It supports automatic and manual discovery of assets .
+2. adımda ise , Organizasyon içindeki varlıklar için nasıl bir arama yapılmasını istedğimizi soruyor. OSSIM **manuel** ve **automatic** olarak 2 tane seçeneği önümüze sunuyor.
 
-Type of Assets in the OSSIM server are
+OSSIM serverlerindeki varlık tipleri şu şekildedir.
 
 *Windows
 *Linux
-*Network device
+*Network device ( Network cihazları. Router gibi..)
 
 ![alt text](http://blog.linoxide.com/wp-content/uploads/2015/02/asset.png "OSSEC Logo")
 
@@ -290,15 +293,14 @@ priority, name) VALUES (20000, 5, NULL, NULL, 10, 5, 'foobar: alien foo on
 __END__
 
 ```
+Yeni bir eklentinin OSSIM servere eklemek için aşşağıdaki komut kullanılmalıdır.
 
-Now the plugin can be inserted into the OSSIM server using the following command.
 ```
 
 cat foobar.sql | mysql -u root -p ossim
 
 ```
-
-The OSSIM server must be restarted so that it is aware of the new plugin information.
+Burada OSSIM server yeni değerlerin farkında olması için tekrardan başlatılmalıdır.
 
 ```
 
@@ -306,12 +308,12 @@ The OSSIM server must be restarted so that it is aware of the new 
 
 ```
 
-Once the plugin exists the OSSIM web interface will verify it in the window: **Configuration-> Plugins**
+Yeni bir eklenti varolduğunda, OSSIM web arayüzü bunu şu panelde doğrulayacaktır: **Configuration-> Plugins**
 
 ![alt text](http://i.hizliresim.com/0D60m9.jpg "OSSIM Logo")
 
-Modification of the values in the above illustration for reliability and priority for each plugin_sid,
-requires restart of the OSSIM server in order for it to take effect. 
+Her bir plugin_sid'ye ait güvenilirlik ve öncelikle ilgili olan değerleri değerlerini değiştirdiğimizde, bu değerleri kullanması için OSSIM serveri tekrardan başlatmamız gerekmektedir.
+
 
 ##Agent Configuration
 Aşağıdaki adımların detayları yeni bir eklenti için agent'ı konfigüre etme yollarıdır. Bu yeni eklenti syslog çıktılarını inceleyecektir. Eklenti için yapılandırılan dosya plugin ID ile varolması gerekmekte ve syslog'daki bilgiyle birbirleriyle eşleşmelidirler. Bu durumda, sadece bir sid ile eşleşmelidir. Fakat, üstte gördügünüz sql komutlarında 5 farklı durum ve 5 farklı sub id vardır.
