@@ -158,30 +158,29 @@ OSSIM serverlerindeki varlık tipleri şu şekildedir.
 
 ![alt text](http://blog.linoxide.com/wp-content/uploads/2015/02/asset.png "OSSEC Logo")
 
-After network setting and asset discovery, next step is the deployment of HIDS on windows/linux devices to perform file integrity, monitoring, rootkit detection and  collection of  event logs. Enter username/password of the asset for the deployment of HIDS.
+Network seçeneklerinden ve varlık keşfetmelerinden sonra bir sonraki adım, HIDS'in Windows ve Linux araçlarına dosya bütünlüğü ve Network incelemek için için dağıtımını görüyoruz. HIDS'in dağıtımı için araçlardaki kullanıcı adı ve şifreri giriyoruz.
 
 ![alt text](http://blog.linoxide.com/wp-content/uploads/2015/02/hids.png "OSSEC Logo")
 
-Select desired host from the list and click on Deploy button for the HIDS deployment. Again click on  Continue button to start deployment process which is shown in the  figure. This process will take a few minute for the HIDS deployment on selected host.
-
+İstenilen host'u host listesinden seçiyoruz ve HIDS dağıtımı için  **Deploy** butonuna tıklıyoruz. Başlaması için de **Continue** butonuna tıklıyoruz. Seçilen host için HIDS kurulumu başlıyor. Bu işlem bir kaç dakika sürmektedir.
 
 ![alt text](http://blog.linoxide.com/wp-content/uploads/2015/02/prompot.png "OSSEC Logo")
 ![alt text](http://blog.linoxide.com/wp-content/uploads/2015/02/deployming.png "OSSEC Logo")
 
 ##Log Management
-Following figure showing the configuration of discovered asset for the management of different logs.
+Aşağıdaki görüntü, farklı loglar için keşfedilmilmiş varlıklar üzerinden konfigürasyonunu içeriyor.
 
 ![alt text](http://blog.linoxide.com/wp-content/uploads/2015/02/log-management.png "OSSEC Logo")
 
-Final option of the configuration wizard  is to join OTX (Threat exchanged program of AlienVault). We are not going to sign up for this option. Finish the configuration step by clicking on finish button.
+Ve son adımımız olarak Konfigürasyon seçeneklerimizi bitirmek için **finish** butonuna tıklıyoruz.
 
-The main dashboard of the OSSIM server is shown below .
+Burada OSSIM'in ana kontrol paneli karşımıza çıkacaktır. bu da, aşşağıda görüldüğü şekildedir:
 
 ![alt text](http://blog.linoxide.com/wp-content/uploads/2015/02/dashboard.png "OSSEC Logo")
 
 ##Web Interface
 
-Web interface of OSSIM server consist of following options on the main GUI.
+OSSIM'in web arayüzü aşağıdaki parçalardan oluşmaktadır.
 
 *Dashboards
 *Analysis
