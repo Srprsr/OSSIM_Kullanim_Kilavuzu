@@ -314,13 +314,10 @@ Modification of the values in the above illustration for reliability a
 requires restart of the OSSIM server in order for it to take effect. 
 
 ##Agent Configuration
-The following steps detail configuration of the agent for the plugin. This plugin is going to monitor
-syslog for the output, so a config file for the plugin  must exist containing the plugin ID and how to
-match information in syslog. In this case, it matches only one sid, but as you can see from the above sql,
-there could be five patterns and five sub ids. 
+Aşağıdaki adımların detayları yeni bir eklenti için agent'ı konfigüre etme yollarıdır. Bu yeni eklenti syslog çıktılarını inceleyecektir. Eklenti için yapılandırılan dosya plugin ID ile varolması gerekmekte ve syslog'daki bilgiyle birbirleriyle eşleşmelidirler. Bu durumda, sadece bir sid ile eşleşmelidir. Fakat, üstte gördügünüz sql komutlarında 5 farklı durum ve 5 farklı sub id vardır.
 
-Contents of /etc/ossim/agent/plugins/foobar.cfg You can copy and paste into the shell. If you create the
-file manually, be sure to remove the backslashes before any ‘$’ symbol. 
+
+**Contents of /etc/ossim/agent/plugins/foobar.cfg** Bu satırı shell'e kopyalayabilir. Eğer dosyayı manuel bir şekilde oluşturuyorsak, **‘$’** 'den önce olan bütün bacskslashleri silmemiz gerekiyor. 
 
 ```
 
@@ -397,17 +394,14 @@ __END__
 
 
 ```
-
-We need to tell the agent that we have a new plugin. Edit the file /etc/ossim/agent/config.cfg and add
-the following line in the [plugin] section.
+Bu durumda agent'a yeni bir eklenti olduğunu bildiriyoruz. ** Edit the file /etc/ossim/agent/config.cfg and add**. Aaşağıdaki satırı eklenti kısmında calıstırıyoruz.
 
 ```
 
 foobar=/etc/ossim/agent/plugins/foobar.cfg
 
 ```
-
-Now to restart the agent so that it is aware of the new plugin information. 
+Şimdi agent'ı tekrar başlaıyoruz. Bu sayede yeni eklentinin farkında oluyor.
 ```
 
 /etc/init.d/ossim-agent restart
