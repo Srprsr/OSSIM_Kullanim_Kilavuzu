@@ -33,15 +33,14 @@ OSSIM birleşik bir yapı olup vazgeçilemez güvenlik becerileri vardır. Bilin
 > * Ntop
 > * Nmap
 
-Its objective is to provide a framework for centralizing, organizing, and improving detection and
-display for monitoring security events within the organization.
-Our system will include the following monitoring tools:
-* Control panel for high-level display
-* Risk and activity monitors for mid-level monitoring
-* Forensic console and network monitors at the low level
+OSSIM'in amacı yapıyı merkezileştirmek, organize etmek ve tespit sistemini attırmak ve gözlemlenen(monitoring) güvenlik durumlarını bizlere göstermektir.
 
-These tools utilize new capabilities developed in SIM post-processing, whose objective is to improve
-detection reliability and sensitivity:
+Sistemimiz aşağıdaki gözlemleme parçalarını içerecektir:
+* yüksek seviyede gözlemleme için panel
+* Risk ve aktivite için orta seviye gözlemleme
+* düşük seviyedeki Network ekranı
+
+Bu araçlar SIM post-processing içerisine kurulunca bazı özel yetenekler elde ediyorlar. Bu yetenekler de güvenilirliği, hassaslığı ve tespit sistemini güçlendirmektedir.
 * Correlation
 * Prioritization
 * Risk assessment
