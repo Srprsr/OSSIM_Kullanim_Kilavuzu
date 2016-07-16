@@ -61,13 +61,12 @@ tools.
 #Installation and Configuration
 Iso dosyasını AlinVault'un şu sitesinden indiriyoruz =>**(http://downloads.alienvault.com/c/download?version=current_ossim_iso)** ve VM içerisinde kuruyoruz. Burada size Vm içerisinde yüklemeyi göstereceğim.
 
-It has two interfaces, one is for the management of server and 2nd is for collecting logs and monitoring of the network devices. The details of the VM are  given below.
+2 tane arayüzü bulunmaktadır. Birisi server yönetimi ile ilgili olup, 2. si ise collecting logs ve monitoring(inceleme) ile ilgilidir.
+VM nin sahip olduğu özellikler aşağıda belirtilmiştir.
 
 Processor :   2 VCPU ,  RAM   : 2 GB , Hard disk Size: 8GB , Management IP :  192.168.1.150/24 and Asset network  : 192.168.0.0/24
 
-When OSSIM VM boots with iso image, it shows following two option at installation wizard.
-
-
+OSSIM iso maji ile ön yüklemede karşımıza 2 tane yükleme seçeneği çıkartıyor.
 
 ![alt text](http://blog.linoxide.com/wp-content/uploads/2015/02/first.png "OSSEC Logo")
 Highlighted option in above figure is selected which will install OSSIM on this VM. Press enter to start the installation process. Select language, location and keyboard setting in next few steps.
