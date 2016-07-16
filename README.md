@@ -45,17 +45,13 @@ Bu araçlar SIM post-processing içerisine kurulunca bazı özel yetenekler elde
 * Prioritization
 * Risk assessment
 
-Post-processing in turn makes use of the preprocessors, a number of detectors and monitors already
-known to most of the administrators that will be included in our distribution:
+Post-processing önişlemcilerin kullanılması gibi düşünülebilir, belirli sayıda detektör ve gözlemleme aracının dahil olduğu organizasyonumuzda aşağıdaki unsurlar bir çok güvenlik yöneticisi tarafından bilinmektedir:
 * IDS (pattern detectors)
 * Anomaly detectors
 * Firewalls
 * Various monitors
 
-Finally, we need an administrative tool that configures and organizes the various modules, both
-external and native, that comprise OSSIM. That tool is the framework, which allows us to inventory
-assets, to define: the topology, a security policy, correlation rules, and to link up the various integrated
-tools.
+Son olarak da bize gereken tek şey, organize yapıda olan bir araçtır. Buna da OSSIM diyoruz.
 
 #Installation and Configuration
 Iso dosyasını AlinVault'un şu sitesinden indiriyoruz =>**(http://downloads.alienvault.com/c/download?version=current_ossim_iso)** ve VM içerisinde kuruyoruz. Burada size Vm içerisinde yüklemeyi göstereceğim.
