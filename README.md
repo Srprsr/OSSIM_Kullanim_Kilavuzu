@@ -190,24 +190,25 @@ OSSIM'in web arayüzü aşağıdaki parçalardan oluşmaktadır.
  
 ##Dashboard
 
-It show a comprehensive view of all components of OSSIM server like severity of threat, vulnerabilities in the networks host, deployment status , risk maps and OTX stats. Sub menu of dashboard is shown in the following figure
+Bu bölümde OSSIM server'in tüm parçalarının incelenebildği bir paneldir. Bu panelin ana parçaları aşağıdaki gösterilmiştir.
 
 ![alt text](http://blog.linoxide.com/wp-content/uploads/2015/02/dashboard-submenu.png "OSSEC Logo")
 
 ##Analysis
 
-Analysis is very important component of any SIEM device. OSSIM server analyzed the hosts based on their logs. This menu shows the alarms, SIEM (security events),tickets and raw logs. Analysis menu is further divided following sub menu.
+Analiz kısmı OSSIM'in en önemli parçalarından biridir. OSSIM serveri hostları loglara göre analiz etmektedirler. Bu menüde Alarmlar, SIEM, ticket ve raw log gibi alt parçalara ayrılmaktadır.
 
 ![alt text](http://blog.linoxide.com/wp-content/uploads/2015/02/analysis-submenu.png "OSSEC Logo")
 ##Environment
 
-In this menu of OSSIM server, setting are related to the assets of the organization. It shows the assets, group and network, vulnerabilities, netflow and detection settings. Sub menu for all these settings is shown in the figure.
+OSSIM Server'in bu menüsünde de, seçenekler organizasyon içinde olan varlıklarla ilişkilidir. Aşağıda alt menüleri de görebilirsiniz.
 
 ![alt text](http://blog.linoxide.com/wp-content/uploads/2015/02/environment.png "OSSEC Logo")
 
 ##Reports
 
-Reporting is an important component of any logging Server. OSSIM server also generates reports which are very useful for the detail investigation of any specific host.
+Raporlama herbir logging server için vazgeçilemez bir parçadır.Ayrıca, OSSIM server de kendisi raporları kendisi üretebilir. Bu durum yeni bir host'u sorgulamak için oldukça kullanışlı bir yoldur.
+
 
 ![alt text](http://blog.linoxide.com/wp-content/uploads/2015/02/reports-submenu.png "OSSEC Logo")
 
