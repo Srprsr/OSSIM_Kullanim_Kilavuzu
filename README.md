@@ -5,7 +5,7 @@ Son zamanlardaki **IDS** gibi güvenlik açısından gelişen teknolojiyi düş�
 
 ![alt text](http://cybersecurity-excellence-awards.com/wp-content/uploads/2016/01/638669-500x318.jpg "OSSIM Logo")
 
-#Bağıntı
+#Correlation
 
 Bağıntı'nın anlamı, tüm sistemdeki tüm bağlantıları tek bir yerden ve tek bir formattan incelemek ve de bu ayrıcalıkla beraber bağlantıları birbirleriyle karşılaştırmak, bilgileri işlemektir. Bu durumda da , Network'un güvenlik durumunu izlerken, bizlere saldırı tespit sistemini kolaylaştırıp oldukça fayda sağlamaktadır.
 
@@ -67,21 +67,20 @@ OSSIM iso maji ile ön yüklemede karşımıza 2 tane yükleme seçeneği çıka
 
 Vurgulanan olan seçenek hangi yükleme türünün VM üzerinde seçildiğini gösteriyor. Yükleme işlemini başlatmak için **Start** tuşuna basıyoruz. Sonradan dil, bölge ve klavye seçeneklerini düzenliyoruz.
 
-##Network Configuration
+##Network Konfigürasyonu
 
 Bu adımda, OSSIM'in Network'ünü VM de konfigüre ediyoruz. Burada yönetmek için eth0'ı kullanıyoruz. eth1'e bağlı olan diğer tüm networkler için, eth0 Network konfigürasyonu aşağıda gösterilmiştir.
 
 
 ![alt text](http://blog.linoxide.com/wp-content/uploads/2015/02/network-configuration.png "OSSEC Logo")
 ![alt text](http://blog.linoxide.com/wp-content/uploads/2015/02/combine.png "OSSEC Logo")
-##Root User Setting
+##Root Kullanıcısı Seçenekleri
 
 Network seçeneklerinden sonra windows promt, OSSIM servere bağlantı için **root** ile bağlantılı olan kullanıcı şifresini istemektedir.
 
 
 ![alt text](http://blog.linoxide.com/wp-content/uploads/2015/02/rootuser.png "OSSEC Logo")
-##Time Zone setting
-
+##Time Zone Seçenekleri
 
 Time zone bilgisi giriş sistemi açısından oldukça öncem sarfetmektedir.
 
@@ -133,9 +132,9 @@ OSSIM'im web arayüzüne başarılı bir şekilde giriş yaptıktan sonra daha f
 
 Bu wizard bize 3 tane seçenekten bahsediyor. Bunlar:
 
-*Monitor Network (Hangi Network'ün inceleneceği için gerekli olan konfigürasyon)
-*Assets Discovery (Belli bir organizasyonun içinde bulunan tüm Network cihazlarını bulmak)
-*Logları ve incelenen networkleri derleme.
+* Monitor Network (Hangi Network'ün inceleneceği için gerekli olan konfigürasyon)
+* Assets Discovery (Belli bir organizasyonun içinde bulunan tüm Network cihazlarını bulmak)
+* Logları ve incelenen networkleri derleme.
 
 Yukarıdaki ekran görüntüsünde yer alan  **start** butonuna tıklamamız gerekiyor.
 
@@ -162,18 +161,18 @@ Network seçeneklerinden ve varlık keşfetmelerinden sonra bir sonraki adım, H
 ![alt text](http://blog.linoxide.com/wp-content/uploads/2015/02/prompot.png "OSSEC Logo")
 ![alt text](http://blog.linoxide.com/wp-content/uploads/2015/02/deployming.png "OSSEC Logo")
 
-##Log Management
+##Giriş Yönetimi
 Aşağıdaki görüntü, farklı loglar için keşfedilmilmiş varlıklar üzerinden konfigürasyonunu içeriyor.
 
 ![alt text](http://blog.linoxide.com/wp-content/uploads/2015/02/log-management.png "OSSEC Logo")
 
 Ve son adımımız olarak Konfigürasyon seçeneklerimizi bitirmek için **finish** butonuna tıklıyoruz.
 
-Burada OSSIM'in ana kontrol paneli karşımıza çıkacaktır. bu da, aşşağıda görüldüğü şekildedir:
+Burada OSSIM'in ana kontrol paneli karşımıza çıkacaktır. bu da, aşağıda görüldüğü şekildedir:
 
 ![alt text](http://blog.linoxide.com/wp-content/uploads/2015/02/dashboard.png "OSSEC Logo")
 
-##Web Interface
+##Web Arayüzü
 
 OSSIM'in web arayüzü aşağıdaki parçalardan oluşmaktadır.
 
@@ -189,7 +188,7 @@ Bu bölümde OSSIM server'in tüm parçalarının incelenebildği bir paneldir. 
 
 ![alt text](http://blog.linoxide.com/wp-content/uploads/2015/02/dashboard-submenu.png "OSSEC Logo")
 
-##Analysis
+#Analiz
 
 Analiz kısmı OSSIM'in en önemli parçalarından biridir. OSSIM serveri hostları loglara göre analiz etmektedirler. Bu menüde Alarmlar, SIEM, ticket ve raw log gibi alt parçalara ayrılmaktadır.
 
@@ -200,14 +199,14 @@ OSSIM Server'in bu menüsünde de, seçenekler organizasyon içinde olan varlık
 
 ![alt text](http://blog.linoxide.com/wp-content/uploads/2015/02/environment.png "OSSEC Logo")
 
-##Reports
+##Raporlar
 
 Raporlama herbir logging server için vazgeçilemez bir parçadır.Ayrıca, OSSIM server de kendisi raporları kendisi üretebilir. Bu durum yeni bir host'u sorgulamak için oldukça kullanışlı bir yoldur.
 
 
 ![alt text](http://blog.linoxide.com/wp-content/uploads/2015/02/reports-submenu.png "OSSEC Logo")
 
-##Configuration
+##Konfigürasyon
 
 Konfigürasyon menüsün kullanıcının; yönetim arayüzünün ip adresi, hangi hostların inceleneceği gibi OSSIM serverindeki değişiklikleri yapabileceği bir bölümdür. Alt menüler aşağıdaki ekran görüntüsünde gösterilmiştir.
 
@@ -215,7 +214,7 @@ Konfigürasyon menüsün kullanıcının; yönetim arayüzünün ip adresi, hang
 ![alt text](http://blog.linoxide.com/wp-content/uploads/2015/02/configuration-submenu.png "OSSEC Logo")
 
 
-#Configuration of OSSIM
+#OSSIM Konfigürasyonu
 
 İlk olarak **Policy => Networks** ekranına gidip  yeni bir **Network Policy** yaratıyoruz. Bu Network'ün kendine özel asset, compromise threshold ve saldırı threshold gibi değerleri var. Ek olarak da Network'ün içinde bulunan host'un Nessus ile taranmasını istiyosarsak bunu yapabiliyoruz. Herhangi bir asset değerini de herhangi bir host için spesifik hale getirebiliyoruz.
 
@@ -223,11 +222,11 @@ Network'ü taramak için **Tools => Netscan** bölümüne gidiyoruz. Bu ekran 
 
 Her bir host için OCS parçalarını çalıştırdığımızda. OCS, otomatik olarak host'tun sahip olduğu bilgileri bize getiriyor. OSSIM, OCS ile ilgili bütün bileşenlerini **Tools =>Downloads** kısmından görebiliyoruz. Bu tool OSSIM installer tarafından değiştirilmiştir. Yapılması gereken tek şey setup scripti çalıştırılmaktır. Bu parametreler de OCS'den OSSIM installer'a rapor olarak sunulmaktadır.
 
-##A Customized Plugin
+##Ayarlanabilir Eklenti
 Bu bölümde güvenilirlik ve öncelik değerleri bir duruma tahsis edilir. Küçük bir plugin ile basit bir pyhton scrpti ile bu halledilebilir. Bu pyhton scripti syslog'a bir mesaj göndermektedir. Bu mesajda agent ve server doğrulanır.
 
-##Server Configuration
-OSSIM Serverde, OSSIM database'i alakalı olan plugin ile  bilgileri güncellenmesi gerekmektedir. Aşşağıdaki komutları kopyalayabiliriz. Bu komut satırı sql adında bir dosya yaratıcaktır. Eğer, dosyayı manuel bir şekilde yaratmak istiyorsanız blackslashlerden önce olan **’$’** sembollerini silmeyi unutmayın.
+##Server Konfigürasyonu
+OSSIM Serverde, OSSIM database'i alakalı olan plugin ile  bilgileri güncellenmesi gerekmektedir. Aşağıdaki komutları kopyalayabiliriz. Bu komut satırı sql adında bir dosya yaratıcaktır. Eğer, dosyayı manuel bir şekilde yaratmak istiyorsanız blackslashlerden önce olan **’$’** sembollerini silmeyi unutmayın.
 
 
 ```
@@ -260,7 +259,7 @@ priority, name) VALUES (20000, 5, NULL, NULL, 10, 5, 'foobar: alien foo on
 __END__
 
 ```
-Yeni bir eklentinin OSSIM servere eklemek için aşşağıdaki komut kullanılmalıdır.
+Yeni bir eklentinin OSSIM servere eklemek için aşağıdaki komut kullanılmalıdır.
 
 ```
 
@@ -282,7 +281,7 @@ Yeni bir eklenti varolduğunda, OSSIM web arayüzü bunu şu panelde doğrulayac
 Her bir plugin_sid'ye ait güvenilirlik ve öncelikle ilgili olan değerleri değerlerini değiştirdiğimizde, bu değerleri kullanması için OSSIM serveri tekrardan başlatmamız gerekmektedir.
 
 
-##Agent Configuration
+##Agent Konfigürasyonu
 Aşağıdaki adımların detayları yeni bir eklenti için agent'ı konfigüre etme yollarıdır. Bu yeni eklenti syslog çıktılarını inceleyecektir. Eklenti için yapılandırılan dosya plugin ID ile varolması gerekmekte ve syslog'daki bilgiyle birbirleriyle eşleşmelidirler. Bu durumda, sadece bir sid ile eşleşmelidir. Fakat, üstte gördügünüz sql komutlarında 5 farklı durum ve 5 farklı sub id vardır.
 
 
@@ -377,7 +376,7 @@ foobar=/etc/ossim/agent/plugins/foobar.cfg
 
 ```
 
-##Verification
+##Doğrulama
 Bu basit bir Syslog mesajı gönderen phyton script'i dir. Aşağıdaki kod phyton yüklü host'ta script olarak run edilebilir. 
 
 
@@ -418,7 +417,7 @@ testfoobar.py 5 4 2
 Etkinlikleri ve uyarıları kontrol ediyoruz. Önceden gösterilmiş etkinlikler sekmesinde bir etkinlik veya alarm görülmelidir.
 
 
-#A Sample OSSIM directive
+#Basit bir OSSIM Direktifi
 OSSIM kendi içindeki kurallarını serverde **/etc/ossim/server/directives.xml** isimli dosyada tutuyor. Bu kurallar direktiflere ayrılmış şekilde bulunuyorlar. Aşağıda gördüğünüz örnek ssh brute force direktifidir. Bu direktif gerekli bilgiyi **ssh auth log.plugin**'inden almaktadır. Aslında bu durumda saldırgan, tek bir host üzerinde host'u değiştirip saldırı girişiminde bulunup farkedilmekten kurtulabilir. Fakat, bu direktif bu saldırı girişimlerini yakalayacaktır.
 
 ```
@@ -465,7 +464,7 @@ priority="5">
 
 
 
-#Logging in
+#OSSIM'e Giriş Yapmak
 OSSIM konsolu web üzerine kurulmuş olup, standart bir web tarayıcısı üzerinden 80 portundan (HTTP) veya güvenli olan 443 portundan (HTTPS)'den bağlanılabilir.
 
 * Kullandığımız browser'ı açıyoruz.
@@ -478,16 +477,16 @@ Default şifremizi değiştirmeyi unutmuyoruz ve buna özen gösteriyoruz.
 
 Bir kere giriş yaptıktan sonra, Karşımıza **Metrics** ekranı gelmektedir. Metrics ekranın da ise izlemek istediğimiz Network'leri gözden geçiriyoruz. 
 
-##The Metrics Screen 
+##Metrics Ekranı
 ![alt text](http://i.hizliresim.com/7vnB9N.jpg "OSSEC Logo")
 
 Göründüğü gibi ekran farklı bölümlere ayrılmıştır. Bunlar **Global Metrics**, **Riskmeter**, **Service Level**, ve  policy'nin her bir parçası için **Current Metrics**.
 
-#The Policy Menu
+#Policy Menüsü
 OSSIM Policy menüsü yönetciye, policy inşaa etmek için gerekli olan objeleri yaratmaya ve bunları değiştirmeye izin verir.
 
 
-##Creating a new sensor
+##Yeni bir Sensör Yaratma
 Aşağıda takip edilen adımlarla, yönetici bir OSSIM sensör ekleyebilir veya bunu değiştirebilir.
 * **policy**'e tıklıyoruz.
 * **sensors**Ee tıklıyoruz.
@@ -516,7 +515,7 @@ Objeyi oluşturmak için **OK**'a tıklıyoruz. Sensor yaratıldığında Sensor
 
 Eğer eklenmiş yeni sensör aktif değilse, Aktif butonuna basarak bağlantıyı tekrar kontrol ediyoruz.
 
-##Defining Signature groups
+##İmza Gruplarını Tanımlama
 İmzalar bölümü direkt olarak Snort ve sensörden okunan diğer imzala tipleriyle alakalıdırlar. Buradaki birbirinden bağımsız uyarılar 
 ACID başlığı altında incelenebilirler. Bu bölümde yönetici, saldırılarla ilgili olan imzaları optimise edebilir. Bu bölüm Diğer sensörler için diğer imzaların açıklamalarını da taşıdığı için oldukça kullanışlı bir bölümdür. Örneğin, sadece Snort Virüs rules içeren Virüs tiplerinin imza listesi tutulabilir. 
 
@@ -540,7 +539,7 @@ Burada bir imza grubuna isim verebiliyoruz. Açıklamak istediğimiz imzaları s
 
 Yeni imza eklenmiş oldu. İleride policy yaratman için kullanılmaya hazırdır.
 
-##Creating a Network
+##Bir Network Yaratmak
 Genellikle Network gruplarının organizasyonu elimizde bulundururuz. Bunun için **The Policy >
 Networks** Butonuna basıyoruz.
 Karşımıza şu ekran çıkıyor.
@@ -554,7 +553,7 @@ Yeni bir Network eklemek için
 ![alt text](http://i.hizliresim.com/X41bV3.jpg "OSSEC Logo")
 
 
-Aşşağıdaki bileşenleri sırayla ekliyoruz.
+Aşağıdaki bileşenleri sırayla ekliyoruz.
 * Name - Yeni Network veya Network grubunun ismi 
 * Ips - Networklerin IP adresleri 
 * Priority - Eklenilen Network'ün ne kadar önemli olduğunu belirtiyoruz. 5, en yüksek dereceye tekabül ediyor.
@@ -566,9 +565,9 @@ Aşşağıdaki bileşenleri sırayla ekliyoruz.
  **OK** tuşuna basıyoruz ve  to Network grubu ekleniyor.
  **NOT:** Her bir Network grubunun periyodik olarak taranmasını istemiyorsak, Nessus Scan seçeneğini **DISABLED** yapmalıyız.
 
-## Adding a group of relevant ports
+## İlgili Portların Eklenmesi
 Bazı zamanlarda, OSSIM'in izlemesi gereken portların optimise edilmesi veya değiştirilmesi gerekmektedir. Bunu yapmak için de **Policy >Ports** Menüsüne giriyoruz.
-Yeni bir port grubu oluşturmak için aşşağıdaki adımlara harfi harfine uymamız gerekiyor.
+Yeni bir port grubu oluşturmak için aşağıdaki adımlara harfi harfine uymamız gerekiyor.
 
 * **Policy**'ye tıklıyoruz
 * **Ports**'a tıklıyoruz.
@@ -578,12 +577,12 @@ Yeni bir port grubu oluşturmak için aşşağıdaki adımlara harfi harfine uym
 * Açıklama ekliyoruz
 * Son olarak **OK** butonuna basıyoruz.
 
-Yeni port grubu aşşağıda görüldüğü gibi eklenmiş bulunuyor.
+Yeni port grubu aşağıda görüldüğü gibi eklenmiş bulunuyor.
 
 ![alt text](http://i.hizliresim.com/bbXvqZ.jpg "OSSEC Logo")
 
 
-##Editing the Priority & Reliability
+## Priority & Reliability Değerlerini Değiştirme
 
 OSSIM'de öncelik ve güvenilirliği Network'de alınan imzalar doğrultusunda değiştirilebilme imkanı vardır. Bu durum gerçektende yönetici için çok yararlı bir durumdur. Çünkü, yönetici bizi imzanın zayıflığı konusunda bizi uyarabilme şansına sahip olur.
 
@@ -625,7 +624,7 @@ Yeni bir host eklemek için
 
 **Önemli : Burada Nessus scan'i akif etmeliyiz. Bu durumda large bir network kullanıyorsak bütün zayıf noktaları görmemize gerek kalmaz. Asıl yapılması gereken, belirli olarak seçeceğimiz bir hostta zayıflıklar var mı yok mu görmek daha faydalı olacaktır.**
 
-Gerekli bilgiler doldurulduğunda **OK** butonuna basılmalıdır. Bu yeni host, host listesinde yer alacaktır. Eğer gilgiler yanlış yazılmış ise **Modify** Butonunu kullanarak, bu bilgiler tekrardan değiştirilebilir.
+Gerekli bilgiler doldurulduğunda **OK** butonuna basılmalıdır. Bu yeni host artık host listesinde yer alacaktır. Eğer gilgiler yanlış yazılmış ise **Modify** Butonunu kullanarak, bu bilgiler güncellenebilir.
 
 ### Updating and the host information.
 Yeni bir host'un bilgilerini update etmek için, **Host Field** kısmından bilgileri değiştirilmek istenen host ismine tıklanır. Ve karşımıza şu şekilde bir ekran çıkacaktır.
@@ -646,7 +645,7 @@ Spesifik bir host için **Metrics**'i incelemek için, **Metrics** Butonuna bas�
 ### Alarms and Alerts
 Host Report menüsünde 3 tane alt bölüm bulunmaktadır. Bunlar; **Vulnerabilities**, **Alarms**, ve **Alerts** dir. Peki alarm ve Alert arasındaki fark nedir?
 
-Belirli olan belli başlı kriterler sağlandığında alarm ortaya çıkar. Örneğin, şu durumlar gerçeleştiğinde alarm ortaya çıkar
+Belirli olan belli başlı kriterler sağlandığında alarm ortaya çıkar. Örneğin, şu durumlar gerçeleştiğinde alarm durumu oluşur.
 
 * Snort tarafından bir alert oluşturulduğunda.
 * Alarmla ilgili bir attack detect edilirse.
@@ -680,7 +679,7 @@ Eğer başarılı bir şekilde login olunursa, yönetici şu ekranla karşılaş
 ![alt text](http://i.hizliresim.com/l1G4kB.jpg "OSSEC Logo")
 
 
-###Using the ACID console.
+### the ACID console Kullanımı.
 ACID çok önemli bir araç olup ihlalleri tespit edip bununla ilgili bilgileri kullanıcıya verir.
 OSSIM'le ilgili oldukca da bağlantılı olup daha fazla bilgiyi **http://acidlab.sourceforge.net** sayfasından elde edebilirsiniz. 
 
@@ -694,14 +693,14 @@ Saldırıların oluşumuna bakmak için **Occurances as Src.** kısmına tıklan
 Herhangi bir imza ile ilgili daha fazla bilgi almak için **[snort]** üzreine tıklanmalı ve bu bizi Snort rules tanımlarının olduğu sayfaya yönlendirecektir. Bu sayfada imza ile ilgili önemli bilgiler yer almaktadır.
 
 ### Vulnerabilities
-OSSIM, şirketlere ve bireysel kullanıcılara kendi serverlerindeki önde gelen zayıf noktaları inceleme imkanı sağlar. Bunu sağlayan **Host Repot** menüsüdür. Bu bölüm zayıf noktaların raporlarını elde eder ve bu noktaları tarar. Bunun sonucunu da görmek için önce **Vulnmeter** başlığı altındaki **Vulnerabilities** bölümüne bakmamız yeterli olacaktır.
+OSSIM, şirketlere ve bireysel kullanıcılara kendi serverlerindeki önde gelen zayıf noktaları inceleme imkanı sağlar. Bunu sağlayan **Host Repot** menüsüdür. Bu bölüm zayıf noktaların raporlarını elde eder ve bu noktaları tarar. Bu incelemelerin sonucunu da görmek için önce **Vulnmeter** başlığı altındaki **Vulnerabilities** bölümüne bakmamız yeterli olacaktır.
 
-Bu bölümde zayıf noktaları olan hostların listesi gelecektir. ve ilgili host ve ilgili IP adress highlighted şekilde gözükecektir. Üzerinde çalışılmak istenen host ve IP adresin üzerine tıklanması gerekir.
+Bu bölümde zayıflıkları olan hostların listesi gelecektir. ve ilgili host ve ilgili IP adress highlighted şekilde gözükecektir. Üzerinde çalışılmak istenen host ve IP adresin üzerine tıklanması gerekir.
 
 ![alt text](http://i.hizliresim.com/nr6yA5.jpg "OSSEC Logo")
 
 
-Daha fazla bilgi edinmek için **(Security hole found)** seçeneğine tıklanmalı ve scroll bar aşağı indirilmelidir.
+Daha fazla bilgi edinmek için **(Security hole found)** seçeneğine tıklanmalı ve sekme aşağı indirilmelidir.
 
 ### Host Usage
 Host usage ile ilgili bilgiler **NTOP** tarafından sağlanmaktadır. Daha fazla bilgiyi **http://www.ntop.org.** adresinden elde edebilirsiniz. Trafik akışındaki şüpheli durumlar içn OSSIM, NTOP'u kullanmaktadır.
@@ -719,12 +718,11 @@ bölümüne girilmelidir. Sonradan karşımıza şu ekran çıkacaktır.
 Değişiklikler farkedilebilir ya da görmezden gelinebilir.
 
 ## Creating a Policy
-
 Policy yaratmak, OSSIM için en önemli durumlardan biridir. Çünkü, yaratılan policy ile hostların ve networklerin izlenme işlemleri yapılır. Buna göre de anlamlı ve istenilen bilgiler elde edilir.
 
 * **Policy**'ye tıklıyoruz.
 
-Aşşağıdaki resimde, gösterilen network için bir kaç tane hali hazırda varolan policy olduğunu görüyoruz.
+Aşağıdaki resimde, gösterilen network için bir kaç tane hali hazırda varolan policy olduğunu görüyoruz.
 
 ![alt text](http://i.hizliresim.com/pP32zN.jpg "OSSEC Logo")
 
@@ -734,8 +732,8 @@ Yeni bir policy eklemek için, **Insert new policy**'a tıklanır. Sonrasında k
 ![alt text](http://i.hizliresim.com/kvz0B7.jpg "OSSEC Logo")
 
 
-* Source addressler seçilir.
-* Destination addressler seçilir.
+* Source addresler seçilir.
+* Destination addresler seçilir.
 * Portlar seçilir
 * Priority seçilir
 * İmzalar seçilir
@@ -747,7 +745,7 @@ Yeni bir policy eklemek için, **Insert new policy**'a tıklanır. Sonrasında k
 # Reports
 Reports, OSSIM'in sağladığı hostlar ve tüm network güvenliği için bilgi edinilmesini sağlayan bir menüdür. Gelen report'lar isteğe göre değiştirilebilir ve hangi raporların görülüp görülmeyeceğini kullanıcı tarafından seçilebilir.
 
-The Security Report bölümü aşşağıdaki bilgileri sağlar. 
+The Security Report bölümü aşağıdaki bilgileri sağlar. 
 
 ![alt text](http://i.hizliresim.com/NEBGAN.jpg "OSSEC Logo")
 
@@ -756,10 +754,9 @@ The Security Report bölümü aşşağıdaki bilgileri sağlar.
 
 ![alt text](http://i.hizliresim.com/aEQg3R.jpg "OSSEC Logo")
 
-Ayrıca bu ekranda, verilem alert'ler hakkında bilgi edinebildiğinden oldukça kullanışlı bir bölümdür. Ayrıca görünmesini istemediğimiz alert'ları bu menüdeyken silebiliriz.
+Bu ekranda, verilem alert'ler hakkında bilgi edinebildiğinden oldukça kullanışlı bir bölümdür. Ayrıca görünmesini istemediğimiz alert'ları bu menüdeyken silebiliriz.
 
 # Monitors Menu
-
 Bu bölümde Session, Network, Availability ve Riskmeter gibi alt başlıklar yer almaktadır.
 Monitor menüsü  real-time network, uptime, ve risk session data gibi seçenekleri sağlar. Bu bölümdeki bilgilerin çoğunu NTOP ve OpenNMS sağlar.
 
@@ -779,7 +776,6 @@ Configuration menüsü, yöneticiye Ossimin seçeneklerini değiştirme imkanı 
 ##Sub Menus
 
 ###Main
-
 Main menü' de bir çok ayrı ayrı parçalar bulunmaktadır.
 
 ![alt text](http://i.hizliresim.com/81vXZr.jpg "OSSEC Logo")
@@ -787,7 +783,7 @@ Main menü' de bir çok ayrı ayrı parçalar bulunmaktadır.
 
 ### Directives
 
-Directives dediğimizde alarm'a neden olan olayların hepsi olarak düşünebiliriz. Bu durumlar herhangi bir altyapıya göre optimise edilebilir. Aşşağıdaki ekran görüntünsünde, win-trin00 Trojan'ı için default directive görünmektedir.
+Directives dediğimizde alarm'a neden olan olayların hepsi olarak düşünebiliriz. Bu durumlar herhangi bir altyapıya göre optimise edilebilir. Aşağıdaki ekran görüntünsünde, win-trin00 Trojan'ı için default directive görünmektedir.
 
 
 ![alt text](http://i.hizliresim.com/DJbG21.jpg "OSSEC Logo")
@@ -800,19 +796,17 @@ Directive'ler plugin ID'ler tarafından değiştirebilirler. Örneğin, Ossime t
 
 ### RRD Configuration
 RDD biçimlendirme, alınmak istenen uyarılar için yönetecinin anlamlı değerler ve de thersholds değerlerini girmesini sağlar.
-Aşağıdaki örnekte default RDD_Config ve deafult seçenekler mevcut. Fakat, farklı bir RDD configuration ekleyebiliriz. Bu da aşşağıda şekildeki gibi olmaktadır.
+Aşağıdaki örnekte default RDD_Config ve default seçenekler mevcut. Fakat, farklı bir RDD configuration ekleyebiliriz. Bu da aşağıda şekildeki gibi olmaktadır.
 
 
 ####Yeni Bir RRD Configuration Ekleme. 
 
 ![alt text](http://i.hizliresim.com/EJd289.jpg "OSSEC Logo")
 
-
 * **Configuration > RRD_Config**'a tıklıyoruz.
 * **Insert new rrd_conf**' a tıklıyoruz.
 
-Karşımıza çıkan ekranda, biçimlendirilmesine izin verilen bireysel network'ler veya host'lar görünüyor.
-
+Karşımıza çıkan ekranda, biçimlendirilmesine izin verilen bireysel network'ler veya host'lar görülüyor.
 
 * Monitor'e bir IP addresi ekliyoruz.
 * thresolds değerini aşağıdaki ipucu değerlerine göre değiştiriyoruz.
@@ -821,7 +815,7 @@ Karşımıza çıkan ekranda, biçimlendirilmesine izin verilen bireysel network
 
 
 ## Host Scan
-Host scan seçeneği kullanıcıya scan edilecek olan host listesine, scan edilmesi istenen host'un eklenmesini sağlar. Bu çok tercih edilen bir yöntem değildir. Bunun yerine **Policy > Hosts > Insert new host** menüsünden bu seçeneği eklemek daha iyi bir fikir olur.
+Host scan seçeneği kullanıcıya scan edilecek olan host listesine, scan edilmesi istenen host'un eklenmesini sağlar. Bu çok tercih edilen bir yöntem değildir. Bunun yerine **Policy > Hosts > Insert new host** menüsünden bu seçeneği eklemek daha iyi bir fikirdir.
 
 
 ##Riskmeter configuration
@@ -835,20 +829,18 @@ Tools menüsüne tıklandığında Scan host, view alarm backlog ve view rules g
 
 
 ## Scan
-Scan seçeneği tanımlanmış Network range'indeki tüm ip adresslerini tarar. Bu sayede, hangi host'un çalışıp çalışmadığı hakkında bilgi verir. Belli bir range'yi taramak için aşağıdaki range belirlenmeli ve **OK** tuşuna basılmalıdır.
+Scan seçeneği tanımlanmış Network range'indeki tüm ip adreslerini tarar. Bu sayede, hangi host'un çalışıp çalışmadığı hakkında bilgi verir. Belli bir range'yi taramak için aşağıdaki range değeri girilmeli ve **OK** tuşuna basılmalıdır.
 
 ![alt text](http://i.hizliresim.com/l1G4db.jpg "OSSEC Logo")
 
 
 ## Backlog Viewer
-
 Backlog viewer, öne çıkan anormallikler hakkında bilgi edinilmesini sağlar.
 
 
 ## Rule viewer
-
 Rule viewer, yöneticiye kuralları ayrı ayrı gösteren bir paneldir.  **Tools > Rule
-Viewer** butonuna tıkladıktan sonra , incelenmek istenen kural seçilir. Aşşağıdaki durumda virüsle ilgili olan kural yer almaktadır.
+Viewer** butonuna tıkladıktan sonra, incelenmek istenen kural seçilir. Aşağıdaki durumda virüsle ilgili olan kural yer almaktadır.
 
 ![alt text](http://i.hizliresim.com/VYnB0r.jpg "OSSEC Logo")
 
