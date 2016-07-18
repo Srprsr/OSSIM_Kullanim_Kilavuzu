@@ -63,7 +63,7 @@ Processor :   2 VCPU ,  RAM   : 2 GB , Hard disk Size: 8GB , Management IP :  19
 
 OSSIM iso maji ile ön yüklemede karşımıza 2 tane yükleme seçeneği çıkartıyor.
 
-![alt text](http://blog.linoxide.com/wp-content/uploads/2015/02/first.png "OSSEC Logo")
+![alt text](http://blog.linoxide.com/wp-content/uploads/2015/02/first.png "OSSIM Logo")
 
 Vurgulanan olan seçenek hangi yükleme türünün VM üzerinde seçildiğini gösteriyor. Yükleme işlemini başlatmak için **Start** tuşuna basıyoruz. Sonradan dil, bölge ve klavye seçeneklerini düzenliyoruz.
 
@@ -72,29 +72,29 @@ Vurgulanan olan seçenek hangi yükleme türünün VM üzerinde seçildiğini g�
 Bu adımda, OSSIM'in Network'ünü VM de konfigüre ediyoruz. Burada yönetmek için eth0'ı kullanıyoruz. eth1'e bağlı olan diğer tüm networkler için, eth0 Network konfigürasyonu aşağıda gösterilmiştir.
 
 
-![alt text](http://blog.linoxide.com/wp-content/uploads/2015/02/network-configuration.png "OSSEC Logo")
-![alt text](http://blog.linoxide.com/wp-content/uploads/2015/02/combine.png "OSSEC Logo")
+![alt text](http://blog.linoxide.com/wp-content/uploads/2015/02/network-configuration.png "OSSIM Logo")
+![alt text](http://blog.linoxide.com/wp-content/uploads/2015/02/combine.png "OSSIM Logo")
 ##Root Kullanıcısı Seçenekleri
 
 Network seçeneklerinden sonra windows promt, OSSIM servere bağlantı için **root** ile bağlantılı olan kullanıcı şifresini istemektedir.
 
 
-![alt text](http://blog.linoxide.com/wp-content/uploads/2015/02/rootuser.png "OSSEC Logo")
+![alt text](http://blog.linoxide.com/wp-content/uploads/2015/02/rootuser.png "OSSIM Logo")
 ##Time Zone Seçenekleri
 
 Time zone bilgisi giriş sistemi açısından oldukça öncem sarfetmektedir.
 
 
-![alt text](http://blog.linoxide.com/wp-content/uploads/2015/02/timezone.png "OSSEC Logo")
+![alt text](http://blog.linoxide.com/wp-content/uploads/2015/02/timezone.png "OSSIM Logo")
 
 Time zone seçeneğinden sonra, yükleme wizard'ı otomatik olarak paraçaları yüklemeye başlayacaktır. Bu adım 15-20 dakika arası sürmektedir.
 
-![alt text](http://blog.linoxide.com/wp-content/uploads/2015/02/basesystem.png "OSSEC Logo")
+![alt text](http://blog.linoxide.com/wp-content/uploads/2015/02/basesystem.png "OSSIM Logo")
 
 Yüklemenin son adımı aşağıda gösterilmiştir.
 
 
-![alt text](http://blog.linoxide.com/wp-content/uploads/2015/02/finsih.png "OSSEC Logo")
+![alt text](http://blog.linoxide.com/wp-content/uploads/2015/02/finsih.png "OSSIM Logo")
 
 Yükleme bittikten sora aşağıda görülen windows promt ekramı açılacaktır. Bu ekran OSSIM'in yüklenmesinin başarı olduğunu söylemektedir. Ve OSSIM'e web arayüzünden üzerinden erişmek için gereken URL şudur:
 
@@ -105,30 +105,30 @@ https://192.168.1.150/
 ```
 
 
-![alt text](http://blog.linoxide.com/wp-content/uploads/2015/02/completion.png "OSSEC Logo")
+![alt text](http://blog.linoxide.com/wp-content/uploads/2015/02/completion.png "OSSIM Logo")
 
 Daha önce belirlediğimiz root adına olan şifre ile OSSIM server'e giriş yapıyoruz.
 
-![alt text](http://blog.linoxide.com/wp-content/uploads/2015/02/login.png "OSSEC Logo")
+![alt text](http://blog.linoxide.com/wp-content/uploads/2015/02/login.png "OSSIM Logo")
 
 Güncel olan Mozilla Firefox tarayıcısı bu linki açmamaktadır. Bu yüzden Chrome kullanmamızda fayda var. Chrome ile gerekli URL'yi girince karşımıza Aşağıdaki uyarı gelmektedir. Bu uyarının anlamı OSSIM kendi self signed sertifikasını kullandığı için Chrome, doğrudan buna güvenememektedir. Proceed seçeniğine basıp ilerlememiz gerekiyor.
 
 
-![alt text](http://blog.linoxide.com/wp-content/uploads/2015/02/exception.png "OSSEC Logo")
+![alt text](http://blog.linoxide.com/wp-content/uploads/2015/02/exception.png "OSSIM Logo")
 
 Yukarıdaki durumu atlattıktan sonra, Karşımıa şu şekilde bir ekrançıkacaktır. Burda OSSIM server'i yöneticisi için gerekli bilgileri istemektedir. Bunları doldurmamız gerekiyor.
 
 
-![alt text](http://blog.linoxide.com/wp-content/uploads/2015/02/information.png "OSSEC Logo")
+![alt text](http://blog.linoxide.com/wp-content/uploads/2015/02/information.png "OSSIM Logo")
 
 Bir sonraki adımda karşımıza login ekranı geliyor ve bu ekranda account ve şifre giriyoruz. Ben burda Username olarak **admin** şifre olarak da **test@123** değerlerini girdim.
 
 
-![alt text](http://blog.linoxide.com/wp-content/uploads/2015/02/loginscreen.png "OSSEC Logo")
+![alt text](http://blog.linoxide.com/wp-content/uploads/2015/02/loginscreen.png "OSSIM Logo")
 
 OSSIM'im web arayüzüne başarılı bir şekilde giriş yaptıktan sonra daha fazla seçeneğin anlatıldığı bir wizard ekranı geliyor.
 
-![alt text](http://blog.linoxide.com/wp-content/uploads/2015/02/wizardnew.png "OSSEC Logo")
+![alt text](http://blog.linoxide.com/wp-content/uploads/2015/02/wizardnew.png "OSSIM Logo")
 
 Bu wizard bize 3 tane seçenekten bahsediyor. Bunlar:
 
@@ -140,7 +140,7 @@ Yukarıdaki ekran görüntüsünde yer alan  **start** butonuna tıklamamız ger
 
 Eğer birinci seçeneğe tıklarsak, karşımıza farklı bir pencere açılıyor. Burada log derleyicisi ve izleme arayüzü için eth1 konfigürasyonunu sağlıyoruz.
 
-![alt text](http://blog.linoxide.com/wp-content/uploads/2015/02/network-configuration2.png "OSSEC Logo")
+![alt text](http://blog.linoxide.com/wp-content/uploads/2015/02/network-configuration2.png "OSSIM Logo")
 
 2. adımda ise , Organizasyon içindeki varlıklar için nasıl bir arama yapılmasını istedğimizi soruyor. OSSIM **manuel** ve **automatic** olarak 2 tane seçeneği önümüze sunuyor.
 
@@ -150,27 +150,27 @@ OSSIM serverlerindeki varlık tipleri şu şekildedir.
 *Linux
 *Network device ( Network cihazları. Router gibi..)
 
-![alt text](http://blog.linoxide.com/wp-content/uploads/2015/02/asset.png "OSSEC Logo")
+![alt text](http://blog.linoxide.com/wp-content/uploads/2015/02/asset.png "OSSIM Logo")
 
 Network seçeneklerinden ve varlık keşfetmelerinden sonra bir sonraki adım, HIDS'in Windows ve Linux araçlarına dosya bütünlüğü ve Network incelemek için için dağıtımını görüyoruz. HIDS'in dağıtımı için araçlardaki kullanıcı adı ve şifreri giriyoruz.
 
-![alt text](http://blog.linoxide.com/wp-content/uploads/2015/02/hids.png "OSSEC Logo")
+![alt text](http://blog.linoxide.com/wp-content/uploads/2015/02/hids.png "OSSIM Logo")
 
 İstenilen host'u host listesinden seçiyoruz ve HIDS dağıtımı için  **Deploy** butonuna tıklıyoruz. Başlaması için de **Continue** butonuna tıklıyoruz. Seçilen host için HIDS kurulumu başlıyor. Bu işlem bir kaç dakika sürmektedir.
 
-![alt text](http://blog.linoxide.com/wp-content/uploads/2015/02/prompot.png "OSSEC Logo")
-![alt text](http://blog.linoxide.com/wp-content/uploads/2015/02/deployming.png "OSSEC Logo")
+![alt text](http://blog.linoxide.com/wp-content/uploads/2015/02/prompot.png "OSSIM Logo")
+![alt text](http://blog.linoxide.com/wp-content/uploads/2015/02/deployming.png "OSSIM Logo")
 
 ##Giriş Yönetimi
 Aşağıdaki görüntü, farklı loglar için keşfedilmilmiş varlıklar üzerinden konfigürasyonunu içeriyor.
 
-![alt text](http://blog.linoxide.com/wp-content/uploads/2015/02/log-management.png "OSSEC Logo")
+![alt text](http://blog.linoxide.com/wp-content/uploads/2015/02/log-management.png "OSSIM Logo")
 
 Ve son adımımız olarak Konfigürasyon seçeneklerimizi bitirmek için **finish** butonuna tıklıyoruz.
 
 Burada OSSIM'in ana kontrol paneli karşımıza çıkacaktır. bu da, aşağıda görüldüğü şekildedir:
 
-![alt text](http://blog.linoxide.com/wp-content/uploads/2015/02/dashboard.png "OSSEC Logo")
+![alt text](http://blog.linoxide.com/wp-content/uploads/2015/02/dashboard.png "OSSIM Logo")
 
 ##Web Arayüzü
 
@@ -186,32 +186,32 @@ OSSIM'in web arayüzü aşağıdaki parçalardan oluşmaktadır.
 
 Bu bölümde OSSIM server'in tüm parçalarının incelenebildği bir paneldir. Bu panelin ana parçaları aşağıdaki gösterilmiştir.
 
-![alt text](http://blog.linoxide.com/wp-content/uploads/2015/02/dashboard-submenu.png "OSSEC Logo")
+![alt text](http://blog.linoxide.com/wp-content/uploads/2015/02/dashboard-submenu.png "OSSIM Logo")
 
 #Analiz
 
 Analiz kısmı OSSIM'in en önemli parçalarından biridir. OSSIM serveri hostları loglara göre analiz etmektedirler. Bu menüde Alarmlar, SIEM, ticket ve raw log gibi alt parçalara ayrılmaktadır.
 
-![alt text](http://blog.linoxide.com/wp-content/uploads/2015/02/analysis-submenu.png "OSSEC Logo")
+![alt text](http://blog.linoxide.com/wp-content/uploads/2015/02/analysis-submenu.png "OSSIM Logo")
 ##Environment
 
 OSSIM Server'in bu menüsünde de, seçenekler organizasyon içinde olan varlıklarla ilişkilidir. Aşağıda alt menüleri de görebilirsiniz.
 
-![alt text](http://blog.linoxide.com/wp-content/uploads/2015/02/environment.png "OSSEC Logo")
+![alt text](http://blog.linoxide.com/wp-content/uploads/2015/02/environment.png "OSSIM Logo")
 
 ##Raporlar
 
 Raporlama herbir logging server için vazgeçilemez bir parçadır.Ayrıca, OSSIM server de kendisi raporları kendisi üretebilir. Bu durum yeni bir host'u sorgulamak için oldukça kullanışlı bir yoldur.
 
 
-![alt text](http://blog.linoxide.com/wp-content/uploads/2015/02/reports-submenu.png "OSSEC Logo")
+![alt text](http://blog.linoxide.com/wp-content/uploads/2015/02/reports-submenu.png "OSSIM Logo")
 
 ##Konfigürasyon
 
 Konfigürasyon menüsün kullanıcının; yönetim arayüzünün ip adresi, hangi hostların inceleneceği gibi OSSIM serverindeki değişiklikleri yapabileceği bir bölümdür. Alt menüler aşağıdaki ekran görüntüsünde gösterilmiştir.
 
 
-![alt text](http://blog.linoxide.com/wp-content/uploads/2015/02/configuration-submenu.png "OSSEC Logo")
+![alt text](http://blog.linoxide.com/wp-content/uploads/2015/02/configuration-submenu.png "OSSIM Logo")
 
 
 #OSSIM Konfigürasyonu
@@ -456,11 +456,11 @@ priority="5">
 
 
 #OSSIM ARCHITECTURE
-![alt text](http://i.hizliresim.com/7vnaRl.jpg "OSSEC Logo")
+![alt text](http://i.hizliresim.com/7vnaRl.jpg "OSSIM Logo")
 
-![alt text](http://i.hizliresim.com/PMW1X8.jpg "OSSEC Logo")
+![alt text](http://i.hizliresim.com/PMW1X8.jpg "OSSIM Logo")
 
-![alt text](http://i.hizliresim.com/go0rmN.jpg "OSSEC Logo")
+![alt text](http://i.hizliresim.com/go0rmN.jpg "OSSIM Logo")
 
 
 
@@ -478,7 +478,7 @@ Default şifremizi değiştirmeyi unutmuyoruz ve buna özen gösteriyoruz.
 Bir kere giriş yaptıktan sonra, Karşımıza **Metrics** ekranı gelmektedir. Metrics ekranın da ise izlemek istediğimiz Network'leri gözden geçiriyoruz. 
 
 ##Metrics Ekranı
-![alt text](http://i.hizliresim.com/7vnB9N.jpg "OSSEC Logo")
+![alt text](http://i.hizliresim.com/7vnB9N.jpg "OSSIM Logo")
 
 Göründüğü gibi ekran farklı bölümlere ayrılmıştır. Bunlar **Global Metrics**, **Riskmeter**, **Service Level**, ve  policy'nin her bir parçası için **Current Metrics**.
 
@@ -494,13 +494,13 @@ Aşağıda takip edilen adımlarla, yönetici bir OSSIM sensör ekleyebilir veya
 Karşımıza şu ekran çıkıyor. Burda farkettiğiniz üzere bu sensör önceden eklenmiştir.
 
 
-![alt text](http://i.hizliresim.com/PMW78O.jpg "OSSEC Logo")
+![alt text](http://i.hizliresim.com/PMW78O.jpg "OSSIM Logo")
 
 * **Insert new sensor**'e tıklıyoruz.
 * 
 Karşımıza şu ekran çıkacaktır. 
 
-![alt text](http://i.hizliresim.com/go0PdO.jpg "OSSEC Logo")
+![alt text](http://i.hizliresim.com/go0PdO.jpg "OSSIM Logo")
 
 
 * Add the Hostname - Host'unuzun ismi
@@ -511,7 +511,7 @@ Karşımıza şu ekran çıkacaktır.
 
 Objeyi oluşturmak için **OK**'a tıklıyoruz. Sensor yaratıldığında Sensorler ekranında eklemiş olduğumuz bilgileri görebiliyoruz.
 
-![alt text](http://i.hizliresim.com/9L1YMN.jpg "OSSEC Logo")
+![alt text](http://i.hizliresim.com/9L1YMN.jpg "OSSIM Logo")
 
 Eğer eklenmiş yeni sensör aktif değilse, Aktif butonuna basarak bağlantıyı tekrar kontrol ediyoruz.
 
@@ -524,12 +524,12 @@ Yeni bir imza grubu oluşturmak için:
 * **Signatures**'a tıklıyoruz.
 * **Insert new signature group**'a tıklıyoruz.
 
-![alt text](http://i.hizliresim.com/qBkA6d.jpg "OSSEC Logo")
+![alt text](http://i.hizliresim.com/qBkA6d.jpg "OSSIM Logo")
 
 
 Karşımıza şu ekran çıkıyor.
 
-![alt text](http://i.hizliresim.com/MJG1N1.jpg "OSSEC Logo")
+![alt text](http://i.hizliresim.com/MJG1N1.jpg "OSSIM Logo")
 
 
 Burada bir imza grubuna isim verebiliyoruz. Açıklamak istediğimiz imzaları seçiyoruz.
@@ -544,13 +544,13 @@ Genellikle Network gruplarının organizasyonu elimizde bulundururuz. Bunun içi
 Networks** Butonuna basıyoruz.
 Karşımıza şu ekran çıkıyor.
 
-![alt text](http://i.hizliresim.com/QM3PDy.jpg "OSSEC Logo")
+![alt text](http://i.hizliresim.com/QM3PDy.jpg "OSSIM Logo")
 
 
 Yeni bir Network eklemek için 
 * **Insert new network**'e basıyoruz. 
 
-![alt text](http://i.hizliresim.com/X41bV3.jpg "OSSEC Logo")
+![alt text](http://i.hizliresim.com/X41bV3.jpg "OSSIM Logo")
 
 
 Aşağıdaki bileşenleri sırayla ekliyoruz.
@@ -579,7 +579,7 @@ Yeni bir port grubu oluşturmak için aşağıdaki adımlara harfi harfine uymam
 
 Yeni port grubu aşağıda görüldüğü gibi eklenmiş bulunuyor.
 
-![alt text](http://i.hizliresim.com/bbXvqZ.jpg "OSSEC Logo")
+![alt text](http://i.hizliresim.com/bbXvqZ.jpg "OSSIM Logo")
 
 
 ## Priority & Reliability Değerlerini Değiştirme
@@ -592,7 +592,7 @@ Güvenilirliği ve önceliği değiştirmek için:
 
 Karşımıza çıkan ekran şu olacaktır.
 
-![alt text](http://i.hizliresim.com/dbdLQD.jpg "OSSEC Logo")
+![alt text](http://i.hizliresim.com/dbdLQD.jpg "OSSIM Logo")
 
 
 
@@ -600,7 +600,7 @@ Back Orifice'nin öncelik ve güvenilirliğini değiştirmek için,  **Id** alan
 
 Aşağıda gördüğümüz ekran görütüsünde gördüğümüz üzere, Back orifice en yüksek önceliğe sahip. Güvenilirlik derecesi de 3'e set edilmiştir bunu değiştirmek içinde farklı bir değer girip **Modify** butonuna basılmalıdır.
 
-![alt text](http://i.hizliresim.com/EJd2bv.jpg "OSSEC Logo")
+![alt text](http://i.hizliresim.com/EJd2bv.jpg "OSSIM Logo")
 
 
 Yukarıdaki görev OSSIM'i kendi network'ümüze göre optimize ettiğimizde, OSSIM tarafından üstlenilmiş bir görev olacaktır.
@@ -611,7 +611,7 @@ Yukarıdaki görev OSSIM'i kendi network'ümüze göre optimize ettiğimizde, OS
 
 **Policy > Hosts** menü, Host operating system şeklinde P0F kullanarak detect edilmesi aşağıdaki şekildedir. 
 
-![alt text](http://i.hizliresim.com/jnOAL9.jpg "OSSEC Logo")
+![alt text](http://i.hizliresim.com/jnOAL9.jpg "OSSIM Logo")
 
 
 Yeni bir host eklemek için
@@ -619,7 +619,7 @@ Yeni bir host eklemek için
 * **Insert new host**'a tıklıyoruz.
 * Aşağıda görülen tüm yerlere anlamlı bilgileri giriyoruz.
 
-![alt text](http://i.hizliresim.com/2Z3PyL.jpg "OSSEC Logo")
+![alt text](http://i.hizliresim.com/2Z3PyL.jpg "OSSIM Logo")
 
 
 **Önemli : Burada Nessus scan'i akif etmeliyiz. Bu durumda large bir network kullanıyorsak bütün zayıf noktaları görmemize gerek kalmaz. Asıl yapılması gereken, belirli olarak seçeceğimiz bir hostta zayıflıklar var mı yok mu görmek daha faydalı olacaktır.**
@@ -629,17 +629,17 @@ Gerekli bilgiler doldurulduğunda **OK** butonuna basılmalıdır. Bu yeni host 
 ### Updating and the host information.
 Yeni bir host'un bilgilerini update etmek için, **Host Field** kısmından bilgileri değiştirilmek istenen host ismine tıklanır. Ve karşımıza şu şekilde bir ekran çıkacaktır.
 
-![alt text](http://i.hizliresim.com/B2QGEV.jpg "OSSEC Logo")
+![alt text](http://i.hizliresim.com/B2QGEV.jpg "OSSIM Logo")
 
 
 Host inventory'sini update etmek için **update** butonuna basılır. Yeni hostlara karşı Nmap scan başlatılır. Bu durum açık portları elde etmemize yararken, servis sistemde aşağıdaki gibi çalışmaktadır.
 
-![alt text](http://i.hizliresim.com/ZdBnLg.jpg "OSSEC Logo")
+![alt text](http://i.hizliresim.com/ZdBnLg.jpg "OSSIM Logo")
 
 
 Spesifik bir host için **Metrics**'i incelemek için, **Metrics** Butonuna basılmalıdır. Karşımıza çıkacak olan Metrics grafiği atakları gösterir. Bu grafik gün bazında, ay bazında olacağı gibi yıl bazında da olabilir.
 
-![alt text](http://i.hizliresim.com/o7WyAQ.jpg "OSSEC Logo")
+![alt text](http://i.hizliresim.com/o7WyAQ.jpg "OSSIM Logo")
 
 
 ### Alarms and Alerts
@@ -676,7 +676,7 @@ Yükleme kısmında ID ve Password dilenildiğince değiştirilebilmektedir.
 
 Eğer başarılı bir şekilde login olunursa, yönetici şu ekranla karşılaşılacaktır.
 
-![alt text](http://i.hizliresim.com/l1G4kB.jpg "OSSEC Logo")
+![alt text](http://i.hizliresim.com/l1G4kB.jpg "OSSIM Logo")
 
 
 ### the ACID console Kullanımı.
@@ -687,7 +687,7 @@ Aşağıda ACID'in basit bir örneklendirmesini görebilirsini görebilirsiniz.
 
 Saldırıların oluşumuna bakmak için **Occurances as Src.** kısmına tıklanmalı ve detect edilen imzalar ve saldırılar görülebilir.
 
-![alt text](http://i.hizliresim.com/VYnBly.jpg "OSSEC Logo")
+![alt text](http://i.hizliresim.com/VYnBly.jpg "OSSIM Logo")
 
 
 Herhangi bir imza ile ilgili daha fazla bilgi almak için **[snort]** üzreine tıklanmalı ve bu bizi Snort rules tanımlarının olduğu sayfaya yönlendirecektir. Bu sayfada imza ile ilgili önemli bilgiler yer almaktadır.
@@ -697,7 +697,7 @@ OSSIM, şirketlere ve bireysel kullanıcılara kendi serverlerindeki önde gelen
 
 Bu bölümde zayıflıkları olan hostların listesi gelecektir. ve ilgili host ve ilgili IP adress highlighted şekilde gözükecektir. Üzerinde çalışılmak istenen host ve IP adresin üzerine tıklanması gerekir.
 
-![alt text](http://i.hizliresim.com/nr6yA5.jpg "OSSEC Logo")
+![alt text](http://i.hizliresim.com/nr6yA5.jpg "OSSIM Logo")
 
 
 Daha fazla bilgi edinmek için **(Security hole found)** seçeneğine tıklanmalı ve sekme aşağı indirilmelidir.
@@ -705,14 +705,14 @@ Daha fazla bilgi edinmek için **(Security hole found)** seçeneğine tıklanmal
 ### Host Usage
 Host usage ile ilgili bilgiler **NTOP** tarafından sağlanmaktadır. Daha fazla bilgiyi **http://www.ntop.org.** adresinden elde edebilirsiniz. Trafik akışındaki şüpheli durumlar içn OSSIM, NTOP'u kullanmaktadır.
 
-![alt text](http://i.hizliresim.com/v42ygm.jpg "OSSEC Logo")
+![alt text](http://i.hizliresim.com/v42ygm.jpg "OSSIM Logo")
 
 
 ### Anomalies
 Anomalies host'un normal davranışının değişmesidir. Bu bölümde **işletim sistemi** ve **MAC adresi** değişmelerini içermektedir. Anomalie'ler, yaratılmış olan RDD_Config'e göre değişiklik gösterirler. Bütün anomalie'leri görmek için **Control Panel > Anomalies**
 bölümüne girilmelidir. Sonradan karşımıza şu ekran çıkacaktır.
 
-![alt text](http://i.hizliresim.com/R3ZGkG.jpg "OSSEC Logo")
+![alt text](http://i.hizliresim.com/R3ZGkG.jpg "OSSIM Logo")
 
 
 Değişiklikler farkedilebilir ya da görmezden gelinebilir.
@@ -724,12 +724,12 @@ Policy yaratmak, OSSIM için en önemli durumlardan biridir. Çünkü, yaratıla
 
 Aşağıdaki resimde, gösterilen network için bir kaç tane hali hazırda varolan policy olduğunu görüyoruz.
 
-![alt text](http://i.hizliresim.com/pP32zN.jpg "OSSEC Logo")
+![alt text](http://i.hizliresim.com/pP32zN.jpg "OSSIM Logo")
 
 
 Yeni bir policy eklemek için, **Insert new policy**'a tıklanır. Sonrasında karşımıza şu ekran çıkar.
 
-![alt text](http://i.hizliresim.com/kvz0B7.jpg "OSSEC Logo")
+![alt text](http://i.hizliresim.com/kvz0B7.jpg "OSSIM Logo")
 
 
 * Source addresler seçilir.
@@ -747,12 +747,12 @@ Reports, OSSIM'in sağladığı hostlar ve tüm network güvenliği için bilgi 
 
 The Security Report bölümü aşağıdaki bilgileri sağlar. 
 
-![alt text](http://i.hizliresim.com/NEBGAN.jpg "OSSEC Logo")
+![alt text](http://i.hizliresim.com/NEBGAN.jpg "OSSIM Logo")
 
 
  **Top 10 Alerts**'a tıkladığımızda, karşımıza şu ekran çıkacaktır.
 
-![alt text](http://i.hizliresim.com/aEQg3R.jpg "OSSEC Logo")
+![alt text](http://i.hizliresim.com/aEQg3R.jpg "OSSIM Logo")
 
 Bu ekranda, verilem alert'ler hakkında bilgi edinebildiğinden oldukça kullanışlı bir bölümdür. Ayrıca görünmesini istemediğimiz alert'ları bu menüdeyken silebiliriz.
 
@@ -765,7 +765,7 @@ Monitor menüsü  real-time network, uptime, ve risk session data gibi seçenekl
 
 ##RiskMeter 
 
-![alt text](http://i.hizliresim.com/YbLVka.jpg "OSSEC Logo")
+![alt text](http://i.hizliresim.com/YbLVka.jpg "OSSIM Logo")
 
 Riskmeter risk altında olan veya saldırı gerçekleştirilen sistem hakkında bilgi edinilmesini sağlar. Bu riskmeter'in nasıl hesaplandığını öğrenmek için OSSIM websitesini ziyaret edebilirsiniz http://www.ossim.net. 
 
@@ -778,7 +778,7 @@ Configuration menüsü, yöneticiye Ossimin seçeneklerini değiştirme imkanı 
 ###Main
 Main menü' de bir çok ayrı ayrı parçalar bulunmaktadır.
 
-![alt text](http://i.hizliresim.com/81vXZr.jpg "OSSEC Logo")
+![alt text](http://i.hizliresim.com/81vXZr.jpg "OSSIM Logo")
 
 
 ### Directives
@@ -786,12 +786,12 @@ Main menü' de bir çok ayrı ayrı parçalar bulunmaktadır.
 Directives dediğimizde alarm'a neden olan olayların hepsi olarak düşünebiliriz. Bu durumlar herhangi bir altyapıya göre optimise edilebilir. Aşağıdaki ekran görüntünsünde, win-trin00 Trojan'ı için default directive görünmektedir.
 
 
-![alt text](http://i.hizliresim.com/DJbG21.jpg "OSSEC Logo")
+![alt text](http://i.hizliresim.com/DJbG21.jpg "OSSIM Logo")
 
 
 Directive'ler plugin ID'ler tarafından değiştirebilirler. Örneğin, Ossime tıklayıp karşımıza şu ekran çıktığında, bu ekranda yöneticiye öncelik ve güvenlik olan OSSIM durumlarını değiştirme imkanı veriyor.
 
-![alt text](http://i.hizliresim.com/mLyR6y.jpg "OSSEC Logo")
+![alt text](http://i.hizliresim.com/mLyR6y.jpg "OSSIM Logo")
 
 
 ### RRD Configuration
@@ -801,7 +801,7 @@ Aşağıdaki örnekte default RDD_Config ve default seçenekler mevcut. Fakat, f
 
 ####Yeni Bir RRD Configuration Ekleme. 
 
-![alt text](http://i.hizliresim.com/EJd289.jpg "OSSEC Logo")
+![alt text](http://i.hizliresim.com/EJd289.jpg "OSSIM Logo")
 
 * **Configuration > RRD_Config**'a tıklıyoruz.
 * **Insert new rrd_conf**' a tıklıyoruz.
@@ -811,7 +811,7 @@ Karşımıza çıkan ekranda, biçimlendirilmesine izin verilen bireysel network
 * Monitor'e bir IP addresi ekliyoruz.
 * thresolds değerini aşağıdaki ipucu değerlerine göre değiştiriyoruz.
 
-![alt text](http://i.hizliresim.com/ZdBnZZ.jpg "OSSEC Logo")
+![alt text](http://i.hizliresim.com/ZdBnZZ.jpg "OSSIM Logo")
 
 
 ## Host Scan
@@ -821,7 +821,7 @@ Host scan seçeneği kullanıcıya scan edilecek olan host listesine, scan edilm
 ##Riskmeter configuration
 Aşağıdaki screenshoot'dan görüleceği gibi, default configuration **Configuration > Riskmeter** bölümünden değiştirilebilir.
 
-![alt text](http://i.hizliresim.com/o7Wyjk.jpg "OSSEC Logo")
+![alt text](http://i.hizliresim.com/o7Wyjk.jpg "OSSIM Logo")
 
 
 # Tools
@@ -831,7 +831,7 @@ Tools menüsüne tıklandığında Scan host, view alarm backlog ve view rules g
 ## Scan
 Scan seçeneği tanımlanmış Network range'indeki tüm ip adreslerini tarar. Bu sayede, hangi host'un çalışıp çalışmadığı hakkında bilgi verir. Belli bir range'yi taramak için aşağıdaki range değeri girilmeli ve **OK** tuşuna basılmalıdır.
 
-![alt text](http://i.hizliresim.com/l1G4db.jpg "OSSEC Logo")
+![alt text](http://i.hizliresim.com/l1G4db.jpg "OSSIM Logo")
 
 
 ## Backlog Viewer
@@ -842,5 +842,5 @@ Backlog viewer, öne çıkan anormallikler hakkında bilgi edinilmesini sağlar.
 Rule viewer, yöneticiye kuralları ayrı ayrı gösteren bir paneldir.  **Tools > Rule
 Viewer** butonuna tıkladıktan sonra, incelenmek istenen kural seçilir. Aşağıdaki durumda virüsle ilgili olan kural yer almaktadır.
 
-![alt text](http://i.hizliresim.com/VYnB0r.jpg "OSSEC Logo")
+![alt text](http://i.hizliresim.com/VYnB0r.jpg "OSSIM Logo")
 
