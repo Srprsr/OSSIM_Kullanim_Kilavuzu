@@ -7,10 +7,10 @@ Son zamanlardaki **IDS** gibi güvenlik açısından gelişen teknolojiyi düş�
 
 #Ana Başlıklar
 * [OSSIM Nedir?](#ossim-nedir?)
-* [Installation and Configuration](#ınstallation-and-configuration)
+* [Yükleme ve Konfigürasyon](#yukleme-ve-konfigurasyon)
 * [OSSIM Konfigürasyonu](#ossim-konfigurasyonu)
-* [OSSIM Mimarisi](#ossım-mimarisi)
-* [OSSIM Login ve Bileşenler](#ossım-login-ve-bileşenler)
+* [OSSIM Mimarisi](#ossim-mimarisi)
+* [OSSIM Login ve Bileşenler](#ossim-login-ve-bilesenler)
 
 #Correlation
 
@@ -60,7 +60,7 @@ Post-processing önişlemcilerin kullanılması gibi düşünülebilir, belirli 
 
 Son olarak da bize gereken tek şey, organize yapıda olan bir araçtır. Buna da OSSIM diyoruz.
 
-#Installation and Configuration
+#Yükleme ve Konfigürasyon
 Iso dosyasını AlinVault'un şu sitesinden indiriyoruz =>**(http://downloads.alienvault.com/c/download?version=current_ossim_iso)** ve VM içerisinde kuruyoruz. Burada size Vm içerisinde yüklemeyi göstereceğim.
 
 2 tane arayüzü bulunmaktadır. Birisi server yönetimi ile ilgili olup, 2. si ise collecting logs ve monitoring(inceleme) ile ilgilidir.
