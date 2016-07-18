@@ -5,7 +5,7 @@ Son zamanlardaki **IDS** gibi güvenlik açısından gelişen teknolojiyi düş�
 
 ![alt text](http://cybersecurity-excellence-awards.com/wp-content/uploads/2016/01/638669-500x318.jpg "OSSIM Logo")
 
-* [OSSIM Nedir?](#ossım-nedir?)
+* [OSSIM Nedir?](#ossim-nedir?)
 * [Installation and Configuration](#ınstallation-and-configuration)
 * [OSSIM Konfigürasyonu](#ossın-konfigurasyonu)
 * [OSSIM Mimarisi](#ossım-mimarisi)
