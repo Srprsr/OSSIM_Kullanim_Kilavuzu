@@ -162,7 +162,7 @@ Network seçeneklerinden ve varlık keşfetmelerinden sonra bir sonraki adım, H
 ![alt text](http://blog.linoxide.com/wp-content/uploads/2015/02/deployming.png "OSSIM Logo")
 
 ##Giriş Yönetimi
-Aşağıdaki görüntü, farklı loglar için keşfedilmilmiş varlıklar üzerinden konfigürasyonunu içeriyor.
+Aşağıdaki görüntü, farklı loglar için keşfedilmilmiş varlıklar üzerinden konfigürasyonunu içeriyor. Bu bölümde OSSIM'in yeni arayüzü ile ilgili bilgiler vereceğim. Bu bölümün parçalarının detayları, kullanımı ve asıl detaylar dökümanın devamında yer alacaktır.
 
 ![alt text](http://blog.linoxide.com/wp-content/uploads/2015/02/log-management.png "OSSIM Logo")
 
