@@ -458,16 +458,18 @@ priority="5">
 ```
 
 
-#OSSIM ARCHITECTURE
+#OSSIM Mimarisi
 ![alt text](http://i.hizliresim.com/7vnaRl.jpg "OSSIM Logo")
 
+
 ![alt text](http://i.hizliresim.com/PMW1X8.jpg "OSSIM Logo")
+
 
 ![alt text](http://i.hizliresim.com/go0rmN.jpg "OSSIM Logo")
 
 
 
-#OSSIM'e Giriş Yapmak
+#OSSIM Login ve Bileşenler
 OSSIM konsolu web üzerine kurulmuş olup, standart bir web tarayıcısı üzerinden 80 portundan (HTTP) veya güvenli olan 443 portundan (HTTPS)'den bağlanılabilir.
 
 * Kullandığımız browser'ı açıyoruz.
