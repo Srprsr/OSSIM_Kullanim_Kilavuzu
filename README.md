@@ -120,6 +120,8 @@ Daha önce belirlediğimiz root adına olan şifre ile OSSIM server'e giriş yap
 
 Güncel olan Mozilla Firefox tarayıcısı bu linki açmamaktadır. Bu yüzden Chrome kullanmamızda fayda var. Chrome ile gerekli URL'yi girince karşımıza Aşağıdaki uyarı gelmektedir. Bu uyarının anlamı OSSIM kendi self signed sertifikasını kullandığı için Chrome, doğrudan buna güvenememektedir. Proceed seçeniğine basıp ilerlememiz gerekiyor.
 
+**ÖNEMLİ: Bu bölümde OSSIM'in yeni arayüzü ile ilgili bilgiler vereceğim. Bu bölümün parçalarının detayları, kullanımı ve asıl detaylar dökümanın devamında yer alacaktır.**
+
 
 ![alt text](http://blog.linoxide.com/wp-content/uploads/2015/02/exception.png "OSSIM Logo")
 
@@ -168,8 +170,6 @@ Network seçeneklerinden ve varlık keşfetmelerinden sonra bir sonraki adım, H
 ![alt text](http://blog.linoxide.com/wp-content/uploads/2015/02/prompot.png "OSSIM Logo")
 ![alt text](http://blog.linoxide.com/wp-content/uploads/2015/02/deployming.png "OSSIM Logo")
 
-
-**ÖNEMLİ: Bu bölümde OSSIM'in yeni arayüzü ile ilgili bilgiler vereceğim. Bu bölümün parçalarının detayları, kullanımı ve asıl detaylar dökümanın devamında yer alacaktır.**
 
 ## Giriş Yönetimi
 Aşağıdaki görüntü, farklı loglar için keşfedilmilmiş varlıklar üzerinden konfigürasyonunu içeriyor. 
