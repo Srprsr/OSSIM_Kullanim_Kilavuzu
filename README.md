@@ -23,7 +23,7 @@ Bağıntının bir diğer fikri de şudur ki; birbiriyle alakalı ürünler aras
 Her bir durumda, bir durumdan dolayı oluşmuş olan tehdide karşı önlem alınıp alınmamasını, güvenliğin öncelikle düşünülerek, bu durumun gerçekleştirip gerçekleştirilmeyeceğine karar verilmelidir.
 Bu durum sistemin daha fazla kompleks hale geldiği yerdir. Ve biz tam burada kendi güvenlik politikamızı hayata geçirmeli, Ve bağıntıda da bahsettiğim üzere tüm real time olarak tüm riskli bağlantıları tek bir yapıdan kontrol etmeliyiz. 
 
-#OSSIM Nedir?
+# OSSIM Nedir?
 OSSIM open source bir yazılım olup, güvenliğin kontrol edilmesini sağlayan bir yapıdır.
 
 OSSIM birleşik bir yapı olup vazgeçilemez güvenlik becerileri vardır. Bilindiği üzere bir çok open source yazılım OSSIM üzerine inşaa edilmiştir. Bu yazilimların bazıları şunlardır:
