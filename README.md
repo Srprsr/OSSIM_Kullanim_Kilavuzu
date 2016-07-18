@@ -5,25 +5,25 @@ Son zamanlardaki **IDS** gibi güvenlik açısından gelişen teknolojiyi düş�
 
 ![alt text](http://cybersecurity-excellence-awards.com/wp-content/uploads/2016/01/638669-500x318.jpg "OSSIM Logo")
 
-#Ana Başlıklar
+# Ana Başlıklar
 * [OSSIM Nedir?](#ossim-nedir?)
 * [Yükleme ve Konfigürasyon](#yukleme-ve-konfigurasyon)
 * [OSSIM Konfigürasyonu](#ossim-konfigurasyonu)
 * [OSSIM Mimarisi](#ossim-mimarisi)
 * [OSSIM Login ve Bileşenler](#ossim-login-ve-bilesenler)
 
-#Correlation
+# Correlation
 
 Bağıntı'nın anlamı, tüm sistemdeki tüm bağlantıları tek bir yerden ve tek bir formattan incelemek ve de bu ayrıcalıkla beraber bağlantıları birbirleriyle karşılaştırmak, bilgileri işlemektir. Bu durumda da , Network'un güvenlik durumunu izlerken, bizlere saldırı tespit sistemini kolaylaştırıp oldukça fayda sağlamaktadır.
 
 Bağıntının bir diğer fikri de şudur ki; birbiriyle alakalı ürünler arasında entegre bir sistem olmasıdır. OSSIM'in bu yapısı, bizlere daha iyi fonksiyonda içeren ürünler üretmemizde yadsınamayacak şekilde destek vermektedir.
 
-#Risk Oluşumu
+# Risk Oluşumu
 
 Her bir durumda, bir durumdan dolayı oluşmuş olan tehdide karşı önlem alınıp alınmamasını, güvenliğin öncelikle düşünülerek, bu durumun gerçekleştirip gerçekleştirilmeyeceğine karar verilmelidir.
 Bu durum sistemin daha fazla kompleks hale geldiği yerdir. Ve biz tam burada kendi güvenlik politikamızı hayata geçirmeli, Ve bağıntıda da bahsettiğim üzere tüm real time olarak tüm riskli bağlantıları tek bir yapıdan kontrol etmeliyiz. 
 
-#OSSIM Nedir?
+# OSSIM Nedir?
 OSSIM open source bir yazılım olup, güvenliğin kontrol edilmesini sağlayan bir yapıdır.
 
 OSSIM birleşik bir yapı olup vazgeçilemez güvenlik becerileri vardır. Bilindiği üzere bir çok open source yazılım OSSIM üzerine inşaa edilmiştir. Bu yazilimların bazıları şunlardır:
@@ -60,7 +60,7 @@ Post-processing önişlemcilerin kullanılması gibi düşünülebilir, belirli 
 
 Son olarak da bize gereken tek şey, organize yapıda olan bir araçtır. Buna da OSSIM diyoruz.
 
-#Yükleme ve Konfigürasyon
+# Yükleme ve Konfigürasyon
 Iso dosyasını AlinVault'un şu sitesinden indiriyoruz =>**(http://downloads.alienvault.com/c/download?version=current_ossim_iso)** ve VM içerisinde kuruyoruz. Burada size Vm içerisinde yüklemeyi göstereceğim.
 
 2 tane arayüzü bulunmaktadır. Birisi server yönetimi ile ilgili olup, 2. si ise collecting logs ve monitoring(inceleme) ile ilgilidir.
@@ -74,20 +74,20 @@ OSSIM iso maji ile ön yüklemede karşımıza 2 tane yükleme seçeneği çıka
 
 Vurgulanan olan seçenek hangi yükleme türünün VM üzerinde seçildiğini gösteriyor. Yükleme işlemini başlatmak için **Start** tuşuna basıyoruz. Sonradan dil, bölge ve klavye seçeneklerini düzenliyoruz.
 
-##Network Konfigürasyonu
+## Network Konfigürasyonu
 
 Bu adımda, OSSIM'in Network'ünü VM de konfigüre ediyoruz. Burada yönetmek için eth0'ı kullanıyoruz. eth1'e bağlı olan diğer tüm networkler için, eth0 Network konfigürasyonu aşağıda gösterilmiştir.
 
 
 ![alt text](http://blog.linoxide.com/wp-content/uploads/2015/02/network-configuration.png "OSSIM Logo")
 ![alt text](http://blog.linoxide.com/wp-content/uploads/2015/02/combine.png "OSSIM Logo")
-##Root Kullanıcısı Seçenekleri
+## Root Kullanıcısı Seçenekleri
 
 Network seçeneklerinden sonra windows promt, OSSIM servere bağlantı için **root** ile bağlantılı olan kullanıcı şifresini istemektedir.
 
 
 ![alt text](http://blog.linoxide.com/wp-content/uploads/2015/02/rootuser.png "OSSIM Logo")
-##Time Zone Seçenekleri
+## Time Zone Seçenekleri
 
 Time zone bilgisi giriş sistemi açısından oldukça öncem sarfetmektedir.
 
@@ -171,7 +171,7 @@ Network seçeneklerinden ve varlık keşfetmelerinden sonra bir sonraki adım, H
 
 **ÖNEMLİ: Bu bölümde OSSIM'in yeni arayüzü ile ilgili bilgiler vereceğim. Bu bölümün parçalarının detayları, kullanımı ve asıl detaylar dökümanın devamında yer alacaktır.**
 
-##Giriş Yönetimi
+## Giriş Yönetimi
 Aşağıdaki görüntü, farklı loglar için keşfedilmilmiş varlıklar üzerinden konfigürasyonunu içeriyor. 
 
 ![alt text](http://blog.linoxide.com/wp-content/uploads/2015/02/log-management.png "OSSIM Logo")
@@ -182,7 +182,7 @@ Burada OSSIM'in ana kontrol paneli karşımıza çıkacaktır. bu da, aşağıda
 
 ![alt text](http://blog.linoxide.com/wp-content/uploads/2015/02/dashboard.png "OSSIM Logo")
 
-##Web Arayüzü
+## Web Arayüzü
 
 OSSIM'in web arayüzü aşağıdaki parçalardan oluşmaktadır.
 
@@ -192,31 +192,31 @@ OSSIM'in web arayüzü aşağıdaki parçalardan oluşmaktadır.
 * Reports
 * Configuration
  
-##Dashboard
+## Dashboard
 
 Bu bölümde OSSIM server'in tüm parçalarının incelenebildği bir paneldir. Bu panelin ana parçaları aşağıdaki gösterilmiştir.
 
 ![alt text](http://blog.linoxide.com/wp-content/uploads/2015/02/dashboard-submenu.png "OSSIM Logo")
 
-#Analiz
+## Analiz
 
 Analiz kısmı OSSIM'in en önemli parçalarından biridir. OSSIM serveri hostları loglara göre analiz etmektedirler. Bu menüde Alarmlar, SIEM, ticket ve raw log gibi alt parçalara ayrılmaktadır.
 
 ![alt text](http://blog.linoxide.com/wp-content/uploads/2015/02/analysis-submenu.png "OSSIM Logo")
-##Environment
+## Environment
 
 OSSIM Server'in bu menüsünde de, seçenekler organizasyon içinde olan varlıklarla ilişkilidir. Aşağıda alt menüleri de görebilirsiniz.
 
 ![alt text](http://blog.linoxide.com/wp-content/uploads/2015/02/environment.png "OSSIM Logo")
 
-##Raporlar
+## Raporlar
 
 Raporlama herbir logging server için vazgeçilemez bir parçadır.Ayrıca, OSSIM server de kendisi raporları kendisi üretebilir. Bu durum yeni bir host'u sorgulamak için oldukça kullanışlı bir yoldur.
 
 
 ![alt text](http://blog.linoxide.com/wp-content/uploads/2015/02/reports-submenu.png "OSSIM Logo")
 
-##Konfigürasyon
+## Konfigürasyon
 
 Konfigürasyon menüsün kullanıcının; yönetim arayüzünün ip adresi, hangi hostların inceleneceği gibi OSSIM serverindeki değişiklikleri yapabileceği bir bölümdür. Alt menüler aşağıdaki ekran görüntüsünde gösterilmiştir.
 
@@ -224,7 +224,7 @@ Konfigürasyon menüsün kullanıcının; yönetim arayüzünün ip adresi, hang
 ![alt text](http://blog.linoxide.com/wp-content/uploads/2015/02/configuration-submenu.png "OSSIM Logo")
 
 
-#OSSIM Konfigürasyonu
+# OSSIM Konfigürasyonu
 
 İlk olarak **Policy => Networks** ekranına gidip  yeni bir **Network Policy** yaratıyoruz. Bu Network'ün kendine özel asset, compromise threshold ve saldırı threshold gibi değerleri var. Ek olarak da Network'ün içinde bulunan host'un Nessus ile taranmasını istiyosarsak bunu yapabiliyoruz. Herhangi bir asset değerini de herhangi bir host için spesifik hale getirebiliyoruz.
 
@@ -232,10 +232,10 @@ Network'ü taramak için **Tools => Netscan** bölümüne gidiyoruz. Bu ekran 
 
 Her bir host için OCS parçalarını çalıştırdığımızda. OCS, otomatik olarak host'tun sahip olduğu bilgileri bize getiriyor. OSSIM, OCS ile ilgili bütün bileşenlerini **Tools =>Downloads** kısmından görebiliyoruz. Bu tool OSSIM installer tarafından değiştirilmiştir. Yapılması gereken tek şey setup scripti çalıştırılmaktır. Bu parametreler de OCS'den OSSIM installer'a rapor olarak sunulmaktadır.
 
-##Ayarlanabilir Eklenti
+## Ayarlanabilir Eklenti
 Bu bölümde güvenilirlik ve öncelik değerleri bir duruma tahsis edilir. Küçük bir plugin ile basit bir pyhton scrpti ile bu halledilebilir. Bu pyhton scripti syslog'a bir mesaj göndermektedir. Bu mesajda agent ve server doğrulanır.
 
-##Server Konfigürasyonu
+## Server Konfigürasyonu
 OSSIM Serverde, OSSIM database'i alakalı olan plugin ile  bilgileri güncellenmesi gerekmektedir. Aşağıdaki komutları kopyalayabiliriz. Bu komut satırı sql adında bir dosya yaratıcaktır. Eğer, dosyayı manuel bir şekilde yaratmak istiyorsanız blackslashlerden önce olan **’$’** sembollerini silmeyi unutmayın.
 
 
@@ -291,7 +291,7 @@ Yeni bir eklenti varolduğunda, OSSIM web arayüzü bunu şu panelde doğrulayac
 Her bir plugin_sid'ye ait güvenilirlik ve öncelikle ilgili olan değerleri değerlerini değiştirdiğimizde, bu değerleri kullanması için OSSIM serveri tekrardan başlatmamız gerekmektedir.
 
 
-##Agent Konfigürasyonu
+## Agent Konfigürasyonu
 Aşağıdaki adımların detayları yeni bir eklenti için agent'ı konfigüre etme yollarıdır. Bu yeni eklenti syslog çıktılarını inceleyecektir. Eklenti için yapılandırılan dosya plugin ID ile varolması gerekmekte ve syslog'daki bilgiyle birbirleriyle eşleşmelidirler. Bu durumda, sadece bir sid ile eşleşmelidir. Fakat, üstte gördügünüz sql komutlarında 5 farklı durum ve 5 farklı sub id vardır.
 
 
@@ -386,7 +386,7 @@ foobar=/etc/ossim/agent/plugins/foobar.cfg
 
 ```
 
-##Doğrulama
+## Doğrulama
 Bu basit bir Syslog mesajı gönderen phyton script'i dir. Aşağıdaki kod phyton yüklü host'ta script olarak run edilebilir. 
 
 
@@ -427,7 +427,7 @@ testfoobar.py 5 4 2
 Etkinlikleri ve uyarıları kontrol ediyoruz. Önceden gösterilmiş etkinlikler sekmesinde bir etkinlik veya alarm görülmelidir.
 
 
-#Basit bir OSSIM Direktifi
+# Basit bir OSSIM Direktifi
 OSSIM kendi içindeki kurallarını serverde **/etc/ossim/server/directives.xml** isimli dosyada tutuyor. Bu kurallar direktiflere ayrılmış şekilde bulunuyorlar. Aşağıda gördüğünüz örnek ssh brute force direktifidir. Bu direktif gerekli bilgiyi **ssh auth log.plugin**'inden almaktadır. Aslında bu durumda saldırgan, tek bir host üzerinde host'u değiştirip saldırı girişiminde bulunup farkedilmekten kurtulabilir. Fakat, bu direktif bu saldırı girişimlerini yakalayacaktır.
 
 ```
@@ -465,7 +465,7 @@ priority="5">
 ```
 
 
-#OSSIM Mimarisi
+# OSSIM Mimarisi
 ![alt text](http://i.hizliresim.com/7vnaRl.jpg "OSSIM Logo")
 
 
@@ -476,7 +476,7 @@ priority="5">
 
 
 
-#OSSIM Login ve Bileşenler
+# OSSIM Login ve Bileşenler
 OSSIM konsolu web üzerine kurulmuş olup, standart bir web tarayıcısı üzerinden 80 portundan (HTTP) veya güvenli olan 443 portundan (HTTPS)'den bağlanılabilir.
 
 * Kullandığımız browser'ı açıyoruz.
@@ -489,16 +489,16 @@ Default şifremizi değiştirmeyi unutmuyoruz ve buna özen gösteriyoruz.
 
 Bir kere giriş yaptıktan sonra, Karşımıza **Metrics** ekranı gelmektedir. Metrics ekranın da ise izlemek istediğimiz Network'leri gözden geçiriyoruz. 
 
-##Metrics Ekranı
+## Metrics Ekranı
 ![alt text](http://i.hizliresim.com/7vnB9N.jpg "OSSIM Logo")
 
 Göründüğü gibi ekran farklı bölümlere ayrılmıştır. Bunlar **Global Metrics**, **Riskmeter**, **Service Level**, ve  policy'nin her bir parçası için **Current Metrics**.
 
-#Policy Menüsü
+# Policy Menüsü
 OSSIM Policy menüsü yönetciye, policy inşaa etmek için gerekli olan objeleri yaratmaya ve bunları değiştirmeye izin verir.
 
 
-##Yeni bir Sensör Yaratma
+## Yeni bir Sensör Yaratma
 Aşağıda takip edilen adımlarla, yönetici bir OSSIM sensör ekleyebilir veya bunu değiştirebilir.
 * **policy**'e tıklıyoruz.
 * **sensors**Ee tıklıyoruz.
@@ -527,7 +527,7 @@ Objeyi oluşturmak için **OK**'a tıklıyoruz. Sensor yaratıldığında Sensor
 
 Eğer eklenmiş yeni sensör aktif değilse, Aktif butonuna basarak bağlantıyı tekrar kontrol ediyoruz.
 
-##İmza Gruplarını Tanımlama
+## İmza Gruplarını Tanımlama
 İmzalar bölümü direkt olarak Snort ve sensörden okunan diğer imzala tipleriyle alakalıdırlar. Buradaki birbirinden bağımsız uyarılar 
 ACID başlığı altında incelenebilirler. Bu bölümde yönetici, saldırılarla ilgili olan imzaları optimise edebilir. Bu bölüm Diğer sensörler için diğer imzaların açıklamalarını da taşıdığı için oldukça kullanışlı bir bölümdür. Örneğin, sadece Snort Virüs rules içeren Virüs tiplerinin imza listesi tutulabilir. 
 
@@ -551,7 +551,7 @@ Burada bir imza grubuna isim verebiliyoruz. Açıklamak istediğimiz imzaları s
 
 Yeni imza eklenmiş oldu. İleride policy yaratman için kullanılmaya hazırdır.
 
-##Bir Network Yaratmak
+## Bir Network Yaratmak
 Genellikle Network gruplarının organizasyonu elimizde bulundururuz. Bunun için **The Policy >
 Networks** Butonuna basıyoruz.
 Karşımıza şu ekran çıkıyor.
@@ -618,7 +618,7 @@ Aşağıda gördüğümüz ekran görütüsünde gördüğümüz üzere, Back or
 Yukarıdaki görev OSSIM'i kendi network'ümüze göre optimize ettiğimizde, OSSIM tarafından üstlenilmiş bir görev olacaktır.
 
 
-##Creating a Host
+## Creating a Host
 Önceki adımları tamamlamak için son işlemimiz diyebiliriz. Yeni bir host oluşturmanın iki farklı yolu vardır. Ya manuel bir şekilde ya da bilinen bir hostun networkde scan edip o host hakkında bilgi alınması şeklindedir.
 
 **Policy > Hosts** menü, Host operating system şeklinde P0F kullanarak detect edilmesi aşağıdaki şekildedir. 
@@ -674,7 +674,7 @@ Alerts seçenekleri ise **Main**, **Source**, ve **Destination** dir.
 Yukarıdaki Alarm seçeneklerden herhangi birisine basıldığında o alarmın hangi host ile alakalı olduğunu gösterecektir. 
 
 
-###Alerts
+### Alerts
 Alert'ler ACID sayrsinde elde edilir. ACID konsoluna ulaşmak için User ID ve password gereklidir.
 
 * **Main**'e Tıklıyoruz.
@@ -775,19 +775,19 @@ Monitor menüsü  real-time network, uptime, ve risk session data gibi seçenekl
 * NTOP – http://www.ntop.org
 * OPENNMS – http://www.opennms.org
 
-##RiskMeter 
+## RiskMeter 
 
 ![alt text](http://i.hizliresim.com/YbLVka.jpg "OSSIM Logo")
 
 Riskmeter risk altında olan veya saldırı gerçekleştirilen sistem hakkında bilgi edinilmesini sağlar. Bu riskmeter'in nasıl hesaplandığını öğrenmek için OSSIM websitesini ziyaret edebilirsiniz http://www.ossim.net. 
 
-#Configuration Menu
+# Konfigürasyon Menüsü
 
 Configuration menüsü, yöneticiye Ossimin seçeneklerini değiştirme imkanı sağlar. Sub menüler ise reload all policies, edit directives , view correlation, information, create or modify RDD_Config information, add a host to scan, and edit the global riskmeter configuratin gibi seçenekleri içermektedir.
 
-##Sub Menus
+## Sub Menus
 
-###Main
+### Main
 Main menü' de bir çok ayrı ayrı parçalar bulunmaktadır.
 
 ![alt text](http://i.hizliresim.com/81vXZr.jpg "OSSIM Logo")
@@ -811,7 +811,7 @@ RDD biçimlendirme, alınmak istenen uyarılar için yönetecinin anlamlı değe
 Aşağıdaki örnekte default RDD_Config ve default seçenekler mevcut. Fakat, farklı bir RDD configuration ekleyebiliriz. Bu da aşağıda şekildeki gibi olmaktadır.
 
 
-####Yeni Bir RRD Configuration Ekleme. 
+#### Yeni Bir RRD Configuration Ekleme. 
 
 ![alt text](http://i.hizliresim.com/EJd289.jpg "OSSIM Logo")
 
