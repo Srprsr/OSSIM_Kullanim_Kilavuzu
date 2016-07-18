@@ -99,9 +99,9 @@ Yüklemenin son adımı aşağıda gösterilmiştir.
 Yükleme bittikten sora aşağıda görülen windows promt ekramı açılacaktır. Bu ekran OSSIM'in yüklenmesinin başarı olduğunu söylemektedir. Ve OSSIM'e web arayüzünden üzerinden erişmek için gereken URL şudur:
 
 ```
-<localfile>
+
 https://192.168.1.150/
-<localfile>
+
 ```
 
 
