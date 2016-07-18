@@ -146,9 +146,9 @@ Eğer birinci seçeneğe tıklarsak, karşımıza farklı bir pencere açılıyo
 
 OSSIM serverlerindeki varlık tipleri şu şekildedir.
 
-*Windows
-*Linux
-*Network device ( Network cihazları. Router gibi..)
+* Windows
+* Linux
+* Network device ( Network cihazları. Router gibi..)
 
 ![alt text](http://blog.linoxide.com/wp-content/uploads/2015/02/asset.png "OSSIM Logo")
 
@@ -176,11 +176,11 @@ Burada OSSIM'in ana kontrol paneli karşımıza çıkacaktır. bu da, aşağıda
 
 OSSIM'in web arayüzü aşağıdaki parçalardan oluşmaktadır.
 
-*Dashboards
-*Analysis
-*Environments
-*Reports
-*Configuration
+* Dashboards
+* Analysis
+* Environments
+* Reports
+* Configuration
  
 ##Dashboard
 
