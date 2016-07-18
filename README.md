@@ -7,7 +7,7 @@ Son zamanlardaki **IDS** gibi güvenlik açısından gelişen teknolojiyi düş�
 
 * [OSSIM Nedir?](#ossim-nedir?)
 * [Installation and Configuration](#ınstallation-and-configuration)
-* [OSSIM Konfigürasyonu](#ossın-konfigurasyonu)
+* [OSSIM Konfigürasyonu](#ossim-konfigurasyonu)
 * [OSSIM Mimarisi](#ossım-mimarisi)
 * [OSSIM Login ve Bileşenler](#ossım-login-ve-bileşenler)
 
