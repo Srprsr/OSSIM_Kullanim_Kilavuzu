@@ -10,7 +10,7 @@ Son zamanlardaki **IDS** gibi güvenlik açısından gelişen teknolojiyi düş�
 * [Yükleme ve Konfigürasyon](#yukleme-ve-konfigurasyon)
 * [OSSIM Konfigürasyonu](#ossim-konfigurasyonu)
 * [OSSIM Mimarisi](#ossim-mimarisi)
-* [OSSIM Login ve Bileşenler](#ossim-login-ve-bilesenler)
+* [OSSIM Login ve Bileşenler](#ossim login ve bilesenler)
 
 # Correlation
 
