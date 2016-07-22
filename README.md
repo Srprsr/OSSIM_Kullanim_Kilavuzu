@@ -3,7 +3,7 @@ OSSIM(Open Source Security Information Manager), SIEM (Security information and 
 
 Son zamanlardaki **IDS** gibi güvenlik açısından gelişen teknolojiyi düşünecek olursak, şaşırtıcı bir şekilde Network'un snapshot'ını elde etmek neredeyse hattı gözetlemek kadar kompleks bir hal almıştır.
 
-![alt text](http://cybersecurity-excellence-awards.com/wp-content/uploads/2016/01/638669-500x318.jpg "OSSIM Logo")
+![alt text](https://sathisharthars.files.wordpress.com/2014/01/av-logo-ossim-black.jpg "OSSIM Logo")
 
 
 
