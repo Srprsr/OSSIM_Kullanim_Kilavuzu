@@ -626,7 +626,7 @@ Yeni bir host eklemek için
 * **Insert new host**'a tıklıyoruz.
 * Aşağıda görülen tüm yerlere anlamlı bilgileri giriyoruz.
 
-![alt text](http://i.hizliresim.com/2Z3PyL.jpg "OSSIM Logo")
+![alt text](http://i.hizliresim.com/qBroAB.jpg "OSSIM Logo")
 
 
 **Önemli : Burada Nessus scan'i akif etmeliyiz. Bu durumda large bir network kullanıyorsak bütün zayıf noktaları görmemize gerek kalmaz. Asıl yapılması gereken, belirli olarak seçeceğimiz bir hostta zayıflıklar var mı yok mu görmek daha faydalı olacaktır.**
@@ -636,12 +636,12 @@ Gerekli bilgiler doldurulduğunda **OK** butonuna basılmalıdır. Bu yeni host 
 ### Updating and the host information.
 Yeni bir host'un bilgilerini update etmek için, **Host Field** kısmından bilgileri değiştirilmek istenen host ismine tıklanır. Ve karşımıza şu şekilde bir ekran çıkacaktır.
 
-![alt text](http://i.hizliresim.com/B2QGEV.jpg "OSSIM Logo")
+![alt text](http://i.hizliresim.com/MJrn1k.jpg "OSSIM Logo")
 
 
 Host inventory'sini update etmek için **update** butonuna basılır. Yeni hostlara karşı Nmap scan başlatılır. Bu durum açık portları elde etmemize yararken, servis sistemde aşağıdaki gibi çalışmaktadır.
 
-![alt text](http://i.hizliresim.com/ZdBnLg.jpg "OSSIM Logo")
+![alt text](http://i.hizliresim.com/QM9rPv.jpg "OSSIM Logo")
 
 
 Spesifik bir host için **Metrics**'i incelemek için, **Metrics** Butonuna basılmalıdır. Karşımıza çıkacak olan Metrics grafiği atakları gösterir. Bu grafik gün bazında, ay bazında olacağı gibi yıl bazında da olabilir.
