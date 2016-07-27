@@ -613,7 +613,7 @@ Aşağıda gördüğümüz ekran görütüsünde gördüğümüz üzere, Back or
 Yukarıdaki görev OSSIM'i kendi network'ümüze göre optimize ettiğimizde, OSSIM tarafından üstlenilmiş bir görev olacaktır.
 
 
-## Creating a Host
+## Yeni Bir Host Yaratma
 Önceki adımları tamamlamak için son işlemimiz diyebiliriz. Yeni bir host oluşturmanın iki farklı yolu vardır. Ya manuel bir şekilde ya da bilinen bir hostun networkde scan edip o host hakkında bilgi alınması şeklindedir.
 
 **Policy > Hosts** menü, Host operating system şeklinde P0F kullanarak detect edilmesi aşağıdaki şekildedir. 
@@ -633,7 +633,7 @@ Yeni bir host eklemek için
 
 Gerekli bilgiler doldurulduğunda **OK** butonuna basılmalıdır. Bu yeni host artık host listesinde yer alacaktır. Eğer gilgiler yanlış yazılmış ise **Modify** Butonunu kullanarak, bu bilgiler güncellenebilir.
 
-### Updating and the host information.
+### Host Bilgilerini Güncelleme
 Yeni bir host'un bilgilerini update etmek için, **Host Field** kısmından bilgileri değiştirilmek istenen host ismine tıklanır. Ve karşımıza şu şekilde bir ekran çıkacaktır.
 
 ![alt text](http://i.hizliresim.com/MJrn1k.jpg "OSSIM Logo")
@@ -649,7 +649,7 @@ Spesifik bir host için **Metrics**'i incelemek için, **Metrics** Butonuna bas�
 ![alt text](http://i.hizliresim.com/o7WyAQ.jpg "OSSIM Logo")
 
 
-### Alarms and Alerts
+### Alarms ve Alerts
 Host Report menüsünde 3 tane alt bölüm bulunmaktadır. Bunlar; **Vulnerabilities**, **Alarms**, ve **Alerts** dir. Peki alarm ve Alert arasındaki fark nedir?
 
 Belirli olan belli başlı kriterler sağlandığında alarm ortaya çıkar. Örneğin, şu durumlar gerçeleştiğinde alarm durumu oluşur.
@@ -699,8 +699,8 @@ Saldırıların oluşumuna bakmak için **Occurances as Src.** kısmına tıklan
 
 Herhangi bir imza ile ilgili daha fazla bilgi almak için **[snort]** üzreine tıklanmalı ve bu bizi Snort rules tanımlarının olduğu sayfaya yönlendirecektir. Bu sayfada imza ile ilgili önemli bilgiler yer almaktadır.
 
-### Vulnerabilities
-OSSIM, şirketlere ve bireysel kullanıcılara kendi serverlerindeki önde gelen zayıf noktaları inceleme imkanı sağlar. Bunu sağlayan **Host Repot** menüsüdür. Bu bölüm zayıf noktaların raporlarını elde eder ve bu noktaları tarar. Bu incelemelerin sonucunu da görmek için önce **Vulnmeter** başlığı altındaki **Vulnerabilities** bölümüne bakmamız yeterli olacaktır.
+### Zayıf Noktalar
+OSSIM, şirketlere ve bireysel kullanıcılara kendi serverlerindeki önde gelen zayıf noktaları inceleme imkanı sağlar. Bunu sağlayan **Host Report** menüsüdür. Bu bölüm zayıf noktaların raporlarını elde eder ve bu noktaları tarar. Bu incelemelerin sonucunu da görmek için önce **Vulnmeter** başlığı altındaki **Vulnerabilities** bölümüne bakmamız yeterli olacaktır.
 
 Bu bölümde zayıflıkları olan hostların listesi gelecektir. ve ilgili host ve ilgili IP adress highlighted şekilde gözükecektir. Üzerinde çalışılmak istenen host ve IP adresin üzerine tıklanması gerekir.
 
@@ -709,7 +709,7 @@ Bu bölümde zayıflıkları olan hostların listesi gelecektir. ve ilgili host 
 
 Daha fazla bilgi edinmek için **(Security hole found)** seçeneğine tıklanmalı ve sekme aşağı indirilmelidir.
 
-### Host Usage
+### Host Kullanımı
 Host usage ile ilgili bilgiler **NTOP** tarafından sağlanmaktadır. Daha fazla bilgiyi **http://www.ntop.org.** adresinden elde edebilirsiniz. Trafik akışındaki şüpheli durumlar içn OSSIM, NTOP'u kullanmaktadır.
 
 ![alt text](http://i.hizliresim.com/v42ygm.jpg "OSSIM Logo")
@@ -724,7 +724,7 @@ bölümüne girilmelidir. Sonradan karşımıza şu ekran çıkacaktır.
 
 Değişiklikler farkedilebilir ya da görmezden gelinebilir.
 
-## Creating a Policy
+## Bir Policy Yaratmak
 Policy yaratmak, OSSIM için en önemli durumlardan biridir. Çünkü, yaratılan policy ile hostların ve networklerin izlenme işlemleri yapılır. Buna göre de anlamlı ve istenilen bilgiler elde edilir.
 
 * **Policy**'ye tıklıyoruz.
@@ -749,7 +749,7 @@ Yeni bir policy eklemek için, **Insert new policy**'a tıklanır. Sonrasında k
 * Policy için bir tanım verilir
 * Kaydedilmesi için **Ok** tuşuna basılır. 
 
-# Reports
+# Raporlar
 Reports, OSSIM'in sağladığı hostlar ve tüm network güvenliği için bilgi edinilmesini sağlayan bir menüdür. Gelen report'lar isteğe göre değiştirilebilir ve hangi raporların görülüp görülmeyeceğini kullanıcı tarafından seçilebilir.
 
 The Security Report bölümü aşağıdaki bilgileri sağlar. 
@@ -780,7 +780,7 @@ Riskmeter risk altında olan veya saldırı gerçekleştirilen sistem hakkında 
 
 Configuration menüsü, yöneticiye Ossimin seçeneklerini değiştirme imkanı sağlar. Sub menüler ise reload all policies, edit directives , view correlation, information, create or modify RDD_Config information, add a host to scan, and edit the global riskmeter configuratin gibi seçenekleri içermektedir.
 
-## Sub Menus
+## Sub Menüler
 
 ### Main
 Main menü' de bir çok ayrı ayrı parçalar bulunmaktadır.
@@ -788,7 +788,7 @@ Main menü' de bir çok ayrı ayrı parçalar bulunmaktadır.
 ![alt text](http://i.hizliresim.com/81vXZr.jpg "OSSIM Logo")
 
 
-### Directives
+### Directifler
 
 Directives dediğimizde alarm'a neden olan olayların hepsi olarak düşünebiliriz. Bu durumlar herhangi bir altyapıya göre optimise edilebilir. Aşağıdaki ekran görüntünsünde, win-trin00 Trojan'ı için default directive görünmektedir.
 
@@ -801,12 +801,12 @@ Directive'ler plugin ID'ler tarafından değiştirebilirler. Örneğin, Ossime t
 ![alt text](http://i.hizliresim.com/mLyR6y.jpg "OSSIM Logo")
 
 
-### RRD Configuration
+### RRD Konfigürasyonu
 RDD biçimlendirme, alınmak istenen uyarılar için yönetecinin anlamlı değerler ve de thersholds değerlerini girmesini sağlar.
 Aşağıdaki örnekte default RDD_Config ve default seçenekler mevcut. Fakat, farklı bir RDD configuration ekleyebiliriz. Bu da aşağıda şekildeki gibi olmaktadır.
 
 
-#### Yeni Bir RRD Configuration Ekleme. 
+#### Yeni Bir RRD Konfigürasyonu Ekleme. 
 
 ![alt text](http://i.hizliresim.com/EJd289.jpg "OSSIM Logo")
 
@@ -825,7 +825,7 @@ Karşımıza çıkan ekranda, biçimlendirilmesine izin verilen bireysel network
 Host scan seçeneği kullanıcıya scan edilecek olan host listesine, scan edilmesi istenen host'un eklenmesini sağlar. Bu çok tercih edilen bir yöntem değildir. Bunun yerine **Policy > Hosts > Insert new host** menüsünden bu seçeneği eklemek daha iyi bir fikirdir.
 
 
-##Riskmeter configuration
+##Riskmeter Konfigürasyonu
 Aşağıdaki screenshoot'dan görüleceği gibi, default configuration **Configuration > Riskmeter** bölümünden değiştirilebilir.
 
 ![alt text](http://i.hizliresim.com/o7Wyjk.jpg "OSSIM Logo")
