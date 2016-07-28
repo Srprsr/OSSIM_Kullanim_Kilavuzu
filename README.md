@@ -62,7 +62,7 @@ OSSIM_Kullanim_Kilavuzu icerisindeki `OSSIM_Kullanim_Klavuzu/build.sh`  **Script
 
 
 # Yükleme ve Konfigürasyon
-
+**Lütfen aşağıdaki konfigürasyonların sizin sisteminiz için uygun olup olmadığına dikkat ediniz.**
 Ubuntu veya Debian gibi bir işletim sistemi kullanıyorsak, Git üzerinden Source code ile indirebiliriz.
 
 ```
@@ -126,7 +126,108 @@ Bundan Sonra da aşşağıdaki yükleme komutlarlarıyla beraber Yüklemeyi ger�
 #make install
 ```
 
-Iso dosyasını AlinVault'un şu sitesinden indiriyoruz =>**(http://downloads.alienvault.com/c/download?version=current_ossim_iso)** ve VM içerisinde kuruyoruz. Burada size Vm içerisinde yüklemeyi göstereceğim.
+##Database Konfigürasyonu
+SIEM güvenlik seviyesi için veritabanını adapte etmek için aşşağıdaki komutlar kullanılabilir.
+
+```
+#cd db
+#gunzip ServiceLevelSIEM.sql.gz
+#mysql -uroot -p < ServiceLevelSIEM.sql
+
+```
+
+Eğer veritabanını en baştan oluşturduysak dashboard'a erişim için username ve password resetlenmeli. Bunun için:
+
+```
+# /usr/bin/ossim-reset-passwd admin
+```
+
+Eğer hali hazırda bir veritabanı kullanıyorsak. En baştaki veritabanı Scripti yerine şu kullanılmalıdır:
+```
+mysql> create user 'fiware'@'localhost' identified by '<password>';
+mysql> grant all privileges on alienvault.* to 'fiware'@'localhost';
+mysql> grant all privileges on alienvault_siem.* to 'fiware'@'localhost';
+```
+
+**Eğer OSSIM'i OSI image yerine Source code ile yüklediysek Karşımıza bir çok error çıkabilir. Bu Errorlerin üstesinden gelmek için aşağıdaki komut çalıştırılmalıdır. Bu komut MYSQL 5 için olan temel IPv6 ve IDNA fonksiyonlarını içermektedir.
+
+```
+# sudo apt-get install libc6-dev libmysqlclient-dev libidn11-dev
+# wget https://bitbucket.org/watchmouse/mysql-udf-ipv6/get/tip.tar.bz2
+# tar -zxvf tip.tar.bz2
+# cd watchmouse-mysql-udf-ipv6-c733da2d2703
+# make
+# sudo make install
+# service mysql restart
+```
+
+Mysql' e bağlanmak için de :
+```
+mysql> CREATE FUNCTION inet6_pton RETURNS STRING SONAME "mysql_udf_ipv6.so";
+mysql> CREATE FUNCTION inet6_ntop RETURNS STRING SONAME "mysql_udf_ipv6.so";
+mysql> CREATE FUNCTION inet6_lookup RETURNS STRING SONAME "mysql_udf_ipv6.so";
+mysql> CREATE FUNCTION inet6_rlookup RETURNS STRING SONAME "mysql_udf_ipv6.so";
+mysql> CREATE FUNCTION inet6_mask RETURNS STRING SONAME "mysql_udf_ipv6.so";
+```
+
+#SIEM Servis Seviyesini Konfigürasyonu
+**Lütfen aşağıdaki konfigürasyonların sizin sisteminiz için uygun olup olmadığına dikkat ediniz.**
+Server ve Agent arasındaki bağlantıda SSL kullanılmasını istiyorsak:
+
+```
+[ssl]
+socat=no
+cert=/etc/ossim/ssl/server.pem
+listen_port=50001
+```
+Aşağıdaki Komut ise OSSIM'in SIEM seviyesini konfigüre etmek için bir çok bölümden oluştuğunu söyleyebiliriz. Server ve Agent arasındaki Paralel işlemler için dinlenilen port Agent'in hareketlerini dinliyor, Schema ise alarmlar ve olaylar için.
+
+```
+//AGENT OSSIM PROPERTIES
+spout_port = 41000
+
+//INCOMING EVENT SCHEMA
+schemaNames = event_id,plugin_id,plugin_sid,date,device,interface,src_ip,dst_ip,
+userdata1,userdata2,userdata3,userdata4,userdata5,userdata6,userdata7,userdata8,
+userdata9,fdate
+
+//SLS ALARM PARAMETERS
+alarmSchema = AlarmID,BacklogID,ListOfEventID
+DirectiveSLS = 70000
+
+// TOPOLOGY PARAMETERS
+topologyName = "topologyPATTERN"
+TOPOLOGY_WORKERS = 6
+//Leave spout parallelism to 1 (To be analysed)
+spoutParallelism = 1
+// Preprocessing and filtering Bolt
+schemaParallelism = 2
+policyParallelism = 2
+// Database writer Bolt
+dbWriterParallelism = 2
+actionParallelism = 2
+crossCorrParallelism = 2
+
+//DATABASE PARAMETERS
+databaseIP = localhost
+databasePort = 3306
+databaseAlarms = alienvault
+databaseEvents = alienvault_siem
+userName = root
+pwd = <password>
+
+//SSL Configuration (TLS/SSLv3/NONE)
+sslProtocol = TLS
+keyStore = /etc/ossim/ssl/serverKeyStore.jks
+keyStorePassword = <password>
+keyStoreType = JKS
+trustStore = /etc/ossim/ssl/serverTrustStore.jks
+trustStorePassword = <password>
+trustStoreType = JKS
+```
+
+
+Yukarıda bahsettiğim gibi, OSSIM'i Source Code yerine Iso dosyasından indirebiliriz. Bu ISO dosyası AlinVault'un sitesinden indirilebilir =>**(http://downloads.alienvault.com/c/download?version=current_ossim_iso)** ve VM içerisinde kuruyoruz. Burada size Vm içerisinde yüklemeyi göstereceğim.
 
 2 tane arayüzü bulunmaktadır. Birisi server yönetimi ile ilgili olup, 2. si ise collecting logs ve monitoring(inceleme) ile ilgilidir.
 VM nin sahip olduğu özellikler aşağıda belirtilmiştir.
