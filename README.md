@@ -58,7 +58,7 @@ Son olarak da bize gereken tek şey, organize yapıda olan bir araçtır. Buna d
 # Kurulum Script'leri
 
 ## Nasıl Kurulur?
-OSSIM_Kullanim_Kilavuzu icerisindeki `OSSIM_Kullanim_Kilavuzu/build.sh`  **Script'i** run edilmelidir. Bu yaklaşım default konfigürasyondur. **Mac** ve **Linux** üzerinde hatasız çalışacaktır. Windows için ise deafult kurulum vardır. Bunun dışında **test**, **setup** ve de **install** Scriptlerini `OSSIM_Kullanim_Kilavuzu/` dosyası altında bulabilirsiniz.
+OSSIM_Kullanim_Kilavuzu icerisindeki `OSSIM_Kullanim_Klavuzu/build.sh`  **Script'i** run edilmelidir. Bu yaklaşım default konfigürasyondur. **Mac** ve **Linux** üzerinde hatasız çalışacaktır. Windows için ise deafult kurulum vardır. Bunun dışında **test**, **setup** ve de **install** Scriptlerini `OSSIM_Kullanim_Klavuzu/` dosyası altında bulabilirsiniz.
 
 
 # Manuel Olarak Yükleme ve Konfigürasyon
