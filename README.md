@@ -55,7 +55,13 @@ Post-processing önişlemcilerin kullanılması gibi düşünülebilir, belirli 
 
 Son olarak da bize gereken tek şey, organize yapıda olan bir araçtır. Buna da OSSIM diyoruz.
 
-# Yükleme ve Konfigürasyon
+# Kurulum Script'leri
+
+## Nasıl Kurulur?
+OSSIM_Kullanim_Kilavuzu icerisindeki `OSSIM_Kullanim_Kilavuzu/build.sh`  **Script'i** run edilmelidir. Bu yaklaşım default konfigürasyondur. **Mac** ve **Linux** üzerinde hatasız çalışacaktır. Windows için ise deafult kurulum vardır. Bunun dışında **test**, **setup** ve de **install** Scriptlerini `OSSIM_Kullanim_Kilavuzu/` dosyası altında bulabilirsiniz.
+
+
+# Manuel Olarak Yükleme ve Konfigürasyon
 Iso dosyasını AlinVault'un şu sitesinden indiriyoruz =>**(http://downloads.alienvault.com/c/download?version=current_ossim_iso)** ve VM içerisinde kuruyoruz. Burada size Vm içerisinde yüklemeyi göstereceğim.
 
 2 tane arayüzü bulunmaktadır. Birisi server yönetimi ile ilgili olup, 2. si ise collecting logs ve monitoring(inceleme) ile ilgilidir.
