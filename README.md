@@ -61,7 +61,71 @@ Son olarak da bize gereken tek şey, organize yapıda olan bir araçtır. Buna d
 OSSIM_Kullanim_Kilavuzu icerisindeki `OSSIM_Kullanim_Klavuzu/build.sh`  **Script'i** run edilmelidir. Bu yaklaşım default konfigürasyondur. **Mac** ve **Linux** üzerinde hatasız çalışacaktır. Windows için ise deafult kurulum vardır. Bunun dışında **test**, **setup** ve de **install** Scriptlerini `OSSIM_Kullanim_Klavuzu/` dosyası altında bulabilirsiniz.
 
 
-# Manuel Olarak Yükleme ve Konfigürasyon
+# Yükleme ve Konfigürasyon
+
+Ubuntu veya Debian gibi bir işletim sistemi kullanıyorsak, Git üzerinden Source code ile indirebiliriz.
+
+```
+#apt-get install -y git
+#git clone https://git@git.assembla.com/os-sim.2.git
+#cd os-sim.2
+#git checkout tags/release-5.2
+
+```
+
+Bundan Sonra da aşşağıdaki yükleme komutlarlarıyla beraber Yüklemeyi gerçekleştirmemiz gerekiyor.
+
+```
+# cd os-sim
+# apt-get update && apt-get upgrade
+# apt-get install –y automake libtool autoconf intltool e2fsprogs hdparm unzip
+# apt-get install –y libglib2.0-dev gnet2.0 libgnet2.0 libgnet-dev
+# apt-get install –y libxml2 libxml2-dev libxslt1-dev openssl libssl-dev 
+# apt-get install –y uuid uuid-dev json-glib-1.0 libjson-glib-1.0 libjson-glib-dev
+# apt-get install –y python-dev php5-geoip geoip-bin geoip-database libgeoip1 libgeoip-dev python-geoip
+# apt-get install geoclue geoclue-hostip geoclue-localnet geoclue-manual geoclue-yahoo libgeoclue0 
+# apt-get install fprobe fprobe-ng
+# apt-get install mysql-client-5.5 mysql-server-5.5 mysql-common libmysqlclient18
+# apt-get install libgda-5.0-mysql php5-mysql python-mysqldb snort-mysql libxml-simple-perl
+# apt-get install libdbi-perl libdbd-mysql-perl libapache-dbi-perl libnet-ip-perl libsoap-lite-perl
+# apt-get install python-dev geoip-bin geoip-database 
+# wget http://geolite.maxmind.com/download/geoip/api/c/GeoIP-1.4.7.tar.gz
+# tar -xvzf GeoIP-1.4.7.tar.gz
+# cd GeoIP-1.4.7
+# ./configure --prefix=/usr
+# make
+# make install
+# cd ..
+# wget http://geolite.maxmind.com/download/geoip/api/python/GeoIP-Python-
+1.2.7.tar.gz
+# tar -zxvf GeoIP-Python-1.2.7.tar.gz
+# cd GeoIP-Python-1.2.7
+# python setup.py build
+# python setup.py install
+# cd ..
+# wget http://geolite.maxmind.com/download/geoip/database/GeoLiteCity.dat.gz
+  -O /tmp/GeoLiteCity.dat.gz 
+# mkdir –p /usr/share/geoip
+# gunzip -c /tmp/GeoLiteCity.dat.gz > /usr/share/geoip/GeoLiteCity.dat
+# apt-get install python-pyinotify python-setuptools
+# easy_install pytz
+# apt-get install python-nmap nmap python-ldap python-libpcap python-adodb
+# apt-get install openjdk-6-jdk 
+# wget http://ftp.gnome.org/mirror/gnome.org/sources/libgda/4.2/libgda-4.2.13.tar.xz
+# mv libgda-4.2.13.tar.xz libgda-4.2.13.tar
+# tar –xvf libgda-4.2.13.tar
+# cd libgda-4.2.13
+# ./configure –enable-mysql=yes –enable-postgres=yes –prefix=/usr
+# make
+# make install
+# cd ..
+#./autogen.sh
+#./configure --exec-prefix=/usr --datarootdir=/usr/share --sysconfdir=/etc 
+   --includedir=/usr/share/ossim/include
+#make
+#make install
+```
+
 Iso dosyasını AlinVault'un şu sitesinden indiriyoruz =>**(http://downloads.alienvault.com/c/download?version=current_ossim_iso)** ve VM içerisinde kuruyoruz. Burada size Vm içerisinde yüklemeyi göstereceğim.
 
 2 tane arayüzü bulunmaktadır. Birisi server yönetimi ile ilgili olup, 2. si ise collecting logs ve monitoring(inceleme) ile ilgilidir.
