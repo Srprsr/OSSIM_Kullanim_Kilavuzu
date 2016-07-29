@@ -58,6 +58,7 @@ Son olarak da bize gereken tek şey, organize yapıda olan bir araçtır. Buna d
 
 # Yükleme ve Konfigürasyon
 **Lütfen aşağıdaki konfigürasyonların sizin sisteminiz için uygun olup olmadığına dikkat ediniz.**
+
 Ubuntu veya Debian gibi bir işletim sistemi kullanıyorsak, Git üzerinden Source code ile indirebiliriz. Windows için ise ISO image gereklidir.
 
 ```
@@ -167,6 +168,7 @@ mysql> CREATE FUNCTION inet6_mask RETURNS STRING SONAME "mysql_udf_ipv6.so";
 
 #SIEM Servis Seviyesini Konfigürasyonu
 **Lütfen aşağıdaki konfigürasyonların sizin sisteminiz için uygun olup olmadığına dikkat ediniz.**
+
 Server ve Agent arasındaki bağlantıda SSL kullanılmasını istiyorsak:
 
 ```
