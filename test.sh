@@ -1,27 +1,4 @@
 #!/bin/bash
-
-###############################################################################
-#
-# Test script for all OSSIM repositories. 
-#
-# Usage: test.sh [genx]
-# 
-# The only required environment variable is OSSIM_DATA which should also 
-# contain elevation data as specified in the ossim_preferences file.
-#
-# The test data referenced must be available at $OSSIM_BATCH_TEST_DATA. This 
-# environment variable can be predefined, otherwise, will default to:
-# $OSSIM_DATA.
-#
-# The expected results should be in $OSSIM_BATCH_TEST_RESULTS. This environment 
-# variable can be predefined, otherwise, will default to
-# $OSSIM_BATCH_TEST_DATA/ossim-test-results.
-#
-# If the optional "genx" argument is specified, then expected results will be
-# generated at $OSSIM_BATCH_TEST_RESULTS ONLY IF this directory is not present.
-# If $OSSIM_BATCH_TEST_RESULTS exists, no expected results will be generated.
-#
-###############################################################################
 #set -x; trap read debug
 
 GENERATE_EXPECTED_RESULTS=0
