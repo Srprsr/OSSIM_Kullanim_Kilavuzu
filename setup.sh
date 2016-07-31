@@ -1,19 +1,4 @@
 #!/bin/sh
-#####################################################################################
-#
-# Test data setup script for all OSSIM repositories. The following env vars must be 
-# set in the GoCD environment:
-#
-#   OSSIM_DATA_REPOSITORY -- local NFS mount point for data repository
-#   OSSIM_DATA -- Local directory to contain elevation, imagery, and expected results
-#
-# The test data directory, specified by the env var OSSIM_DATA is
-# syncronized against a master repository. The master data repository is
-# assumed to be NFS-mounted at the mount point specified in the environment
-# variable "OSSIM_DATA_REPOSITORY". The data will be rsynced to the local
-# directory specified by "OSSIM_DATA" env var.
-#
-#####################################################################################
 
 echo; echo "Running setup.sh script from <$PWD>...";
 
